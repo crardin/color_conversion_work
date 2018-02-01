@@ -1,12 +1,28 @@
 Converting to "xyY" colourspace and then to "XYZ" from given "Munsell" 	7.5R 4/8
 xyY value: 	[ 0.485       0.3359      0.11700751]
 XYZ value: 	[ 0.16894506  0.11700751  0.06238775]
+Lab50 value: 	[ 40.73650412  35.22508965  13.24952594]
 Converting to "xyY" colourspace and then to "XYZ" from given "Munsell" 	5YR 9/2
 xyY value: 	[ 0.3353      0.3325      0.76695586]
 XYZ value: 	[ 0.77341444  0.76695586  0.76626387]
+Lab50 value: 	[ 90.18131824   6.87713652 -12.05684357]
 Converting to "xyY" colourspace and then to "XYZ" from given "Munsell" 	10Y 8/12
 xyY value: 	[ 0.4341      0.502       0.57619628]
 XYZ value: 	[ 0.49826056  0.57619628  0.07334451]
+Lab50 value: 	[ 80.52685092 -14.84136796  77.1671179 ]
 Converting to "xyY" colourspace and then to "XYZ" from given "Munsell" 	5GY 3/2
 xyY value: 	[ 0.3319      0.3729      0.06391178]
 XYZ value: 	[ 0.05688474  0.06391178  0.05059468]
+Lab50 value: 	[ 30.37866981  -5.26816822   1.09623099]
+Converting to "xyY" colourspace and then to "XYZ" from given "Munsell" 	2.8P 4.5/9.3
+xyY value: 	[ 0.26845539  0.20511399  0.15190162]
+XYZ value: 	[ 0.19881047  0.15190162  0.38985963]
+Lab50 value: 	[ 45.89355957  28.59645904 -49.06148361]
+Converting to "xyY" colourspace and then to "XYZ" from given "Munsell" 	N8.9
+xyY value: 	[ 0.31006    0.31616    0.7461345]
+XYZ value: 	[ 0.73173856  0.7461345   0.88211713]
+Lab50 value: 	[ 89.21161718   2.55807447 -23.1049447 ]
+Converting to "xyY" colourspace and then to "XYZ" from given "Munsell" 	2.4B 4.6/6.0
+xyY value: 	[ 0.21395431  0.27784757  0.15958379]
+XYZ value: 	[ 0.12288623  0.15958379  0.29188732]
+Lab50 value: 	[ 46.91983595 -19.59246032 -32.96615095]

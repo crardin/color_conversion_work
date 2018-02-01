@@ -1,0 +1,9 @@
+- figure out how to do a gui in python
+    - ?
+- figure out how to compile a program in python to an executable for windows
+    - wrappers?
+- figure out how to do conversions correctly
+- look into classifier stuff
+    - sklearn
+- figure out what needs to be done exactly
+- figure out how to use patch tool

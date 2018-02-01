@@ -1,0 +1,154 @@
+A desktop app for Mac OS X. This is for my personal use so the GUI can be simple. However, next year I might want to improve it and offer it as a download from my blog.
+
+Input: a .csv file containing a list of colors as follows:
+
+1.	# - which might be blank
+2.	Name - which might be blank
+3.	L
+4.	A
+5.	B
+Always Illuminant D50 and 2 degree observer.
+
+Output: a .csv file
+
+1.	# - repeat the input value
+2.	Name - repeat the input value
+3.	L - repeat the input value
+4.	A- repeat the input value
+5.	B- repeat the input value
+6.	Rounded LAB, which is one line consisting of the following:
+a.	The letter "L";
+b.	The "L" value, rounded
+c.	a white space
+d.	The letter "A",
+e.	The "A" value, rounded
+f.	a white space
+g.	The letter "B"
+h.	The "B" value, rounded
+i.	example: 82.5 -14.2 43.9 becomes L82 A-14 B44
+7.	Munsell H1
+8.	Munsell H2
+9.	Munsell V
+10.	Munsell C
+11.	Original Munsell, which is H1H2 V/C, i.e. 6.3RP 7.6/4.8
+12.	Decimal Hue, which is done by adding H1 + H2, after H2 has been converted to a number as follows:
+i.	R = 0
+ii.	YR = 10
+iii.	Y = 20
+iv.	GY = 30
+v.	G = 40
+vi.	BG = 50
+vii.	B = 60
+viii.	PB = 70
+ix.	P = 80
+x.	RP = 90
+xi.	N= -2.5 (note: "N" colors are have no value for H1)
+13.	Nominal H1, which is found after rounding the Munsell notation to the nearest node
+a.	Must be 2.5, 5, 7.5 or 10
+14.	Nominal H2, which is found after rounding the Munsell notation to the nearest node
+15.	Nominal V, which is found after rounding the Munsell notation to the nearest node
+a.	a whole number from 1 to 10
+16.	Nominal H1, which is found after rounding the Munsell notation to the nearest node
+a.	chromas below 0.5 should counted as "Ns" or "neutrals - i.e. they have no chroma
+b.	chromas between 0.5 and 1.5 should be considered chroma 1
+c.	all higher chromas should be rounded to the nearest even number
+17.	Nominal Munsell, which is the same format as #11 above, but using the inputs from 13-16
+18.	dE to Node, a number that quantifies how far apart #11 and #17 are.
+19.	Nominal Decimal Hue, calculated the same as #12 above, but using the inputs from 13 & 14.
+20.	40 Hue, which is calculated by dividing 18 by 2.5 and rounding to the nearest whole number. Neutrals are -1.
+21.	Munsell verbal description: this converts #17 into a verbal description of the color, using the format " [value], [chroma], [hue]"
+a.	Value
+i.	1-2 = very dark
+ii.	3 = dark
+iii.	4-6 = middle
+iv.	7-8 = light
+v.	9-10 = very light
+b.	Chroma
+i.	if Chroma = 0, just say "a [dark/middle/light] neutral"
+ii.	1 = very weak
+iii.	2-4 = weak
+iv.	6-8 = moderate
+v.	8-10 = strong
+vi.	12 or higher = very strong
+c.	Hue - see the spreadsheet "HueVerbalsTable". I might want to tinker with this so it would be best if you kept it as easy to edit as possible.
+d.	Example: 2.5 5/8 becomes "a middle, moderate purplish red"
+22.	Judd category. See the spreadsheet "Judd". Use dE calculations to determine which "centroid" is the closest match for this color, using #11. Report the category ID number in this column.
+23.	Judd verbal description. Insert the verbal description of the Judd category in this column.
+24.	RGB = convert #17 to RGB. Make sure it is sRGB
+25.	Hex = convert #24 to the hex code
+
+Nouns:
+    - desktop app
+    - MacOS
+    - GUI
+    - input csv file
+    - list of colors
+    - color
+        - identifier (might be blank)
+        - name (might be blank)
+        - Lab color
+        - assumed to be illumanant d50, 2 degree
+    - output csv file
+        - identifier (repeat the input value)
+        - name - repeat the input value
+        - Lab color - repeat the input value
+        - Rounded LAB, which is one line consisting of the following:
+            - The letter "L";
+            - The "L" value, rounded
+            - a white space
+            - The letter "A",
+            - The "A" value, rounded
+            - a white space
+            - The letter "B"
+            - The "B" value, rounded
+            - example: 82.5 -14.2 43.9 becomes L82 A-14 B44
+        - Munsell H1
+        - Munsell H2
+        - Munsell V
+    	- Munsell C
+        - Original Munsell, which is H1H2 V/C, i.e. 6.3RP 7.6/4.8
+        - Decimal Hue, which is done by adding H1 + H2, after H2 has been converted to a number as follows:
+            - R = 0
+            - YR = 10
+            - Y = 20
+            - GY = 30
+            - G = 40
+            - BG = 50
+            - B = 60
+            - PB = 70
+            - P = 80
+            - RP = 90
+            - N= -2.5 (note: "N" colors are have no value for H1)
+        - Nominal H1, which is found after rounding the Munsell notation to the nearest node
+            - Must be 2.5, 5, 7.5 or 10
+        - Nominal H2, which is found after rounding the Munsell notation to the nearest node
+        - Nominal V, which is found after rounding the Munsell notation to the nearest node
+            - a whole number from 1 to 10
+        - Nominal H1, which is found after rounding the Munsell notation to the nearest node
+            - chromas below 0.5 should counted as "Ns" or "neutrals - i.e. they have no chroma
+            - chromas between 0.5 and 1.5 should be considered chroma 1
+            - all higher chromas should be rounded to the nearest even number
+        - Nominal Munsell, which is the same format as #11 above, but using the inputs from 13-16
+        - dE to Node, a number that quantifies how far apart #11 and #17 are.
+        - Nominal Decimal Hue, calculated the same as #12 above, but using the inputs from 13 & 14.
+        - 40 Hue, which is calculated by dividing 18 by 2.5 and rounding to the nearest whole number. Neutrals are -1.
+        - Munsell verbal description: this converts #17 into a verbal description of the color, using the format " [value], [chroma], [hue]"
+            - Value
+                i.	1-2 = very dark
+                ii.	3 = dark
+                iii.	4-6 = middle
+                iv.	7-8 = light
+                v.	9-10 = very light
+            - Chroma
+                i.	if Chroma = 0, just say "a [dark/middle/light] neutral"
+                ii.	1 = very weak
+                iii.	2-4 = weak
+                iv.	6-8 = moderate
+                v.	8-10 = strong
+                vi.	12 or higher = very strong
+            - Hue - see the spreadsheet "HueVerbalsTable". I might want to tinker with this so it would be best if you kept it as easy to edit as possible.
+            - Example: 2.5 5/8 becomes "a middle, moderate purplish red"
+        - Judd category. See the spreadsheet "Judd". Use dE calculations to determine which "centroid" is the closest match for this color, using #11. Report the category ID number in this column.
+        - Judd verbal description. Insert the verbal description of the Judd category in this column.
+        - RGB = convert #17 to RGB. Make sure it is sRGB
+        - Hex = convert #24 to the hex code
