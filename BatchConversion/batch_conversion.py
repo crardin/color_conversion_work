@@ -8,7 +8,7 @@ from LABColor import LABColor
 class BatchConverter(object):
     __inputFileName = '../InputData/C&DColors.csv'
     # __inputFileName = '../InputData/TestWithoutAnswers.csv'
-    __outputFileName = '../Output/transformedValues.csv'
+    # __outputFileName = '../Output/transformedValues.csv'
     __colors = []
     __predictedColors = []
     inputFile = open(__inputFileName)
@@ -53,10 +53,11 @@ class BatchConverter(object):
     def outputData(self):
         outputFile = open(self.outputFileName, 'w', newline='')
         outputWriter = csv.writer(outputFile)
-        outputWriter.writerow(['Unique #', 'Label', 'L', 'a', 'b', 'Munsell'])
+        outputWriter.writerow(['Unique #', 'Label', 'L', 'a', 'b', 'Munsell', 'H1', 'H2', 'V', 'C'])
         for color in self.__colors:
+            calculatedValues = color.CalculatedMunsellList
             outputWriter.writerow([color.colorIdentifier, color.colorName, color.LabList[0], color.LabList[1], color.LabList[2],
-            self.neigh.predict([color.LabList])])
+            self.neigh.predict([color.LabList]), calculatedValues[0], calculatedValues[1], calculatedValues[2], calculatedValues[3]])
         outputFile.close()
 
     @property

@@ -74,21 +74,24 @@ class LABColor(Color):
         return HueLetterCode
 
     def getHueNumber(self, inputAngle):
-        HueNumber = np.interp(inputAngle % 36, np.linspace(0, 36, 10), np.linspace(0, 10, 10))
-        if HueNumber == 0:
+        HueNumber = np.interp(divmod(inputAngle, 36)[1], np.linspace(0, 36, 50), np.linspace(0, 10, 50))
+        if HueNumber <= 0.5:
             HueNumber = 10
         return HueNumber
+
+    def roundToNearestValue(self, inputValue):
+        return round(inputValue * 2) / 2
 
     def generateMunsellList(self):
         habDegrees = self.__LChList[2] * (180/math.pi)
         habDegrees = habDegrees % 360
         HueLetter = self.getHueLetterCode(habDegrees)
         HueNumber = self.getHueNumber(habDegrees)
-        Value = self.__LChList[0] / 10.0
-        Chroma = (self.__LChList[1]) / 5.0
+        Value = round(self.__LChList[0] / 10.0)
+        Chroma = round((self.__LChList[1]) / 5.0)
         if Chroma <= 0.5:
             Chroma = 'N'
-        self.__MunsellList = [HueNumber, HueLetter, Value, Chroma]
+        self.__MunsellList = [self.roundToNearestValue(HueNumber), HueLetter, Value, Chroma]
 
     @property
     def LABColor(self):
