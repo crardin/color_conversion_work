@@ -22,7 +22,7 @@ class BatchConverterWindow(BatchConverter, BaseWidget):
         self._saveButton = ControlButton('Save')
         self._saveButton.value = self.__saveButtonAction
         self._LabList = ControlList('Transform Results')
-        self._LabList.horizontal_headers = ['Color Name', 'L', 'a', 'b', 'H1', 'H2', 'V', 'C']
+        self._LabList.horizontal_headers = ['Color Name', 'L', 'a', 'b', 'Fit H1', 'Fit H2', 'Fit V', 'Fit C', 'H1', 'H2', 'V', 'C']
         self._LabList.readonly = True
         self._LabList.tableWidget.resizeColumnsToContents()
         self.formset = [(' ', '_inputFile', ' '), (' ','_outputFile', ' '), (' ', '_transformButton', '_saveButton', ' '), ('_LabList')]
@@ -41,7 +41,7 @@ class BatchConverterWindow(BatchConverter, BaseWidget):
            BatchConverter.predictData(self)
            for color in BatchConverter.predictedColors.fget(self):
                munsellValues = self.getMunsellValues(color['colorValue'])
-               listOutput = [color['colorName'], color['L'], color['A'], color['B'], munsellValues[0], munsellValues[1], munsellValues[2], munsellValues[3]]
+               listOutput = [color['colorName'], color['L'], color['A'], color['B'], munsellValues[0], munsellValues[1], munsellValues[2], munsellValues[3], color['H1'], color['H2'], color['V'], color['C']]
                self._LabList += listOutput
            self._LabList.tableWidget.resizeColumnsToContents()
 

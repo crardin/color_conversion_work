@@ -1,5 +1,6 @@
 import csv
 from sklearn import svm
+from sklearn.neighbors import KNeighborsClassifier
 from Munsell import Munsell
 from LABColor import LABColor
 
@@ -17,8 +18,14 @@ class BatchConverter(object):
 
     def trainData(self):
         self.myMunsell = Munsell()
-        self.clf = svm.SVC()
-        self.clf.fit(self.myMunsell.labValues, self.myMunsell.munsellValues)
+        self.neigh = KNeighborsClassifier(n_neighbors=1)
+        self.neigh.fit(self.myMunsell.labValues, self.myMunsell.munsellValues)
+        # self.clf = svm.SVC()
+        # self.clf.fit(self.myMunsell.labValues, self.myMunsell.HValues)
+        # self.clf2 = svm.SVC()
+        # self.clf2.fit(self.myMunsell.labValues, self.myMunsell.VValues)
+        # self.clf3 = svm.SVC()
+        # self.clf3.fit(self.myMunsell.labValues, self.myMunsell.CValues)
 
     def testDataTraining(self):
         # test values
@@ -39,7 +46,8 @@ class BatchConverter(object):
     def predictData(self):
         self.__predictedColors = []
         for color in self.__colors:
-            currentColor = {'colorName':color.colorName, 'L':color.LabList[0], 'A':color.LabList[1], 'B':color.LabList[2], 'colorValue':self.clf.predict([color.LabList])[0]}
+            calculatedValues = color.CalculatedMunsellList
+            currentColor = {'colorName':color.colorName, 'L':color.LabList[0], 'A':color.LabList[1], 'B':color.LabList[2], 'colorValue':self.neigh.predict([color.LabList])[0], 'H1':calculatedValues[0], 'H2':calculatedValues[1], 'V':calculatedValues[2], 'C':calculatedValues[3]}
             self.__predictedColors.append(currentColor)
 
     def outputData(self):
@@ -48,7 +56,7 @@ class BatchConverter(object):
         outputWriter.writerow(['Unique #', 'Label', 'L', 'a', 'b', 'Munsell'])
         for color in self.__colors:
             outputWriter.writerow([color.colorIdentifier, color.colorName, color.LabList[0], color.LabList[1], color.LabList[2],
-            self.clf.predict([color.LabList])])
+            self.neigh.predict([color.LabList])])
         outputFile.close()
 
     @property
@@ -81,12 +89,7 @@ if __name__ == '__main__':
     myBatchConverter = BatchConverter()
     myBatchConverter.getInputData()
     myBatchConverter.predictData()
-    print("predicted values for " + str(myBatchConverter.inputFileName))
     for color in myBatchConverter.predictedColors:
         print(color)
-    myBatchConverter.inputFileName = '../InputData/TestWithoutAnswers.csv'
-    myBatchConverter.getInputData()
-    myBatchConverter.predictData()
-    print("predicted values for " + str(myBatchConverter.inputFileName))
-    for color in myBatchConverter.predictedColors:
-        print(color)
+    for color in myBatchConverter.colors:
+        print(color.CalculatedMunsellList)

@@ -1,5 +1,5 @@
 from Illuminant import Illuminant
-
+import math
 
 class XYZColor:
     __L = 0
@@ -19,22 +19,21 @@ class XYZColor:
 
     def checkDelta(self, t):
         if t > self.__delta:
-            return t ** 3.0
+            return math.pow(t, 3)
         else:
-            # return 3.0 * (self.__delta ** 2.0) * (t - (4 / 29))
-            return ((t - 16) / 116) / 7.787
+            return 3.0 * (math.pow(self.__delta, 2.0) * (t - (4 / 29)))
 
     def calculateX(self):
-        t = self.Xn * (((self.__L + 16) / 116) + (self.__A / 500))
-        self.__X = self.checkDelta(t)
+        t = (((self.__L + 16) / 116) + (self.__A / 500))
+        self.__X = self.Xn * self.checkDelta(t)
 
     def calculateY(self):
-        t = self.Yn * ((self.__L + 16) / 116)
-        self.__Y = self.checkDelta(t)
+        t = ((self.__L + 16) / 116)
+        self.__Y = self.Yn * self.checkDelta(t)
 
     def calculateZ(self):
-        t = self.Zn * (((self.__L + 16) / 116) - (self.__B / 200))
-        self.__Z = self.checkDelta(t)
+        t = (((self.__L + 16) / 116) - (self.__B / 200))
+        self.__Z = self.Zn * self.checkDelta(t)
 
     @property
     def xyzVector(self):
