@@ -11,7 +11,6 @@ class BatchConverter(object):
     __outputFileName = '../Output/transformedValues.csv'
     __colors = []
     __predictedColors = []
-    inputFile = open(__inputFileName)
 
     def __init__(self):
         self.trainData()
@@ -88,6 +87,7 @@ class BatchConverter(object):
 
 if __name__ == '__main__':
     myBatchConverter = BatchConverter()
+    myBatchConverter.inputFileName = '/Users/Clay/PycharmProjects/color_conversion_work/InputData/TestWithoutAnswers.csv'
     myBatchConverter.getInputData()
     myBatchConverter.predictData()
     for color in myBatchConverter.predictedColors:

@@ -74,3 +74,7 @@ class Munsell:
     @property
     def CValues(self):
         return self.__C_list
+
+if __name__ == "__main__":
+    myMunsell = Munsell()
+
