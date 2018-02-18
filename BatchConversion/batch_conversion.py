@@ -8,7 +8,7 @@ from LABColor import LABColor
 class BatchConverter(object):
     __inputFileName = '../InputData/C&DColors.csv'
     # __inputFileName = '../InputData/TestWithoutAnswers.csv'
-    # __outputFileName = '../Output/transformedValues.csv'
+    __outputFileName = '../Output/transformedValues.csv'
     __colors = []
     __predictedColors = []
     inputFile = open(__inputFileName)

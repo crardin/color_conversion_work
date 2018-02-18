@@ -36,6 +36,7 @@ QPushButton{
     color: #ffffff;
     padding: 10px 10px 10px 10px;
     border-radius: 6px;
+    margin-left: 5px;
 }
 
 QTableWidget{
@@ -45,4 +46,12 @@ QTableWidget{
 
 QPushButton:hover{
     background: #3cb0fd;
+}
+
+#_colorValue{
+    border: 1px solid #000;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: #DDD;
+    margin: 5px;
 }

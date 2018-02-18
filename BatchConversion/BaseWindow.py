@@ -5,7 +5,7 @@ conf+=settings
 import pyforms
 from pyforms import BaseWidget
 
-from pyforms.Controls import ControlDockWidget
+from pyforms.Controls import ControlEmptyWidget
 from BatchConverterWindow import BatchConverterWindow
 from singleColorConversionWindow import SingleConverterWindow
 
@@ -26,9 +26,7 @@ class BaseWindow(BaseWidget):
             }
         ]
 
-        self._panel = ControlDockWidget()
-        # self.formset = [ '_panel']
-
+        self._panel = ControlEmptyWidget()
         self._panel.value = BatchConverterWindow()
 
     def __batchTransformEvent(self):
