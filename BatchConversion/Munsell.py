@@ -2,7 +2,7 @@ import openpyxl
 
 
 class Munsell:
-    __munsellDataFile = "../munsell_data/real_CIELAB.xlsx"
+    __munsellDataFile = "real_CIELAB.xlsx"
     __conversionData = {}
     __labValues = []
     __munsellValues = []
@@ -74,3 +74,7 @@ class Munsell:
     @property
     def CValues(self):
         return self.__C_list
+
+if __name__ == "__main__":
+    myMunsell = Munsell()
+

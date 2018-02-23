@@ -4,7 +4,8 @@ from pyforms import BaseWidget
 from pyforms.Controls import ControlFile
 from pyforms.Controls import ControlButton
 from pyforms.Controls import ControlList
-from batch_conversion import BatchConverter
+from BatchConversion.batch_conversion import BatchConverter
+
 
 class BatchConverterWindow(BatchConverter, BaseWidget):
     def __init__(self):
@@ -14,9 +15,9 @@ class BatchConverterWindow(BatchConverter, BaseWidget):
 
         # definition of the forms fields
         self._inputFile = ControlFile('Input File', default='', helptext='choose a file to input batch data from', use_save_dialog=False)
-        self._inputFile.value = self.inputFileName
+        # self._inputFile.value = self.inputFileName
         self._outputFile = ControlFile('Output File', default='', helptext='choose a file to output to', use_save_dialog=True)
-        self._outputFile.value = self.outputFileName
+        # self._outputFile.value = self.outputFileName
         self._transformButton = ControlButton('Transform')
         self._transformButton.value = self.__transformButtonAction
         self._saveButton = ControlButton('Save')

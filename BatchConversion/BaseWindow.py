@@ -1,13 +1,14 @@
 from pysettings import conf
-import settings
-conf+=settings
+from BatchConversion import settings
+conf += settings
 
 import pyforms
 from pyforms import BaseWidget
 
 from pyforms.Controls import ControlEmptyWidget
-from BatchConverterWindow import BatchConverterWindow
-from singleColorConversionWindow import SingleConverterWindow
+from BatchConversion.BatchConverterWindow import BatchConverterWindow
+from BatchConversion.singleColorConversionWindow import SingleConverterWindow
+
 
 class BaseWindow(BaseWidget):
     def __init__(self):

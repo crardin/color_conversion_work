@@ -1,8 +1,8 @@
 import math
 import numpy as np
-from Color import Color
-from XYZColor import XYZColor
-from xyYColor import xyYColor
+from BatchConversion.Color import Color
+from BatchConversion.XYZColor import XYZColor
+from BatchConversion.xyYColor import xyYColor
 
 
 class LABColor(Color):
