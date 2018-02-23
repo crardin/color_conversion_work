@@ -2,15 +2,359 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdbf9acc-2805-4226-afe0-4407b10f96b6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/colorimetry.iml" afterPath="$PROJECT_DIR$/.idea/colorimetry.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/BatchConversion/ColorConverter.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/BatchConversion/real_CIELAB.xlsx" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/BatchConversion/BaseWindow.py" afterPath="$PROJECT_DIR$/BatchConversion/BaseWindow.py" />
       <change beforePath="$PROJECT_DIR$/BatchConversion/BatchConverterWindow.py" afterPath="$PROJECT_DIR$/BatchConversion/BatchConverterWindow.py" />
+      <change beforePath="$PROJECT_DIR$/BatchConversion/LABColor.py" afterPath="$PROJECT_DIR$/BatchConversion/LABColor.py" />
       <change beforePath="$PROJECT_DIR$/BatchConversion/Munsell.py" afterPath="$PROJECT_DIR$/BatchConversion/Munsell.py" />
+      <change beforePath="$PROJECT_DIR$/BatchConversion/XYZColor.py" afterPath="$PROJECT_DIR$/BatchConversion/XYZColor.py" />
       <change beforePath="$PROJECT_DIR$/BatchConversion/batch_conversion.py" afterPath="$PROJECT_DIR$/BatchConversion/batch_conversion.py" />
-      <change beforePath="$PROJECT_DIR$/InputData/C&amp;DColors.csv" afterPath="$PROJECT_DIR$/InputData/C&amp;DColors.csv" />
-      <change beforePath="$PROJECT_DIR$/munsell_data/real_CIELAB.xlsx" afterPath="$PROJECT_DIR$/munsell_data/real_CIELAB.xlsx" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Aden" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Amman" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Anadyr" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Aqtobe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Ashkhabad" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Atyrau" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Bahrain" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Baku" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Bangkok" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Beirut" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Brunei" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Calcutta" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Chita" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Choibalsan" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Chungking" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Dubai" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Famagusta" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Gaza" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Harbin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Hebron" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Hong_Kong" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Hovd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Irkutsk" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Istanbul" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Jakarta" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Jayapura" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Kabul" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Kamchatka" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Karachi" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Kathmandu" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Katmandu" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Kuala_Lumpur" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Kuwait" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Makassar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Muscat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Nicosia" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Novokuznetsk" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Oral" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Pontianak" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Samarkand" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Seoul" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Shanghai" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Srednekolymsk" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Tashkent" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Tbilisi" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Tel_Aviv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Thimbu" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Thimphu" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Ujung_Pandang" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Ulaanbaatar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Urumqi" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Vientiane" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Vladivostok" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Yakutsk" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Yekaterinburg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/CET" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/CST6CDT" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Cuba" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/EET" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/EST" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/EST5EDT" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Egypt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Eire" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/GMT" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/GMT+0" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/GMT+1" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/GMT+10" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/GMT+11" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/GMT+12" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/GMT+2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/GMT+3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/GMT+4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/GMT+5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/GMT+6" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/GMT+7" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/GMT+8" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/GMT+9" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/GMT-0" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/GMT-1" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/GMT-10" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/GMT-11" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/GMT-12" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/GMT-13" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/GMT-14" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/GMT-2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/GMT-3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/GMT-4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/GMT-5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/GMT-6" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/GMT-7" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/GMT-8" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/GMT-9" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/GMT0" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/Greenwich" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/UCT" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/UTC" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/Universal" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Etc/Zulu" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Factory" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/GB" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/GB-Eire" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/GMT" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/GMT+0" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/GMT-0" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/GMT0" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Greenwich" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/HST" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Hongkong" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Iceland" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Iran" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Israel" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Jamaica" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Japan" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Kwajalein" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Libya" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/MET" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/MST" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/MST7MDT" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/NZ" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/NZ-CHAT" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Navajo" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/PRC" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/PST8PDT" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Poland" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Portugal" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/ROC" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/ROK" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Singapore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Turkey" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/UCT" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/US/Alaska" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/US/Aleutian" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/US/Arizona" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/US/Central" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/US/East-Indiana" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/US/Eastern" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/US/Hawaii" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/US/Indiana-Starke" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/US/Michigan" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/US/Mountain" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/US/Pacific" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/US/Pacific-New" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/US/Samoa" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/UTC" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Universal" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/W-SU" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/WET" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Zulu" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/iso3166.tab" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/leapseconds" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/localtime" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/posixrules" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/tzdata.zi" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/zone.tab" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/zone1970.tab" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/ascii.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/big5.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/cp1250.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/cp1251.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/cp1252.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/cp1253.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/cp1254.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/cp1255.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/cp1256.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/cp1257.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/cp1258.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/cp437.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/cp737.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/cp775.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/cp850.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/cp852.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/cp855.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/cp857.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/cp860.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/cp861.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/cp862.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/cp863.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/cp864.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/cp865.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/cp866.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/cp869.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/cp874.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/cp932.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/cp936.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/cp949.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/cp950.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/dingbats.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/ebcdic.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/euc-cn.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/euc-jp.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/euc-kr.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/gb12345.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/gb1988.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/gb2312-raw.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/gb2312.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/iso2022-jp.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/iso2022-kr.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/iso2022.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/iso8859-1.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/iso8859-10.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/iso8859-13.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/iso8859-14.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/iso8859-15.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/iso8859-16.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/iso8859-2.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/iso8859-3.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/iso8859-4.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/iso8859-5.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/iso8859-6.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/iso8859-7.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/iso8859-8.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/iso8859-9.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/jis0201.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/jis0208.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/jis0212.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/koi8-r.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/koi8-u.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/ksc5601.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/macCentEuro.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/macCroatian.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/macCyrillic.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/macDingbats.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/macGreek.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/macIceland.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/macJapan.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/macRoman.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/macRomania.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/macThai.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/macTurkish.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/macUkraine.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/shiftjis.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/symbol.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/encoding/tis-620.enc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/http1.0/http.tcl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/http1.0/pkgIndex.tcl" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/America/Argentina/Buenos_Aires" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/America/Argentina/Mendoza" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/America/North_Dakota/Beulah" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/America/North_Dakota/Center" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/America/North_Dakota/New_Salem" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Antarctica/Casey" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Antarctica/Davis" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Antarctica/DumontDUrville" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Antarctica/Macquarie" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Antarctica/Mawson" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Antarctica/McMurdo" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Antarctica/Palmer" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Antarctica/Rothera" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Antarctica/South_Pole" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Antarctica/Syowa" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Antarctica/Troll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Antarctica/Vostok" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Atlantic/Azores" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Atlantic/Bermuda" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Atlantic/Canary" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Atlantic/Cape_Verde" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Atlantic/Faeroe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Atlantic/Faroe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Atlantic/Jan_Mayen" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Atlantic/Madeira" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Atlantic/Reykjavik" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Atlantic/South_Georgia" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Atlantic/St_Helena" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Atlantic/Stanley" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Australia/ACT" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Australia/Adelaide" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Australia/Brisbane" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Australia/Broken_Hill" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Australia/Canberra" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Australia/Currie" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Australia/Darwin" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Australia/Eucla" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Australia/Hobart" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Australia/LHI" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Australia/Lindeman" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Australia/Lord_Howe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Australia/Melbourne" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Australia/NSW" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Australia/North" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Australia/Perth" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Australia/Queensland" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Australia/South" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Australia/Sydney" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Australia/Tasmania" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Australia/Victoria" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Australia/West" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Australia/Yancowinna" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Apia" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Auckland" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Bougainville" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Chatham" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Chuuk" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Easter" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Efate" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Enderbury" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Fakaofo" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Fiji" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Funafuti" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Galapagos" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Gambier" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Guadalcanal" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Guam" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Honolulu" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Johnston" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Kiritimati" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Kosrae" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Kwajalein" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Majuro" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Marquesas" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Midway" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Nauru" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Niue" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Norfolk" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Noumea" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Pago_Pago" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Palau" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Pitcairn" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Pohnpei" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Ponape" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Port_Moresby" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Rarotonga" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Saipan" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Samoa" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Tahiti" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Tarawa" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Tongatapu" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Truk" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Wake" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Wallis" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/Pacific/Yap" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/SystemV/AST4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/SystemV/AST4ADT" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/SystemV/CST6" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/SystemV/CST6CDT" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/SystemV/EST5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/SystemV/EST5EDT" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/SystemV/HST10" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/SystemV/MST7" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/SystemV/MST7MDT" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/SystemV/PST8" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/SystemV/PST8PDT" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/SystemV/YST9" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/BaseWindow/tcl/tzdata/SystemV/YST9YDT" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,9 +371,10 @@
     <SUITE FILE_PATH="coverage/colorimetry$classifier.coverage" NAME="classifier Coverage Results" MODIFIED="1518274468733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/color_conversion_work$Munsell.coverage" NAME="Munsell Coverage Results" MODIFIED="1518993224148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
     <SUITE FILE_PATH="coverage/color_conversion_work$batch_conversion.coverage" NAME="batch_conversion Coverage Results" MODIFIED="1518994133476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
+    <SUITE FILE_PATH="coverage/color_conversion_work$ColorConverter.coverage" NAME="ColorConverter Coverage Results" MODIFIED="1519367326940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
     <SUITE FILE_PATH="coverage/colorimetry$BatchConverterWindow.coverage" NAME="BatchConverterWindow Coverage Results" MODIFIED="1518785681805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
     <SUITE FILE_PATH="coverage/colorimetry$colorimetry__1_.coverage" NAME="colorimetry (1) Coverage Results" MODIFIED="1516486874218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
-    <SUITE FILE_PATH="coverage/color_conversion_work$BaseWindow.coverage" NAME="BaseWindow Coverage Results" MODIFIED="1518993783683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
+    <SUITE FILE_PATH="coverage/color_conversion_work$BaseWindow.coverage" NAME="BaseWindow Coverage Results" MODIFIED="1519365908378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
     <SUITE FILE_PATH="coverage/colorimetry$batch_gui.coverage" NAME="batch_gui Coverage Results" MODIFIED="1518146116827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
     <SUITE FILE_PATH="coverage/colorimetry$munsell_transforms.coverage" NAME="munsell_transforms Coverage Results" MODIFIED="1517437145213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/colorimetry$batch_gui_2.coverage" NAME="batch_gui_2 Coverage Results" MODIFIED="1518566190515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
@@ -46,10 +391,32 @@
       <file leaf-file-name="BaseWindow.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BatchConversion/BaseWindow.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+            <state relative-caret-position="105">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ColorConverter.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BatchConversion/ColorConverter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LABColor.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BatchConversion/LABColor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -67,40 +434,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BatchConversion/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="54" column="4" lean-forward="false" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BatchConverterWindow.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BatchConversion/BatchConverterWindow.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="11" column="52" lean-forward="true" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LABColor.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BatchConversion/LABColor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1245">
-              <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="xyYColor.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BatchConversion/xyYColor.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -111,24 +444,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="C&amp;DColors.csv" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/InputData/C&amp;DColors.csv">
+      <file leaf-file-name="Color.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BatchConversion/Color.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="53" lean-forward="true" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+            <state relative-caret-position="270">
+              <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="batch_conversion.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BatchConversion/batch_conversion.py">
+      <file leaf-file-name="XYZColor.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BatchConversion/XYZColor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1067">
-              <caret line="95" column="42" lean-forward="true" selection-start-line="95" selection-start-column="42" selection-end-line="95" selection-end-column="42" />
+            <state relative-caret-position="45">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding>
-                <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#0#49#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Illuminant.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BatchConversion/Illuminant.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setup.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/setup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -137,17 +490,7 @@
         <entry file="file://$PROJECT_DIR$/BatchConversion/Munsell.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reader.py" pinned="false" current-in-tab="false">
-        <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/openpyxl/chart/reader.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -200,14 +543,16 @@
         <option value="$PROJECT_DIR$/BatchConversion/test_gui.py" />
         <option value="$PROJECT_DIR$/BatchConversion/menuFunctionality.py" />
         <option value="$PROJECT_DIR$/BatchConversion/batch_gui_3.py" />
-        <option value="$PROJECT_DIR$/BatchConversion/XYZColor.py" />
-        <option value="$PROJECT_DIR$/BatchConversion/LABColor.py" />
-        <option value="$PROJECT_DIR$/BatchConversion/BaseWindow.py" />
         <option value="$PROJECT_DIR$/BatchConversion/singleColorConversionWindow.py" />
         <option value="$PROJECT_DIR$/BatchConversion/style.css" />
         <option value="$PROJECT_DIR$/BatchConversion/Munsell.py" />
         <option value="$PROJECT_DIR$/BatchConversion/BatchConverterWindow.py" />
+        <option value="$PROJECT_DIR$/BatchConversion/LABColor.py" />
         <option value="$PROJECT_DIR$/BatchConversion/batch_conversion.py" />
+        <option value="$PROJECT_DIR$/BatchConversion/XYZColor.py" />
+        <option value="$PROJECT_DIR$/BatchConversion/ColorConverter.py" />
+        <option value="$PROJECT_DIR$/BatchConversion/BaseWindow.py" />
+        <option value="$PROJECT_DIR$/setup.py" />
       </list>
     </option>
   </component>
@@ -218,8 +563,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="69" />
-    <option name="y" value="80" />
+    <option name="x" value="84" />
+    <option name="y" value="57" />
     <option name="width" value="1476" />
     <option name="height" value="937" />
   </component>
@@ -249,21 +594,6 @@
               <item name="color_conversion_work" type="b2602c69:ProjectViewProjectNode" />
               <item name="color_conversion_work" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="color_conversion_work" type="b2602c69:ProjectViewProjectNode" />
-              <item name="color_conversion_work" type="462c0819:PsiDirectoryNode" />
-              <item name="BatchConversion" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="color_conversion_work" type="b2602c69:ProjectViewProjectNode" />
-              <item name="color_conversion_work" type="462c0819:PsiDirectoryNode" />
-              <item name="InputData" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="color_conversion_work" type="b2602c69:ProjectViewProjectNode" />
-              <item name="color_conversion_work" type="462c0819:PsiDirectoryNode" />
-              <item name="Output" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -274,11 +604,14 @@
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../machine_learning/ud120-projects" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/BatchConversion" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Clay\PycharmProjects\colorimetry\example_code" />
       <recent name="C:\Users\Clay\PycharmProjects\colorimetry\developer_notes" />
@@ -299,7 +632,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.BatchConverterWindow">
+  <component name="RunManager" selected="Python.BaseWindow">
     <configuration name="BaseWindow" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -333,6 +666,25 @@
       <module name="colorimetry" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BatchConversion/BatchConverterWindow.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="ColorConverter" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BatchConversion" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="colorimetry" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BatchConversion/ColorConverter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -390,25 +742,6 @@
       <module name="colorimetry" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="C:\Users\Clay\PycharmProjects\colorimetry\color_transform.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="singleColorConversionWindow" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BatchConversion" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="colorimetry" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BatchConversion/singleColorConversionWindow.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -554,19 +887,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.colorimetry" />
-      <item index="1" class="java.lang.String" itemvalue="Python.singleColorConversionWindow" />
-      <item index="2" class="java.lang.String" itemvalue="Python.BaseWindow" />
-      <item index="3" class="java.lang.String" itemvalue="Python.batch_conversion" />
-      <item index="4" class="java.lang.String" itemvalue="Python.BatchConverterWindow" />
-      <item index="5" class="java.lang.String" itemvalue="Python.Munsell" />
+      <item index="1" class="java.lang.String" itemvalue="Python.BaseWindow" />
+      <item index="2" class="java.lang.String" itemvalue="Python.batch_conversion" />
+      <item index="3" class="java.lang.String" itemvalue="Python.BatchConverterWindow" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Munsell" />
+      <item index="5" class="java.lang.String" itemvalue="Python.ColorConverter" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.BatchConverterWindow" />
-        <item index="1" class="java.lang.String" itemvalue="Python.batch_conversion" />
-        <item index="2" class="java.lang.String" itemvalue="Python.BaseWindow" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Munsell" />
-        <item index="4" class="java.lang.String" itemvalue="Python.singleColorConversionWindow" />
+        <item index="0" class="java.lang.String" itemvalue="Python.ColorConverter" />
+        <item index="1" class="java.lang.String" itemvalue="Python.BaseWindow" />
+        <item index="2" class="java.lang.String" itemvalue="Python.BatchConverterWindow" />
+        <item index="3" class="java.lang.String" itemvalue="Python.batch_conversion" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Munsell" />
       </list>
     </recent_temporary>
   </component>
@@ -640,11 +973,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518989157779</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="working branch for mac">
+      <created>1518994747128</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1518994747128</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="69" y="80" width="1476" height="937" extended-state="0" />
+    <frame x="84" y="57" width="1476" height="937" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -733,7 +1073,8 @@
     <MESSAGE value="updated training data added" />
     <MESSAGE value="pushing out all training data" />
     <MESSAGE value="updating current changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="updating current changes" />
+    <MESSAGE value="working branch for mac" />
+    <option name="LAST_COMMIT_MESSAGE" value="working branch for mac" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -745,16 +1086,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BatchConversion/batch_conversion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/developer_notes/color notes.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -855,21 +1186,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BatchConversion/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BatchConversion/test_gui.py" />
-    <entry file="file://$PROJECT_DIR$/BatchConversion/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/color_transform.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -881,13 +1198,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BatchConversion/Color.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -903,51 +1213,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BatchConversion/Illuminant.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BatchConversion/XYZColor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="29" lean-forward="false" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#33#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BatchConversion/xyYColor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Output/transformedValues.csv" />
-    <entry file="file://$PROJECT_DIR$/BatchConversion/LABColor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/InputData/TestWithoutAnswers.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -964,47 +1230,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BatchConversion/singleColorConversionWindow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="26" lean-forward="false" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/munsell_data/1929.dat.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/openpyxl/chart/reader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BatchConversion/Munsell.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BatchConversion/BaseWindow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1016,30 +1246,140 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/InputData/C&amp;DColors.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BatchConversion/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/openpyxl/chart/reader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BatchConversion/batch_conversion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BatchConversion/BatchConverterWindow.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="11" column="52" lean-forward="true" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BatchConversion/Color.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BatchConversion/LABColor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BatchConversion/Munsell.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BatchConversion/singleColorConversionWindow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="26" lean-forward="false" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BatchConversion/batch_conversion.py">
+    <entry file="file://$PROJECT_DIR$/BatchConversion/xyYColor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1067">
-          <caret line="95" column="42" lean-forward="true" selection-start-line="95" selection-start-column="42" selection-end-line="95" selection-end-column="42" />
+        <state relative-caret-position="345">
+          <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BatchConversion/XYZColor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InputData/C&amp;DColors.csv">
+    <entry file="file://$PROJECT_DIR$/BatchConversion/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="53" lean-forward="true" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BatchConversion/Illuminant.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BatchConversion/ColorConverter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BatchConversion/BaseWindow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>

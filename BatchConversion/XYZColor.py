@@ -1,5 +1,6 @@
-from Illuminant import Illuminant
+from BatchConversion.Illuminant import Illuminant
 import math
+
 
 class XYZColor:
     __L = 0

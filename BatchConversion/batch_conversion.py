@@ -1,8 +1,8 @@
 import csv
 from sklearn import svm
 from sklearn.neighbors import KNeighborsClassifier
-from Munsell import Munsell
-from LABColor import LABColor
+from BatchConversion.Munsell import Munsell
+from BatchConversion.LABColor import LABColor
 
 
 class BatchConverter(object):
