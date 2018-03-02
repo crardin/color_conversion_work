@@ -21,21 +21,22 @@ class LABColor(Color):
 
     def __init__(self, colorIdentifier, colorName, L, A, B):
         Color.__init__(self, colorIdentifier, colorName)
+
         try:
             self.__L = float(L)
-        except ValueError:
+        except (ValueError, TypeError):
             print("Value is not a float")
         try:
             self.__A = float(A)
-        except ValueError:
+        except (ValueError, TypeError):
             print("Value is not a float")
         try:
             self.__B = float(B)
-        except ValueError:
+        except (ValueError, TypeError):
             print("Value is not a float")
 
-        self.__XYZVector = XYZColor(self.__L, self.__A, self.__B).xyzVector
-        self.__xyYVector = xyYColor(self.__XYZVector[0], self.__XYZVector[1], self.__XYZVector[2]).xyYVector
+        # self.__XYZVector = XYZColor(self.__L, self.__A, self.__B).xyzVector
+        # self.__xyYVector = xyYColor(self.__XYZVector[0], self.__XYZVector[1], self.__XYZVector[2]).xyYVector
 
     def getAnswerFromFile(self, H1, H2, V, C):
         self.__H1 = H1

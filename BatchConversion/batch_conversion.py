@@ -1,5 +1,5 @@
-import csv
-from sklearn import svm
+import pandas as pd
+# from sklearn import svm
 from sklearn.neighbors import KNeighborsClassifier
 from BatchConversion.Munsell import Munsell
 from BatchConversion.LABColor import LABColor
@@ -13,11 +13,12 @@ class BatchConverter(object):
     __predictedColors = []
 
     def __init__(self):
+        self.clf = None
+        self.neigh = KNeighborsClassifier(n_neighbors=1)
+        self.myMunsell = Munsell()
         self.trainData()
 
     def trainData(self):
-        self.myMunsell = Munsell()
-        self.neigh = KNeighborsClassifier(n_neighbors=1)
         self.neigh.fit(self.myMunsell.labValues, self.myMunsell.munsellValues)
         # self.clf = svm.SVC()
         # self.clf.fit(self.myMunsell.labValues, self.myMunsell.HValues)
@@ -32,7 +33,14 @@ class BatchConverter(object):
         print(self.clf.predict([[10.63, -7.8, 1.3]]))  # should be 7.5G 1/2
 
     def getInputData(self):
+        df = pd.read_csv(self.inputFile, names=["OriginalName", "L*", "a*", "b*"], quotechar='"', encoding='latin1')
+        for index, row in df[1:].iterrows():
+            newColor = LABColor(0, row['OriginalName'], row['L*'], row['a*'], row['b*'])
+            self.__colors.append(newColor)
+
+    def getInputData_old(self):
         self.__colors = []
+
         inputReader = csv.reader(self.inputFile)
         inputData = list(inputReader)
         inputData = inputData[1:]
@@ -44,9 +52,12 @@ class BatchConverter(object):
 
     def predictData(self):
         self.__predictedColors = []
-        for color in self.__colors:
-            calculatedValues = color.CalculatedMunsellList
-            currentColor = {'colorName':color.colorName, 'L':color.LabList[0], 'A':color.LabList[1], 'B':color.LabList[2], 'colorValue':self.neigh.predict([color.LabList])[0], 'H1':calculatedValues[0], 'H2':calculatedValues[1], 'V':calculatedValues[2], 'C':calculatedValues[3]}
+        for currentColor in self.__colors:
+            calculatedValues = currentColor.CalculatedMunsellList
+            currentColor = {'colorName': currentColor.colorName, 'L': currentColor.LabList[0], 'A': currentColor.LabList[1],
+                            'B': currentColor.LabList[2], 'colorValue': self.neigh.predict([currentColor.LabList])[0],
+                            'H1': calculatedValues[0], 'H2': calculatedValues[1], 'V': calculatedValues[2],
+                            'C': calculatedValues[3]}
             self.__predictedColors.append(currentColor)
 
     def outputData(self):
@@ -55,8 +66,10 @@ class BatchConverter(object):
         outputWriter.writerow(['Unique #', 'Label', 'L', 'a', 'b', 'Munsell', 'H1', 'H2', 'V', 'C'])
         for color in self.__colors:
             calculatedValues = color.CalculatedMunsellList
-            outputWriter.writerow([color.colorIdentifier, color.colorName, color.LabList[0], color.LabList[1], color.LabList[2],
-            self.neigh.predict([color.LabList]), calculatedValues[0], calculatedValues[1], calculatedValues[2], calculatedValues[3]])
+            outputWriter.writerow(
+                [color.colorIdentifier, color.colorName, color.LabList[0], color.LabList[1], color.LabList[2],
+                 self.neigh.predict([color.LabList]), calculatedValues[0], calculatedValues[1], calculatedValues[2],
+                 calculatedValues[3]])
         outputFile.close()
 
     @property
@@ -87,7 +100,7 @@ class BatchConverter(object):
 
 if __name__ == '__main__':
     myBatchConverter = BatchConverter()
-    myBatchConverter.inputFileName = '/Users/Clay/PycharmProjects/color_conversion_work/InputData/TestWithoutAnswers.csv'
+    myBatchConverter.inputFileName = '/Users/Clay/PycharmProjects/colorimetry/InputData/test.csv'
     myBatchConverter.getInputData()
     myBatchConverter.predictData()
     for color in myBatchConverter.predictedColors:
