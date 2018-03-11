@@ -1,3 +1,4 @@
+import csv
 import pandas as pd
 # from sklearn import svm
 from sklearn.neighbors import KNeighborsClassifier
@@ -33,22 +34,10 @@ class BatchConverter(object):
         print(self.clf.predict([[10.63, -7.8, 1.3]]))  # should be 7.5G 1/2
 
     def getInputData(self):
-        df = pd.read_csv(self.inputFile, names=["OriginalName", "L*", "a*", "b*"], quotechar='"', encoding='latin1')
+        df = pd.read_csv(self.__inputFileName, names=["OriginalName", "L*", "a*", "b*"], quotechar='"', encoding='latin1')
         for index, row in df[1:].iterrows():
             newColor = LABColor(0, row['OriginalName'], row['L*'], row['a*'], row['b*'])
             self.__colors.append(newColor)
-
-    def getInputData_old(self):
-        self.__colors = []
-
-        inputReader = csv.reader(self.inputFile)
-        inputData = list(inputReader)
-        inputData = inputData[1:]
-        for inputRow in inputData:
-            newColor = LABColor(inputRow[0], inputRow[1], inputRow[2], inputRow[3], inputRow[4])
-            newColor.getAnswerFromFile(str(inputRow[5]), str(inputRow[6]), float(inputRow[7]), float(inputRow[8]))
-            self.__colors.append(newColor)
-        self.inputFile.close()
 
     def predictData(self):
         self.__predictedColors = []
@@ -86,7 +75,7 @@ class BatchConverter(object):
 
     @inputFileName.setter
     def inputFileName(self, value):
-        self.__inputFileName = str(value)
+        self.__inputFileName = value
         self.inputFile = open(self.__inputFileName)
 
     @property
@@ -100,7 +89,7 @@ class BatchConverter(object):
 
 if __name__ == '__main__':
     myBatchConverter = BatchConverter()
-    myBatchConverter.inputFileName = '/Users/Clay/PycharmProjects/colorimetry/InputData/test.csv'
+    myBatchConverter.inputFileName = '../InputData/test.csv'
     myBatchConverter.getInputData()
     myBatchConverter.predictData()
     for color in myBatchConverter.predictedColors:

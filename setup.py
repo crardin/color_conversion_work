@@ -10,7 +10,7 @@ from setuptools import setup
 # APP = ['BatchConversion/BaseWindow.py']
 DATA_FILES = ['BatchConversion/real_CIELAB.xlsx', 'BatchConversion/style.css']
 OPTIONS = {
-    'packages': ['BatchConversion', 'pyforms', 'sklearn', 'openpyxl'],
+    'packages': ['BatchConversion', 'pyforms', 'sklearn', 'openpyxl', 'pandas'],
     'argv_emulation': 1,
 }
 setup(
