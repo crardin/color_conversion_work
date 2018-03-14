@@ -1,9 +1,12 @@
-import pyforms
 import re
+
+import pyforms
+from AnyQt.QtWidgets import QFileDialog
 from pyforms import BaseWidget
-from pyforms.Controls import ControlFile
 from pyforms.Controls import ControlButton
+from pyforms.Controls import ControlFile
 from pyforms.Controls import ControlList
+
 from BatchConversion.batch_conversion import BatchConverter
 
 
@@ -16,8 +19,8 @@ class BatchConverterWindow(BatchConverter, BaseWidget):
         # definition of the forms fields
         self._inputFile = ControlFile('Input File', default='', helptext='choose a file to input batch data from',
                                       use_save_dialog=False)
-        self._outputFile = ControlFile('Output File', default='', helptext='choose a file to output to',
-                                       use_save_dialog=True)
+        # self._outputFile = ControlFile('Output File', default='', helptext='choose a file to output to',
+        #                                use_save_dialog=True)
         self._transformButton = ControlButton('Transform')
         self._transformButton.value = self.__transformButtonAction
         self._saveButton = ControlButton('Export')
@@ -27,7 +30,7 @@ class BatchConverterWindow(BatchConverter, BaseWidget):
                                             'H2', 'V', 'C']
         self._LabList.readonly = True
         self._LabList.tableWidget.resizeColumnsToContents()
-        self.formset = [(' ', '_inputFile', ' '), (' ', '_outputFile', ' '), (' ', '_transformButton', '_saveButton', ' '), ('_LabList')]
+        self.formset = [(' ', '_inputFile', ' '), (' ', '_transformButton', '_saveButton', ' '), ('_LabList')]
 
     def getMunsellValues(self, inputString):
         inputString = str(inputString)
@@ -50,7 +53,8 @@ class BatchConverterWindow(BatchConverter, BaseWidget):
             self._LabList.tableWidget.resizeColumnsToContents()
 
     def __saveButtonAction(self):
-        self.outputFileName = self._outputFile.value
+        self.outputFileName = QFileDialog.getSaveFileName(self, 'Choose Output File')[0]
+        print(self.outputFileName)
         if self.outputFileName is not None and self.outputFileName != '':
             BatchConverter.outputData(self)
 
