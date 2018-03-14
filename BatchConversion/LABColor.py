@@ -1,8 +1,6 @@
 import math
 import numpy as np
 from BatchConversion.Color import Color
-from BatchConversion.XYZColor import XYZColor
-from BatchConversion.xyYColor import xyYColor
 
 
 class LABColor(Color):
@@ -34,9 +32,6 @@ class LABColor(Color):
             self.__B = float(B)
         except (ValueError, TypeError):
             print("Value is not a float")
-
-        # self.__XYZVector = XYZColor(self.__L, self.__A, self.__B).xyzVector
-        # self.__xyYVector = xyYColor(self.__XYZVector[0], self.__XYZVector[1], self.__XYZVector[2]).xyYVector
 
     def getAnswerFromFile(self, H1, H2, V, C):
         self.__H1 = H1

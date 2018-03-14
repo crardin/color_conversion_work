@@ -10,6 +10,9 @@ class Munsell:
     def __init__(self):
         pass
 
+    def findNominalMunsell(self):
+        pass
+
     @property
     def munsellValue(self):
         return [self.__H1, self.__H2, self.__V, self.__C]

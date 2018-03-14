@@ -29,6 +29,9 @@ class TestMunsell(unittest.TestCase):
         self.myMunsell.C = 2
         self.assertEqual('10RP 1/2', self.myMunsell.fullMunsellValue)
 
+    def test_find_nominal_munsell(self):
+        pass
+
 
 if __name__ == "__main__":
     unittest.main()

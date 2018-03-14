@@ -1,8 +1,8 @@
 import csv
 import openpyxl
 from sklearn.neighbors import KNeighborsClassifier
-
 from BatchConversion.InputFileHandler import InputFileHandler
+from BatchConversion.Munsell import Munsell
 
 
 class BatchConverter(object):
@@ -19,6 +19,7 @@ class BatchConverter(object):
     __outputFileName = ''
     __inputLABColors = []
     __predictedColors = []
+    __munsellValues = []
     __inputFileHandler = None
     __outputFileHandler = None
 
@@ -69,21 +70,30 @@ class BatchConverter(object):
         self.__predictedColors = []
         for currentColor in self.__inputLABColors:
             calculatedValues = currentColor.CalculatedMunsellList
-            currentColor = {'colorName': currentColor.colorName, 'L': currentColor.LabList[0], 'A': currentColor.LabList[1],
-                            'B': currentColor.LabList[2], 'colorValue': self.neigh.predict([currentColor.LabList])[0],
-                            'H1': calculatedValues[0], 'H2': calculatedValues[1], 'V': calculatedValues[2],
-                            'C': calculatedValues[3]}
+            munsellValue = Munsell()
+            munsellValue.H1 = calculatedValues[0]
+            munsellValue.H2 = calculatedValues[1]
+            munsellValue.V = calculatedValues[2]
+            munsellValue.C = calculatedValues[3]
+            currentColor = {'colorName': currentColor.colorName, 'L': currentColor.LabList[0],
+                            'A': currentColor.LabList[1], 'B': currentColor.LabList[2],
+                            'roundedLab': currentColor.roundedLab,
+                            'colorValue': self.neigh.predict([currentColor.LabList])[0], 'H1': munsellValue.H1,
+                            'H2': munsellValue.H2, 'V': munsellValue.V, 'C': munsellValue.C}
+            self.__munsellValues.append(munsellValue)
             self.__predictedColors.append(currentColor)
 
     def outputData(self):
         outputFile = open(self.outputFileName, 'w', newline='')
         outputWriter = csv.writer(outputFile)
-        outputWriter.writerow(['Unique #', 'Label', 'L', 'a', 'b', 'Munsell', 'H1', 'H2', 'V', 'C'])
+        outputWriter.writerow(['Unique #', 'Label', 'L', 'a', 'b', 'Rounded Lab', 'Munsell', 'H1', 'H2', 'V', 'C'])
         for outputColor in self.__inputLABColors:
             calculatedValues = outputColor.CalculatedMunsellList
             outputWriter.writerow(
-                [outputColor.colorIdentifier, outputColor.colorName, outputColor.LabList[0], outputColor.LabList[1], outputColor.LabList[2],
-                 self.neigh.predict([outputColor.LabList]), calculatedValues[0], calculatedValues[1], calculatedValues[2],
+                [outputColor.colorIdentifier, outputColor.colorName, format(outputColor.LabList[0], '.2f'),
+                 format(outputColor.LabList[1], '.2f'), format(outputColor.LabList[2], '.2f'), outputColor.roundedLab,
+                 self.neigh.predict([outputColor.LabList]), calculatedValues[0], calculatedValues[1],
+                 calculatedValues[2],
                  calculatedValues[3]])
         outputFile.close()
 
@@ -102,6 +112,10 @@ class BatchConverter(object):
     @property
     def predictedColors(self):
         return self.__predictedColors
+
+    @property
+    def munsellValues(self):
+        return self.__munsellValues
 
     @property
     def colors(self):

@@ -19,17 +19,16 @@ class BatchConverterWindow(BatchConverter, BaseWidget):
         # definition of the forms fields
         self._inputFile = ControlFile('Input File', default='', helptext='choose a file to input batch data from',
                                       use_save_dialog=False)
-        # self._outputFile = ControlFile('Output File', default='', helptext='choose a file to output to',
-        #                                use_save_dialog=True)
         self._transformButton = ControlButton('Transform')
         self._transformButton.value = self.__transformButtonAction
         self._saveButton = ControlButton('Export')
         self._saveButton.value = self.__saveButtonAction
         self._LabList = ControlList('Transform Results')
-        self._LabList.horizontal_headers = ['Color Name', 'L', 'a', 'b', 'Fit H1', 'Fit H2', 'Fit V', 'Fit C', 'H1',
-                                            'H2', 'V', 'C']
+        self._LabList.horizontal_headers = ['Color Name', 'L', 'a', 'b', 'Rounded Lab', 'Fit H1', 'Fit H2', 'Fit V',
+                                            'Fit C', 'H1', 'H2', 'V', 'C']
         self._LabList.readonly = True
         self._LabList.tableWidget.resizeColumnsToContents()
+        self._LabList.resize_rows_contents()
         self.formset = [(' ', '_inputFile', ' '), (' ', '_transformButton', '_saveButton', ' '), ('_LabList')]
 
     def getMunsellValues(self, inputString):
@@ -46,17 +45,22 @@ class BatchConverterWindow(BatchConverter, BaseWidget):
             BatchConverter.predictData(self)
             for color in BatchConverter.predictedColors.fget(self):
                 munsellValues = self.getMunsellValues(color['colorValue'])
-                listOutput = [color['colorName'], color['L'], color['A'], color['B'], munsellValues[0],
+                listOutput = [color['colorName'], color['L'], color['A'], color['B'], color['roundedLab'],
+                              munsellValues[0],
                               munsellValues[1], munsellValues[2], munsellValues[3], color['H1'], color['H2'],
                               color['V'], color['C']]
                 self._LabList += listOutput
             self._LabList.tableWidget.resizeColumnsToContents()
 
     def __saveButtonAction(self):
-        self.outputFileName = QFileDialog.getSaveFileName(self, 'Choose Output File')[0]
-        print(self.outputFileName)
-        if self.outputFileName is not None and self.outputFileName != '':
-            BatchConverter.outputData(self)
+        self.inputFileName = self._inputFile.value
+        if self.inputFileName is not None and self.inputFileName != '':
+            BatchConverter.getInputData(self)
+            BatchConverter.predictData(self)
+            self.outputFileName = QFileDialog.getSaveFileName(self, 'Choose Output File')[0]
+            print(self.outputFileName)
+            if self.outputFileName is not None and self.outputFileName != '':
+                BatchConverter.outputData(self)
 
 
 if __name__ == '__main__':
