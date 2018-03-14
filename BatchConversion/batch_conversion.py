@@ -1,26 +1,36 @@
 import csv
+import os
+import openpyxl
 import pandas as pd
 # from sklearn import svm
 from sklearn.neighbors import KNeighborsClassifier
 from BatchConversion.Munsell import Munsell
 from BatchConversion.LABColor import LABColor
+from BatchConversion.InputFileHandler import InputFileHandler
 
 
 class BatchConverter(object):
-    __inputFileName = '../InputData/C&DColors.csv'
+    # __inputFileName = '../InputData/C&DColors.csv'
     # __inputFileName = '../InputData/TestWithoutAnswers.csv'
+    __labTrainingValues = []
+    __munsellTrainingValues = []
+    __conversionData = {}
+    __munsellDataFile = "real_CIELAB.xlsx"
+    __inputFileName = ''
     __outputFileName = '../Output/transformedValues.csv'
     __colors = []
     __predictedColors = []
+    __inputFileHandler = None
 
     def __init__(self):
-        self.clf = None
+        # self.clf = None
         self.neigh = KNeighborsClassifier(n_neighbors=1)
+        self.getTrainingData()
         self.myMunsell = Munsell()
         self.trainData()
 
     def trainData(self):
-        self.neigh.fit(self.myMunsell.labValues, self.myMunsell.munsellValues)
+        self.neigh.fit(self.__labTrainingValues, self.__munsellTrainingValues)
         # self.clf = svm.SVC()
         # self.clf.fit(self.myMunsell.labValues, self.myMunsell.HValues)
         # self.clf2 = svm.SVC()
@@ -33,11 +43,37 @@ class BatchConverter(object):
         print(self.clf.predict([[10.63, 12.59, -2.07]]))  # should be 10RP 1/2
         print(self.clf.predict([[10.63, -7.8, 1.3]]))  # should be 7.5G 1/2
 
+    def getTrainingData(self):
+        wb = openpyxl.load_workbook(self.__munsellDataFile)
+        sheet = wb['data']
+        for i in range(2, sheet.max_row + 1):
+            munsellValue = self.getMunsellTrainingValue(i, sheet)
+            labValue = self.getLabTrainingValue(i, sheet)
+            self.__conversionData[labValue] = munsellValue
+
+    def getMunsellTrainingValue(self, i, sheet):
+        H = sheet.cell(row=i, column=2).value
+        munsellValue = str(H) + " "
+        V = sheet.cell(row=i, column=3).value
+        munsellValue += str(V) + "/"
+        C = sheet.cell(row=i, column=4).value
+        munsellValue += str(C)
+        self.__munsellTrainingValues.append(str(H + " " + str(V) + "/" + str(C)))
+        return munsellValue
+
+    def getLabTrainingValue(self, i, sheet):
+        L = sheet.cell(row=i, column=11).value
+        labValue = str(L) + " "
+        A = sheet.cell(row=i, column=12).value
+        labValue += str(A) + " "
+        B = sheet.cell(row=i, column=13).value
+        labValue += str(B)
+        self.__labTrainingValues.append([L, A, B])
+        return labValue
+
     def getInputData(self):
-        df = pd.read_csv(self.__inputFileName, names=["OriginalName", "L*", "a*", "b*"], quotechar='"', encoding='latin1')
-        for index, row in df[1:].iterrows():
-            newColor = LABColor(0, row['OriginalName'], row['L*'], row['a*'], row['b*'])
-            self.__colors.append(newColor)
+        self.__inputFileHandler.getInputData()
+        self.__colors = self.__inputFileHandler.Colors
 
     def predictData(self):
         self.__predictedColors = []
@@ -62,11 +98,16 @@ class BatchConverter(object):
         outputFile.close()
 
     @property
+    def conversionData(self):
+        return self.__conversionData
+
+    @property
     def predictedColors(self):
         return self.__predictedColors
 
     @property
     def colors(self):
+        self.getInputData()
         return self.__colors
 
     @property
@@ -76,7 +117,11 @@ class BatchConverter(object):
     @inputFileName.setter
     def inputFileName(self, value):
         self.__inputFileName = value
-        self.inputFile = open(self.__inputFileName)
+        if not self.__inputFileHandler:
+            self.__inputFileHandler = InputFileHandler(self.__inputFileName)
+        else:
+            self.__inputFileName = value
+            self.__inputFileHandler.inputFileName = self.__inputFileName
 
     @property
     def outputFileName(self):
@@ -84,7 +129,8 @@ class BatchConverter(object):
 
     @outputFileName.setter
     def outputFileName(self, value):
-        self.__outputFileName = str(value)
+        if os.path.isdir(value):
+            self.__outputFileName = str(value)
 
 
 if __name__ == '__main__':

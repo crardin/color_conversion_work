@@ -2,7 +2,10 @@ import openpyxl
 
 
 class Munsell:
-    __munsellDataFile = "real_CIELAB.xlsx"
+    """
+    class to handle data related to a Munsell color
+    """
+    # __munsellDataFile = "real_CIELAB.xlsx"
     __conversionData = {}
     __labValues = []
     __munsellValues = []
@@ -17,7 +20,8 @@ class Munsell:
     __C = 0.0
 
     def __init__(self):
-        self.getData()
+        # self.getData()
+        pass
 
     def getData(self):
         wb = openpyxl.load_workbook(self.__munsellDataFile)
@@ -74,6 +78,7 @@ class Munsell:
     @property
     def CValues(self):
         return self.__C_list
+
 
 if __name__ == "__main__":
     myMunsell = Munsell()

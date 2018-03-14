@@ -16,21 +16,18 @@ class BatchConverterWindow(BatchConverter, BaseWidget):
         # definition of the forms fields
         self._inputFile = ControlFile('Input File', default='', helptext='choose a file to input batch data from',
                                       use_save_dialog=False)
-        # self._inputFile.value = self.inputFileName
         self._outputFile = ControlFile('Output File', default='', helptext='choose a file to output to',
                                        use_save_dialog=True)
-        # self._outputFile.value = self.outputFileName
         self._transformButton = ControlButton('Transform')
         self._transformButton.value = self.__transformButtonAction
-        self._saveButton = ControlButton('Save')
+        self._saveButton = ControlButton('Export')
         self._saveButton.value = self.__saveButtonAction
         self._LabList = ControlList('Transform Results')
         self._LabList.horizontal_headers = ['Color Name', 'L', 'a', 'b', 'Fit H1', 'Fit H2', 'Fit V', 'Fit C', 'H1',
                                             'H2', 'V', 'C']
         self._LabList.readonly = True
         self._LabList.tableWidget.resizeColumnsToContents()
-        self.formset = [(' ', '_inputFile', ' '), (' ', '_outputFile', ' '),
-                        (' ', '_transformButton', '_saveButton', ' '), ('_LabList')]
+        self.formset = [(' ', '_inputFile', ' '), (' ', '_outputFile', ' '), (' ', '_transformButton', '_saveButton', ' '), ('_LabList')]
 
     def getMunsellValues(self, inputString):
         inputString = str(inputString)
