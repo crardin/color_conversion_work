@@ -1,0 +1,116 @@
+color breakdown
+
+input file
+xf fix check on input file to check for unique number field
+
+output
+- rounded lab values
+	- one cell
+	x check to see if I already have a function to do this
+	*g add this data to the output table
+- Original Munsell
+	*f write function to take Munsell values and create this value
+- Nominal H1
+	- found from rounding the Munsell value to nearest node
+	- 2.5, 5, 7.5, or 10
+	xf write function to round to closest of those values
+- Nominal H2
+	- round to the nearest node
+	xf not sure if I need another function to do this
+- Nominal V
+	- round Munsell to nearest node
+	- whole number from 1 to 10
+	xf not sure if I need another function for this
+- Nominal H1 is listed twice ?
+	xf write function to round chroma below 0.5 to "Ns"
+	xf write function to round chroma between 0.5 to 1.5 as 1
+	xf write function to round higher chromas (>1.5) to nearest even number
+- Nominal Munsell
+	- same as Nominal H above 
+	- uses the Nominal values as input?
+	- not sure what is needed here
+	*f add function to find nominal munsell from full munsell value?
+	*g add this data to the output table
+- dE to Node
+	- quantifies how close the Munsell value and the Nominal munsell value is
+	*f write a function to determine dE
+	*g add functionality to display this value
+- Nominal Decimal Hue
+	*f write function to convert color value to decimal value
+	*f write function to create this value from the Nominal Munsell value
+	*g add this data to the output table
+- 40 Hue
+	*f write function to calculate this
+		- divide dE by 2.5 and round to the nearest whole number
+		- neutrals are -1
+- Munsell verbal description
+	- converts Nominal Munsell into a verbal description
+	*f write function to calculate the verbal description
+		- format "[value], [chroma], [hue]"
+		- Value
+			- 1-2 	"very dark"
+			- 3 	"dark"
+			- 4-6 	"middle"
+			- 7-8 	"light"
+			- 9-10 	"very light"
+		- Chroma
+			- 0 just say 	"a [dark/middle/light] neutral"
+			- 1 			"very weak"
+			- 2-4			"weak"
+			- 6-8			"moderate"
+			- 12 or higher	"very strong"
+		- Hue
+			- write function that draws in HueVerbalsTable
+			- add functionality of changing HueVerbalsTable
+		- example:
+			- 2.5 5/8 becomes a middle, moderate purplish red
+	*g add this data to the output table
+- Judd category
+	*f write function that pulls in data from spreadsheet
+	*g add functionality of changing Judd spreadsheet?
+	*f write function that uses dE calculation to determine which "centroid" is the closest match for this color
+	*f write function that uses original munsell to determine the category ID in this column
+	*f write function to determine the Judd verbal description from the spreadsheet
+	*g add this data to the output table
+- RGB 
+	*f write function to convert Nominal Munsell to RGB
+		- make sure it's sRGB
+	*g add this data to the output table
+- Hex
+	*f convert RGB value to the hex code
+	*g add this data to the output table
+
+GUI
+	*g finish single color conversion page
+	*g add in visualization of colors to the page
+	*g delete output file line
+	*g change button to open output file select box
+	*f finish single_conversion class implementation
+Design
+	xs draw up class design
+	xs fix classes
+		xs add in classes for different parts of the Munsell color
+		xs add in classes to deal with file input/output
+	xs determine where to put in new function definitions
+	xs plan out testing locations
+	xt implement testing for main classes
+	*f refactor to new design
+	
+Testing
+	xt set up basic testing on the application
+	xta figure out if testing dorks the app generation process
+
+Deployment
+	*a figure out if it's possible to script the App generation process
+	*a fix download to/from github
+	*a figure out scripting command line commands
+
+**************************************************************************
+function tasks - 15
+gui tasks - 12
+system tasks - 0
+test tasks - 0
+application tasks - 3
+
+total tasks - 30
+total task time - 

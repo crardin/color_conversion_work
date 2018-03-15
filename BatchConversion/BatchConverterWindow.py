@@ -29,7 +29,7 @@ class BatchConverterWindow(BatchConverter, BaseWidget):
         self._LabList.readonly = True
         self._LabList.tableWidget.resizeColumnsToContents()
         self._LabList.resize_rows_contents()
-        self.formset = [(' ', '_inputFile', ' '), (' ', '_transformButton', '_saveButton', ' '), ('_LabList')]
+        self.formset = [(' ', '_inputFile', ' '), (' ', '_transformButton', '_saveButton', ' '), '_LabList']
 
     def getMunsellValues(self, inputString):
         inputString = str(inputString)

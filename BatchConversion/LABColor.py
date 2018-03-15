@@ -41,7 +41,12 @@ class LABColor(Color):
 
     def generateLChList(self):
         C = math.sqrt(math.pow(self.__A, 2) + math.pow(self.__B, 2))
-        h = math.atan2(self.__B,self.__A)
+        h = math.atan2(self.__B, self.__A)
+        h = math.degrees(h)
+        if h < 0:
+            h += 360.0
+        elif h >= 360:
+            h -= 360.0
         self.__LChList = [self.__L, C, h]
 
     def getHueLetterCode(self, inputAngle):
@@ -79,8 +84,7 @@ class LABColor(Color):
         return round(inputValue * 2) / 2
 
     def generateMunsellList(self):
-        habDegrees = self.__LChList[2] * (180/math.pi)
-        habDegrees = habDegrees % 360
+        habDegrees = self.__LChList[2]
         HueLetter = self.getHueLetterCode(habDegrees)
         HueNumber = self.getHueNumber(habDegrees)
         Value = round(self.__LChList[0] / 10.0)
@@ -125,4 +129,3 @@ class LABColor(Color):
     @property
     def xyYVector(self):
         return self.__xyYVector
-

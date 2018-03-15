@@ -17,19 +17,23 @@ class InputFileHandler(FileHandler):
 
     def getInputData(self):
         self.__colors = []
-        self.df = pd.read_csv(self.__inputFileName, quotechar='"', encoding='latin1')
-        for index, row in self.df[1:].iterrows():
-            if self.determineUniqueColumnIsThere():
-                newColor = LABColor(row['Unique #'], row['Name'], row['L*'], row['a*'], row['b*'])
-            else:
-                newColor = LABColor(0, row['OriginalName'], row['L*'], row['a*'], row['b*'])
-            self.__colors.append(newColor)
+        df = pd.read_csv(self.__inputFileName, quotechar='"', encoding='latin1')
+        headerValues = list(df.columns.values)
+        uniqueHeaderValues = [s for s in headerValues if "Unique" in s]
+        uniqueHeader = ""
+        if len(uniqueHeaderValues) > 0:
+            uniqueHeader = uniqueHeaderValues[0]
 
-    def determineUniqueColumnIsThere(self):
-        if 'Unique #' in self.df:
-            return True
-        else:
-            return False
+        nameHeaderValues = [s for s in headerValues if "Name" in s]
+        if len(nameHeaderValues) > 0:
+            nameHeader = nameHeaderValues[0]
+
+        for index, row in df[1:].iterrows():
+            if uniqueHeader != "":
+                newColor = LABColor(row[uniqueHeader], row[nameHeader], row['L*'], row['a*'], row['b*'])
+            else:
+                newColor = LABColor(0, row[nameHeader], row['L*'], row['a*'], row['b*'])
+            self.__colors.append(newColor)
 
     @property
     def Colors(self):
