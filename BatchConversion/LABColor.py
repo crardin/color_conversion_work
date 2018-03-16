@@ -15,7 +15,8 @@ class LABColor(Color):
     __XYZVector = []
     __xyYVector = []
     __LChList = []
-    __MunsellList = []
+    __MunsellVector = []
+    __HueNumber = 0
 
     def __init__(self, colorIdentifier, colorName, L, A, B):
         Color.__init__(self, colorIdentifier, colorName)
@@ -47,9 +48,19 @@ class LABColor(Color):
             h += 360.0
         elif h >= 360:
             h -= 360.0
-        self.__LChList = [self.__L, C, h]
+        self.__LChList = [round(self.__L, 2), round(C, 2), round(h, 2)]
 
-    def getHueLetterCode(self, inputAngle):
+    def getHueLetterCode(self):
+        """
+         The Munsell hues are assumed to be evenly spaced on a circle, with 5Y
+         at 90 degrees, 5G at 162 degrees, and so on.  Each letter code corresponds
+         to a certain sector of the circle.  The following cases extract the
+         letter code.
+        :param inputAngle:
+        :return: A letter code based on the input angle
+        """
+        inputAngle = self.LChList[2]
+
         if inputAngle == 0:
             HueLetterCode = 'RP'
         elif inputAngle <= 36:
@@ -74,28 +85,49 @@ class LABColor(Color):
             HueLetterCode = 'RP'
         return HueLetterCode
 
-    def getHueNumber(self, inputAngle):
-        HueNumber = np.interp(divmod(inputAngle, 36)[1], np.linspace(0, 36, 50), np.linspace(0, 10, 50))
-        if HueNumber <= 0.5:
-            HueNumber = 10
-        return HueNumber
+    def checkIncreasing(self, sequence):
+        if np.all(np.diff(sequence) > 0):
+            return True
+        return False
+
+    def getHueNumber(self):
+        """
+            Each letter code is prefixed by a number greater than 0, and less than
+            or equal to 10, that further specifies the hue.
+            :return: Number between 0 and 10
+        """
+        inputAngleDegrees = self.LChList[2]
+        xp = np.linspace(0, 36)
+        fp = np.linspace(0, 10)
+        HueNumber = round(np.interp(divmod(inputAngleDegrees, 36)[1], xp, fp), 2)
+        # if HueNumber <= 0.5:
+        #     HueNumber = 10
+        self.__HueNumber = HueNumber
 
     def roundToNearestValue(self, inputValue):
         return round(inputValue * 2) / 2
 
-    def generateMunsellList(self):
-        habDegrees = self.__LChList[2]
-        HueLetter = self.getHueLetterCode(habDegrees)
-        HueNumber = self.getHueNumber(habDegrees)
-        Value = round(self.__LChList[0] / 10.0)
-        Chroma = round((self.__LChList[1]) / 5.0)
-        if Chroma <= 0.5:
-            Chroma = 'N'
-        self.__MunsellList = [self.roundToNearestValue(HueNumber), HueLetter, Value, Chroma]
+    def generateMunsellVector(self):
+        HueLetter = self.getHueLetterCode()
+        Value = self.__LChList[0] / 10.0
+        outputValue = round(Value)
+        Chroma = (self.__LChList[1]) / 5.0
+        outputChroma = round(Chroma)
+        if outputChroma <= 0.5:
+            outputChroma = 'N'
+        self.__MunsellVector = [self.roundToNearestValue(self.HueNumber), HueLetter, outputValue, outputChroma]
+
+    def convertMunsellVectorToStandardSpecification(self):
+        pass
 
     @property
     def LABColor(self):
         return str(self.__L) + " " + str(self.__A) + " " + str(self.__B)
+
+    @property
+    def HueNumber(self):
+        self.getHueNumber()
+        return self.__HueNumber
 
     @property
     def LabList(self):
@@ -106,16 +138,19 @@ class LABColor(Color):
         self.generateLChList()
         return self.__LChList
 
+    @LChList.setter
+    def LChList(self, value):
+        self.__LChList = value
+
     @property
-    def CalculatedMunsellList(self):
+    def MunsellVector(self):
         self.generateLChList()
-        self.generateMunsellList()
-        return self.__MunsellList
+        self.generateMunsellVector()
+        return self.__MunsellVector
 
     @property
     def roundedLab(self):
-        self.__roundedLab = 'L{0} A{1} B{2}'.format(str(round(int(self.__L))), str(round(int(self.__A))),
-                                                    str(round(int(self.__B))))
+        self.__roundedLab = 'L{0} A{1} B{2}'.format(str(round(self.__L)), str(round(self.__A)), str(round(self.__B)))
         return self.__roundedLab
 
     @property

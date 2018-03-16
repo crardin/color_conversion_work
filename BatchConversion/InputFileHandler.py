@@ -28,7 +28,7 @@ class InputFileHandler(FileHandler):
         if len(nameHeaderValues) > 0:
             nameHeader = nameHeaderValues[0]
 
-        for index, row in df[1:].iterrows():
+        for index, row in df.iterrows():
             if uniqueHeader != "":
                 newColor = LABColor(row[uniqueHeader], row[nameHeader], row['L*'], row['a*'], row['b*'])
             else:
