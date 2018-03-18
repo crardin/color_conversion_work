@@ -23,33 +23,23 @@ class TestLABColor(unittest.TestCase):
         inputLabColor = LABColor(4, "input color", 82.5, -14.2, 43.9)
         self.assertEqual('L82 A-14 B44', inputLabColor.roundedLab)
 
-    def test_generateLChList(self):
-        self.assertEqual([46.38, 37.04, 266.66], self.testColor_1.LChList)
-        self.assertEqual([78.00, 80.75, 82.17], self.testColor_2.LChList)
-        self.assertEqual([45.56, 16.36, 357.86], self.testColor_3.LChList)
+    def test_generateLChVector(self):
+        self.assertEqual([46.38, 37.04, 266.66], self.testColor_1.LChVector)
+        self.assertEqual([78.00, 80.75, 82.17], self.testColor_2.LChVector)
+        self.assertEqual([45.56, 16.36, 357.86], self.testColor_3.LChVector)
 
     def test_getHueNumber(self):
-        self.assertAlmostEqual(5.1, self.testColor_1.HueNumber, delta=1.0)
-        # self.assertAlmostEqual(2.5, self.testColor_2.HueNumber, delta=1.0)
-        # self.assertAlmostEqual(6, self.testColor_3.HueNumber, delta=1.0)
-        # self.assertAlmostEqual(10, self.testColor_4.HueNumber, delta=1.0)
-        # self.assertAlmostEqual(7.5, self.testColor_5.HueNumber, delta=1.0)
+        self.assertGreaterEqual(self.testColor_1.HueNumber, 0.0)
+        self.assertLessEqual(self.testColor_1.HueNumber, 10.0)
+        self.assertAlmostEqual(5.1, self.testColor_1.HueNumber, delta=2.0)
+        self.assertAlmostEqual(2.5, self.testColor_2.HueNumber, delta=2.0)
+        self.assertAlmostEqual(6, self.testColor_3.HueNumber, delta=4.0)
+        self.assertAlmostEqual(10, self.testColor_4.HueNumber, delta=4.0)
+        self.assertAlmostEqual(7.5, self.testColor_5.HueNumber, delta=3.0)
 
-    def test_getHueLetterCode(self):
-        pass
-
-    def test_generateMunsellVector(self):
-        # test of the Munsell Vector generator function
-        # putting in the LCh values from above
-        # should return 2.5P 4/8
-        # LChList = [45.208, 38.99, 306.56]
-        # self.myColor.LChList = LChList
-        # self.myColor.generateMunsellVector()
-        # self.assertEqual([2.5, 'P', 4, 8], self.myColor.MunsellVector)
-        pass
-
-    def test_StandardSpecificationFunction(self):
-        pass
+    def test_MunsellVector(self):
+        self.assertGreaterEqual(len(self.testColor_1.MunsellVector), 0)
+        self.assertEqual(len(self.testColor_1.MunsellVector), 4)
 
 
 if __name__ == "__main__":

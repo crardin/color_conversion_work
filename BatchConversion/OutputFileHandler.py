@@ -15,9 +15,14 @@ class OutputFileHandler(FileHandler):
         self.__outputFileName = outputFileName
 
     def outputColorsToFile(self):
-        outputFile = open(self.__outputFileName, 'w', newline='')
-        outputWriter = csv.writer(outputFile)
-        outputWriter.writerow(['Unique #', 'Label', 'L', 'a', 'b', 'Munsell', 'H1', 'H2', 'V', 'C'])
+        with open(self.__outputFileName, 'w', newline='') as outputFile:
+            outputWriter = csv.writer(outputFile)
+            outputWriter.writerow(['Unique #', 'Label', 'L', 'a', 'b', 'RoundedLab', 'H1', 'H2', 'V', 'C'])
+            for outputColor in self.OutputColors:
+                outputWriter.writerow([outputColor.colorIdentifier, outputColor.colorName, outputColor.LabVector[0],
+                                      outputColor.LabVector[1], outputColor.LabVector[2], outputColor.roundedLab,
+                                      outputColor.MunsellVector[0], outputColor.MunsellVector[1],
+                                      outputColor.MunsellVector[2], outputColor.MunsellVector[3]])
 
     @property
     def OutputFileName(self):

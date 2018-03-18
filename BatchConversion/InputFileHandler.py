@@ -1,7 +1,6 @@
 import pandas as pd
 from BatchConversion.FileHandler import FileHandler
 from BatchConversion.LABColor import LABColor
-from BatchConversion.Munsell import Munsell
 
 
 class InputFileHandler(FileHandler):
@@ -37,6 +36,7 @@ class InputFileHandler(FileHandler):
 
     @property
     def Colors(self):
+        self.getInputData()
         return self.__colors
 
     @property

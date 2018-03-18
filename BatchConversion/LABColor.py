@@ -4,53 +4,64 @@ from BatchConversion.Color import Color
 
 
 class LABColor(Color):
+    """
+    class  to represent a given Lab color
+    """
     __L = 0
-    __A = 0
-    __B = 0
-    __H1 = ""
-    __H2 = ""
-    __V = 0
-    __C = 0
+    __a = 0
+    __b = 0
     __roundedLab = ''
-    __XYZVector = []
-    __xyYVector = []
-    __LChList = []
+    __LChVector = []
     __MunsellVector = []
-    __HueNumber = 0
+    __HueNumber = 0.0
+    __HueLetter = ''
+    __Value = 0.0
+    __Chroma = 0.0
 
-    def __init__(self, colorIdentifier, colorName, L, A, B):
+    def __init__(self, colorIdentifier, colorName, L, a, b):
         Color.__init__(self, colorIdentifier, colorName)
+        self.checkLabValue(L, a, b)
+        self.convertLabToLCh()
+        self.convertLabToMunsell()
 
+    def checkLabValue(self, L, a, b):
         try:
             self.__L = float(L)
+            self.__L = round(self.__L, 2)
         except (ValueError, TypeError):
             print("Value is not a float")
         try:
-            self.__A = float(A)
+            self.__a = float(a)
+            self.__a = round(self.__a, 2)
         except (ValueError, TypeError):
             print("Value is not a float")
         try:
-            self.__B = float(B)
+            self.__b = float(b)
+            self.__b = round(self.__b, 2)
         except (ValueError, TypeError):
             print("Value is not a float")
 
-    def getAnswerFromFile(self, H1, H2, V, C):
-        self.__H1 = H1
-        self.__H2 = H2
-        self.__V = V
-        self.__C = C
+    def convertLabToLCh(self):
+        C = self.calculateChromaValue()
+        h = self.calculateHueValue()
+        self.__LChVector = [self.__L, C, h]
 
-    def generateLChList(self):
-        C = math.sqrt(math.pow(self.__A, 2) + math.pow(self.__B, 2))
-        h = math.atan2(self.__B, self.__A)
+    def calculateHueValue(self):
+        h = math.atan2(self.__b, self.__a)
         h = math.degrees(h)
-        if h < 0:
+        if (h < 0):
             h += 360.0
-        elif h >= 360:
+        elif (h >= 360):
             h -= 360.0
-        self.__LChList = [round(self.__L, 2), round(C, 2), round(h, 2)]
+        h = round(h, 2)
+        return h
 
-    def getHueLetterCode(self):
+    def calculateChromaValue(self):
+        C = math.sqrt(pow(self.__a, 2) + pow(self.__b, 2))
+        C = round(C, 2)
+        return C
+
+    def getHueLetter(self):
         """
          The Munsell hues are assumed to be evenly spaced on a circle, with 5Y
          at 90 degrees, 5G at 162 degrees, and so on.  Each letter code corresponds
@@ -59,7 +70,7 @@ class LABColor(Color):
         :param inputAngle:
         :return: A letter code based on the input angle
         """
-        inputAngle = self.LChList[2]
+        inputAngle = self.LChVector[2]
 
         if inputAngle == 0:
             HueLetterCode = 'RP'
@@ -83,12 +94,7 @@ class LABColor(Color):
             HueLetterCode = 'P'
         else:
             HueLetterCode = 'RP'
-        return HueLetterCode
-
-    def checkIncreasing(self, sequence):
-        if np.all(np.diff(sequence) > 0):
-            return True
-        return False
+        self.__HueLetter = HueLetterCode
 
     def getHueNumber(self):
         """
@@ -96,33 +102,28 @@ class LABColor(Color):
             or equal to 10, that further specifies the hue.
             :return: Number between 0 and 10
         """
-        inputAngleDegrees = self.LChList[2]
         xp = np.linspace(0, 36)
         fp = np.linspace(0, 10)
-        HueNumber = round(np.interp(divmod(inputAngleDegrees, 36)[1], xp, fp), 2)
-        # if HueNumber <= 0.5:
-        #     HueNumber = 10
+        HueNumber = round(np.interp(divmod(self.LChVector[2], 36)[1], xp, fp), 1)
         self.__HueNumber = HueNumber
 
-    def roundToNearestValue(self, inputValue):
-        return round(inputValue * 2) / 2
+    def convertLabToMunsell(self):
+        """
+        method to perform conversion to the Munsell Color representation
+        """
+        self.__MunsellVector = [self.HueNumber, self.HueLetter, self.Value, self.Chroma]
 
-    def generateMunsellVector(self):
-        HueLetter = self.getHueLetterCode()
-        Value = self.__LChList[0] / 10.0
-        outputValue = round(Value)
-        Chroma = (self.__LChList[1]) / 5.0
-        outputChroma = round(Chroma)
-        if outputChroma <= 0.5:
-            outputChroma = 'N'
-        self.__MunsellVector = [self.roundToNearestValue(self.HueNumber), HueLetter, outputValue, outputChroma]
+    def calculateChroma(self):
+        self.__Chroma = round((self.LChVector[1] / 5.0), 1)
 
-    def convertMunsellVectorToStandardSpecification(self):
-        pass
+    def calculateValue(self):
+        returnValue = self.LChVector[0] / 10.0
+        returnValue = round(returnValue, 1)
+        self.__Value = returnValue
 
     @property
     def LABColor(self):
-        return str(self.__L) + " " + str(self.__A) + " " + str(self.__B)
+        return str(self.__L) + " " + str(self.__a) + " " + str(self.__b)
 
     @property
     def HueNumber(self):
@@ -130,37 +131,37 @@ class LABColor(Color):
         return self.__HueNumber
 
     @property
-    def LabList(self):
-        return [self.__L, self.__A, self.__B]
+    def HueLetter(self):
+        self.getHueLetter()
+        return self.__HueLetter
 
     @property
-    def LChList(self):
-        self.generateLChList()
-        return self.__LChList
+    def Value(self):
+        self.calculateValue()
+        return self.__Value
 
-    @LChList.setter
-    def LChList(self, value):
-        self.__LChList = value
+    @property
+    def Chroma(self):
+        self.calculateChroma()
+        return self.__Chroma
+
+    @property
+    def LabVector(self):
+        return [self.__L, self.__a, self.__b]
+
+    @property
+    def LChVector(self):
+        return self.__LChVector
 
     @property
     def MunsellVector(self):
-        self.generateLChList()
-        self.generateMunsellVector()
         return self.__MunsellVector
 
     @property
+    def MunsellValue(self):
+        return str(self.__MunsellVector[0]) + self.__MunsellVector[1] + ' ' + str(self.__MunsellVector[2]) + '/' + str(self.__MunsellVector[3])
+
+    @property
     def roundedLab(self):
-        self.__roundedLab = 'L{0} A{1} B{2}'.format(str(round(self.__L)), str(round(self.__A)), str(round(self.__B)))
+        self.__roundedLab = 'L{0} A{1} B{2}'.format(str(round(self.__L)), str(round(self.__a)), str(round(self.__b)))
         return self.__roundedLab
-
-    @property
-    def testAnswer(self):
-        return self.__H1 + self.__H2 + " " + str(self.__V) + "/" + str(self.__C)
-
-    @property
-    def XYZVector(self):
-        return self.__XYZVector
-
-    @property
-    def xyYVector(self):
-        return self.__xyYVector

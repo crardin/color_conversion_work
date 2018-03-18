@@ -4,7 +4,7 @@ from BatchConversion.Munsell import Munsell
 
 class TestMunsell(unittest.TestCase):
     def setUp(self):
-        self.myMunsell = Munsell()
+        self.myMunsell = Munsell(5.1, 'PB', 4.6, 9.1)
 
     def test_H1_setting(self):
         self.myMunsell.H1 = 10
@@ -22,14 +22,16 @@ class TestMunsell(unittest.TestCase):
         self.myMunsell.C = 2
         self.assertEqual(2, self.myMunsell.C)
 
-    def test_full_MunsellValue(self):
-        self.myMunsell.H1 = 10
-        self.myMunsell.H2 = 'RP'
-        self.myMunsell.V = 1
-        self.myMunsell.C = 2
-        self.assertEqual('10RP 1/2', self.myMunsell.fullMunsellValue)
+    def test_MunsellValue(self):
+        self.assertEqual('5.1PB 4.6/9.1', self.myMunsell.MunsellValue)
 
-    def test_find_nominal_munsell(self):
+    def test_MunsellVector(self):
+        pass
+
+    def test_nominal_munsell(self):
+        pass
+
+    def test_decimalHue(self):
         pass
 
 

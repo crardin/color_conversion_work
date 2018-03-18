@@ -1,7 +1,5 @@
-import csv
-import openpyxl
-from sklearn.neighbors import KNeighborsClassifier
 from BatchConversion.InputFileHandler import InputFileHandler
+from BatchConversion.OutputFileHandler import OutputFileHandler
 from BatchConversion.Munsell import Munsell
 
 
@@ -11,114 +9,37 @@ class BatchConverter(object):
 
     should hold instances of the various color classes
     """
-    __labTrainingValues = []
-    __munsellTrainingValues = []
-    __conversionData = {}
-    __munsellDataFile = "real_CIELAB.xlsx"
     __inputFileName = ''
     __outputFileName = ''
     __inputLABColors = []
-    __predictedColors = []
     __munsellValues = []
     __inputFileHandler = None
     __outputFileHandler = None
 
     def __init__(self):
-        self.neigh = KNeighborsClassifier(n_neighbors=1)
-        self.getTrainingData()
-        self.trainData()
-
-    def trainData(self):
-        self.neigh.fit(self.__labTrainingValues, self.__munsellTrainingValues)
-
-    def getTrainingData(self):
-        self.__labTrainingValues = []
-        self.__munsellTrainingValues = []
-        wb = openpyxl.load_workbook(self.__munsellDataFile)
-        sheet = wb['data']
-        for i in range(2, sheet.max_row + 1):
-            munsellValue = self.getMunsellTrainingValue(i, sheet)
-            labValue = self.getLabTrainingValue(i, sheet)
-            self.__conversionData[labValue] = munsellValue
-
-    def getMunsellTrainingValue(self, i, sheet):
-        H = sheet.cell(row=i, column=2).value
-        munsellValue = str(H) + " "
-        V = sheet.cell(row=i, column=3).value
-        munsellValue += str(V) + "/"
-        C = sheet.cell(row=i, column=4).value
-        munsellValue += str(C)
-        self.__munsellTrainingValues.append(str(H + " " + str(V) + "/" + str(C)))
-        return munsellValue
-
-    def getLabTrainingValue(self, i, sheet):
-        L = sheet.cell(row=i, column=11).value
-        labValue = str(L) + " "
-        A = sheet.cell(row=i, column=12).value
-        labValue += str(A) + " "
-        B = sheet.cell(row=i, column=13).value
-        labValue += str(B)
-        self.__labTrainingValues.append([L, A, B])
-        return labValue
+        pass
 
     def getInputData(self):
         self.__inputFileHandler.getInputData()
         self.__inputLABColors = self.__inputFileHandler.Colors
-        self.predictData()
 
-    def predictData(self):
-        self.__predictedColors = []
+    def getMunsellValues(self):
         for currentColor in self.__inputLABColors:
-            calculatedValues = currentColor.CalculatedMunsellList
-            munsellValue = Munsell()
-            munsellValue.H1 = calculatedValues[0]
-            munsellValue.H2 = calculatedValues[1]
-            munsellValue.V = calculatedValues[2]
-            munsellValue.C = calculatedValues[3]
-            currentColor = {'colorName': currentColor.colorName, 'L': currentColor.LabList[0],
-                            'A': currentColor.LabList[1], 'B': currentColor.LabList[2],
-                            'roundedLab': currentColor.roundedLab,
-                            'colorValue': self.neigh.predict([currentColor.LabList])[0], 'H1': munsellValue.H1,
-                            'H2': munsellValue.H2, 'V': munsellValue.V, 'C': munsellValue.C}
-            self.__munsellValues.append(munsellValue)
-            self.__predictedColors.append(currentColor)
+            calculatedValues = currentColor.MunsellVector
+            munsellVector = Munsell(calculatedValues[0], calculatedValues[1], calculatedValues[2], calculatedValues[3])
+            self.__munsellValues.append(munsellVector)
 
     def outputData(self):
-        outputFile = open(self.outputFileName, 'w', newline='')
-        outputWriter = csv.writer(outputFile)
-        outputWriter.writerow(['Unique #', 'Label', 'L', 'a', 'b', 'Rounded Lab', 'Munsell', 'H1', 'H2', 'V', 'C'])
-        for outputColor in self.__inputLABColors:
-            calculatedValues = outputColor.CalculatedMunsellList
-            outputWriter.writerow(
-                [outputColor.colorIdentifier, outputColor.colorName, format(outputColor.LabList[0], '.2f'),
-                 format(outputColor.LabList[1], '.2f'), format(outputColor.LabList[2], '.2f'), outputColor.roundedLab,
-                 self.neigh.predict([outputColor.LabList]), calculatedValues[0], calculatedValues[1],
-                 calculatedValues[2],
-                 calculatedValues[3]])
-        outputFile.close()
-
-    @property
-    def conversionData(self):
-        return self.__conversionData
-
-    @property
-    def labTrainingValues(self):
-        return self.__labTrainingValues
-
-    @property
-    def munsellTrainingValues(self):
-        return self.__munsellTrainingValues
-
-    @property
-    def predictedColors(self):
-        return self.__predictedColors
+        self.__outputFileHandler.OutputColors = self.__inputLABColors
+        self.__outputFileHandler.outputColorsToFile()
 
     @property
     def munsellValues(self):
+        self.getMunsellValues()
         return self.__munsellValues
 
     @property
-    def colors(self):
+    def inputLabColors(self):
         self.getInputData()
         return self.__inputLABColors
 
@@ -142,14 +63,14 @@ class BatchConverter(object):
     @outputFileName.setter
     def outputFileName(self, value):
         self.__outputFileName = str(value)
+        if value is not None and value != '':
+            if not self.__outputFileHandler:
+                self.__outputFileHandler = OutputFileHandler(self.__outputFileName)
+            else:
+                self.__outputFileHandler.outputFileName = self.__outputFileName
 
 
 if __name__ == '__main__':
     myBatchConverter = BatchConverter()
     myBatchConverter.inputFileName = '../InputData/test.csv'
     myBatchConverter.getInputData()
-    myBatchConverter.predictData()
-    for color in myBatchConverter.predictedColors:
-        print(color)
-    for color in myBatchConverter.colors:
-        print(color.CalculatedMunsellList)
