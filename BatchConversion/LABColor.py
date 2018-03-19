@@ -163,6 +163,26 @@ class LABColor(Color):
         return self.__Munsell.MunsellValue
 
     @property
+    def NominalMunsellValue(self):
+        return self.__Munsell.NominalMunsellValue
+
+    @property
+    def NominalMunsellVector(self):
+        return self.__Munsell.NominalMunsellVector
+
+    @property
+    def DecimalHue(self):
+        return self.__Munsell.DecimalHue
+
+    @property
+    def NominalDecimalHue(self):
+        return self.__Munsell.NominalDecimalHue
+
+    @property
+    def MunsellValue(self):
+        return self.__Munsell.MunsellValue
+
+    @property
     def roundedLab(self):
         self.__roundedLab = 'L{0} A{1} B{2}'.format(str(round(self.__L)), str(round(self.__a)), str(round(self.__b)))
         return self.__roundedLab

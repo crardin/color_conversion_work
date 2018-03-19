@@ -1,6 +1,6 @@
 import pyforms
-from AnyQt.QtWidgets import QFileDialog, QHeaderView, QAbstractScrollArea
-from PyQt5.QtWidgets import QApplication
+from AnyQt.QtWidgets import QFileDialog
+from PyQt5.QtWidgets import QApplication, QHeaderView
 from pyforms import BaseWidget
 from pyforms.Controls import ControlButton
 from pyforms.Controls import ControlFile
@@ -10,6 +10,8 @@ from BatchConversion.batch_conversion import BatchConverter
 
 
 class BatchConverterWindow(BatchConverter, BaseWidget):
+    _headers = None
+
     def __init__(self):
         BatchConverter.__init__(self)
         BaseWidget.__init__(self, 'Batch Converter')
@@ -24,9 +26,11 @@ class BatchConverterWindow(BatchConverter, BaseWidget):
         self._saveButton.value = self.__saveButtonAction
         self._messageLabel = ControlLabel('')
         self._LabList = ControlList('Transform Results')
-        self._LabList.horizontal_headers = ['Color Name', 'L', 'a', 'b', 'Rounded Lab', 'H1', 'H2', 'V', 'C']
-        self._LabList.tableWidget.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
-        self._LabList.tableWidget.horizontalHeader().setStretchLastSection(False)
+        self._LabList.horizontal_headers = ['Color Name', 'L', 'a', 'b', 'Rounded Lab', 'H1', 'H2', 'V', 'C',
+                                            'Nominal H1', 'Nominal H2', 'Nominal V', 'Nominal C']
+        self._headers = self._LabList.tableWidget.horizontalHeader()
+        self._headers.setSectionResizeMode(QHeaderView.Stretch)
+        self._headers.setStretchLastSection(False)
         self._LabList.readonly = True
 
         self.formset = [(' ', '_inputFile', ' '), (' ', '_transformButton', '_saveButton', ' '), '_LabList',
@@ -41,9 +45,10 @@ class BatchConverterWindow(BatchConverter, BaseWidget):
             for color in BatchConverter.inputLabColors.fget(self):
                 listOutput = [color.colorName, color.LabVector[0], color.LabVector[1], color.LabVector[2],
                               color.roundedLab, color.MunsellVector[0], color.MunsellVector[1], color.MunsellVector[2],
-                              color.MunsellVector[3]]
+                              color.MunsellVector[3], color.NominalMunsellVector[0], color.NominalMunsellVector[1],
+                              color.NominalMunsellVector[2], color.NominalMunsellVector[3]]
                 self._LabList += listOutput
-            self._LabList.tableWidget.horizontalHeader().resizeSections()
+            self._headers.resizeSections()
             # self._LabList.tableWidget.resizeColumnsToContents()
             self._messageLabel.value = 'File Transform Complete'
         else:

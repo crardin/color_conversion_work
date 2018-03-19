@@ -7,9 +7,11 @@ class Munsell:
     __V = 0.0
     __C = 0.0
     __DecimalHue = 0.0
+    __NominalDecimalHue = 0.0
     __Nominal_H1 = 0.0
     __Nominal_V = 0
     __Nominal_C = 0
+    __dE = 0.0
     __NominalMunsellVector = []
     __MunsellVector = []
 
@@ -20,16 +22,24 @@ class Munsell:
         self.__C = round(Chroma, 2)
         self.__MunsellVector = [self.__H1, self.__H2, self.__V, self.__C]
 
-    def getNumberForHueLetter(self):
+    def getNumberForHueLetter(self, inputHueLetter):
         colors = {'R': 0, 'YR': 10, 'Y': 20, 'GY': 30, 'G': 40, 'BG': 50, 'B': 60, 'PB': 70, 'P': 80, 'RP': 90,
                   'N': -2.5}
-        if self.MunsellVector[1] in colors:
-            return colors[self.MunsellVector[1]]
+        if inputHueLetter in colors:
+            return colors[inputHueLetter]
+
+    def calculateDeltaE(self):
+        pass
 
     def calculateDecimalHue(self):
         h1 = self.MunsellVector[0]
-        h2 = self.getNumberForHueLetter()
+        h2 = self.getNumberForHueLetter(self.MunsellVector[1])
         self.__DecimalHue = h1 + h2
+
+    def calculateNominalDecimalHue(self):
+        h1 = self.NominalMunsellVector[0]
+        h2 = self.getNumberForHueLetter(self.NominalMunsellVector[1])
+        self.__NominalDecimalHue = h1 + h2
 
     def findNominalMunsell(self):
         self.findNominalH1()
@@ -77,13 +87,22 @@ class Munsell:
 
     @property
     def NominalMunsellValue(self):
-        self.findNominalMunsell()
         return self.formatMunsellString(self.NominalMunsellVector)
+
+    @property
+    def deltaE(self):
+        self.calculateDeltaE()
+        return self.__dE
 
     @property
     def DecimalHue(self):
         self.calculateDecimalHue()
         return self.__DecimalHue
+
+    @property
+    def NominalDecimalHue(self):
+        self.calculateNominalDecimalHue()
+        return self.__NominalDecimalHue
 
     @property
     def H1(self):
