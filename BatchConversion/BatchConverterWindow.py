@@ -1,6 +1,5 @@
 import pyforms
-from AnyQt.QtWidgets import QFileDialog
-from PyQt5.QtWidgets import QApplication, QHeaderView
+from PyQt5.QtWidgets import QFileDialog, QApplication, QHeaderView
 from pyforms import BaseWidget
 from pyforms.Controls import ControlButton
 from pyforms.Controls import ControlFile
