@@ -10,12 +10,13 @@ from setuptools import setup
 # APP = ['BatchConversion/BaseWindow.py']
 DATA_FILES = ['BatchConversion/real_CIELAB.xlsx', 'BatchConversion/style.css']
 OPTIONS = {
-    'packages': ['BatchConversion', 'pyforms', 'sklearn', 'openpyxl', 'pandas'],
+    'packages': ['BatchConversion', 'pyforms', 'sklearn', 'openpyxl', 'pandas', 'AnyQt', 'PyQt5'],
     'argv_emulation': 1,
 }
 setup(
     app=['BatchConversion/BaseWindow.py'],
     data_files=DATA_FILES,
     options={'py2app': OPTIONS},
-    setup_requires=['py2app'], install_requires=['scikit-learn']
+    setup_requires=['py2app'],
+    install_requires=['scikit-learn', 'AnyQt', 'PyQt5']
 )
