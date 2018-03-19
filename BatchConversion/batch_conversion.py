@@ -25,9 +25,7 @@ class BatchConverter(object):
 
     def getMunsellValues(self):
         for currentColor in self.__inputLABColors:
-            calculatedValues = currentColor.MunsellVector
-            munsellVector = Munsell(calculatedValues[0], calculatedValues[1], calculatedValues[2], calculatedValues[3])
-            self.__munsellValues.append(munsellVector)
+            self.__munsellValues.append(currentColor.MunsellVector)
 
     def outputData(self):
         self.__outputFileHandler.OutputColors = self.__inputLABColors

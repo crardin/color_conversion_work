@@ -1,7 +1,7 @@
 import math
 import numpy as np
 from BatchConversion.Color import Color
-
+from BatchConversion.Munsell import Munsell
 
 class LABColor(Color):
     """
@@ -12,6 +12,7 @@ class LABColor(Color):
     __b = 0
     __roundedLab = ''
     __LChVector = []
+    __Munsell = None
     __MunsellVector = []
     __HueNumber = 0.0
     __HueLetter = ''
@@ -111,7 +112,7 @@ class LABColor(Color):
         """
         method to perform conversion to the Munsell Color representation
         """
-        self.__MunsellVector = [self.HueNumber, self.HueLetter, self.Value, self.Chroma]
+        self.__Munsell = Munsell(self.HueNumber, self.HueLetter, self.Value, self.Chroma)
 
     def calculateChroma(self):
         self.__Chroma = round((self.LChVector[1] / 5.0), 1)
@@ -155,11 +156,11 @@ class LABColor(Color):
 
     @property
     def MunsellVector(self):
-        return self.__MunsellVector
+        return self.__Munsell.MunsellVector
 
     @property
     def MunsellValue(self):
-        return str(self.__MunsellVector[0]) + self.__MunsellVector[1] + ' ' + str(self.__MunsellVector[2]) + '/' + str(self.__MunsellVector[3])
+        return self.__Munsell.MunsellValue
 
     @property
     def roundedLab(self):

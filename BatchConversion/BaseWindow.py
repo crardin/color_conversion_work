@@ -1,5 +1,6 @@
 from pysettings import conf
 from BatchConversion import settings
+
 conf += settings
 
 import pyforms
@@ -57,4 +58,4 @@ class BaseWindow(BaseWidget):
 
 
 if __name__ == "__main__":
-    pyforms.start_app(BaseWindow)
+    pyforms.start_app(BaseWindow,  geometry=(200, 200, 1000, 400))

@@ -1,34 +1,29 @@
 QMainWindow{
     background-color: #DDD;
-    max-width: 700px;
+    max-width: 1000px;
     max-height: 1000px;
     padding: 5px;
 }
 
-QMdiSubWindow{
-    max-width: 700px;
-    max-height: 700px;
-    padding: 5px;
-    margin: 5px;
-}
-
 QLabel{
-    min-width: 150px;
+    font-weight: bold;
     max-height: 50px;
-    margin: 5px;
+    text-align: center;
     padding: 0;
 }
 
-QComboBox{
-    margin: 5px;
-    padding: 5px;
+QMenu {
+    background-color: #dddddd;
+    border: 1px solid #777777;
+}
+
+QMenuBar{
+    border-bottom: 1px solid #777777;
 }
 
 QLineEdit{
+    border: 1px solid #777777;
     min-width: 200px;
-    height: 70px;
-    padding-left: 10px;
-    margin: 5px;
 }
 
 QPushButton{
@@ -39,13 +34,16 @@ QPushButton{
     margin-left: 5px;
 }
 
-QTableWidget{
-    max-height: 600px;
-    margin: 5px;
+QPushButton::hover{
+    background: #3cb0fd;
 }
 
-QPushButton:hover{
-    background: #3cb0fd;
+QTableWidget{
+    border: none;
+}
+
+QHeaderView::section{
+    border: 1px solid #777777;
 }
 
 #_colorValue{

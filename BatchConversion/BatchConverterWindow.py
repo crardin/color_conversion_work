@@ -1,9 +1,11 @@
 import pyforms
-from AnyQt.QtWidgets import QFileDialog
+from AnyQt.QtWidgets import QFileDialog, QHeaderView, QAbstractScrollArea
+from PyQt5.QtWidgets import QApplication
 from pyforms import BaseWidget
 from pyforms.Controls import ControlButton
 from pyforms.Controls import ControlFile
 from pyforms.Controls import ControlList
+from pyforms.Controls import ControlLabel
 from BatchConversion.batch_conversion import BatchConverter
 
 
@@ -20,15 +22,19 @@ class BatchConverterWindow(BatchConverter, BaseWidget):
         self._transformButton.value = self.__transformButtonAction
         self._saveButton = ControlButton('Export')
         self._saveButton.value = self.__saveButtonAction
+        self._messageLabel = ControlLabel('')
         self._LabList = ControlList('Transform Results')
-        self._LabList.horizontal_headers = ['Color Name', 'L', 'a', 'b', 'Rounded Lab', 'H1', 'H2', 'V',
-                                            'C']
+        self._LabList.horizontal_headers = ['Color Name', 'L', 'a', 'b', 'Rounded Lab', 'H1', 'H2', 'V', 'C']
+        self._LabList.tableWidget.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+        self._LabList.tableWidget.horizontalHeader().setStretchLastSection(False)
         self._LabList.readonly = True
-        self._LabList.tableWidget.resizeColumnsToContents()
-        self._LabList.resize_rows_contents()
-        self.formset = [(' ', '_inputFile', ' '), (' ', '_transformButton', '_saveButton', ' '), '_LabList']
+
+        self.formset = [(' ', '_inputFile', ' '), (' ', '_transformButton', '_saveButton', ' '), '_LabList',
+                        (' ', '_messageLabel', ' ')]
 
     def __transformButtonAction(self):
+        self._messageLabel.value = 'Processing Color'
+        QApplication.processEvents()
         self.inputFileName = self._inputFile.value
         if self.inputFileName is not None and self.inputFileName != '':
             self._LabList.clear()
@@ -37,15 +43,26 @@ class BatchConverterWindow(BatchConverter, BaseWidget):
                               color.roundedLab, color.MunsellVector[0], color.MunsellVector[1], color.MunsellVector[2],
                               color.MunsellVector[3]]
                 self._LabList += listOutput
-            self._LabList.tableWidget.resizeColumnsToContents()
+            self._LabList.tableWidget.horizontalHeader().resizeSections()
+            # self._LabList.tableWidget.resizeColumnsToContents()
+            self._messageLabel.value = 'File Transform Complete'
+        else:
+            self._messageLabel.value = 'File Transform Failed'
+        QApplication.processEvents()
 
     def __saveButtonAction(self):
+        self._messageLabel.value = 'Exporting Color Data'
+        QApplication.processEvents()
         self.inputFileName = self._inputFile.value
         if self.inputFileName is not None and self.inputFileName != '':
             BatchConverter.getInputData(self)
             self.outputFileName = QFileDialog.getSaveFileName(self, 'Choose Output File')[0]
             BatchConverter.outputData(self)
+            self._messageLabel.value = 'File Export Complete'
+        else:
+            self._messageLabel.value = 'File Export Failed'
+        QApplication.processEvents()
 
 
 if __name__ == '__main__':
-    pyforms.start_app(BatchConverterWindow)
+    pyforms.start_app(BatchConverterWindow, geometry=(200, 200, 1000, 400))

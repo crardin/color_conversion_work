@@ -59,13 +59,16 @@ class Munsell:
             value = lambda myvalue: min(vals, key=lambda x: abs(x - myvalue))
             self.__Nominal_C = value(self.__C)
 
+    def formatMunsellString(self, inputVector):
+        return str(inputVector[0]) + inputVector[1] + ' ' + str(inputVector[2]) + '/' + str(inputVector[3])
+
     @property
     def MunsellVector(self):
         return [self.__H1, self.__H2, self.__V, self.__C]
 
     @property
     def MunsellValue(self):
-        return str(self.__H1) + str(self.__H2) + ' ' + str(self.__V) + '/' + str(self.__C)
+        return self.formatMunsellString(self.MunsellVector)
 
     @property
     def NominalMunsellVector(self):
@@ -75,7 +78,7 @@ class Munsell:
     @property
     def NominalMunsellValue(self):
         self.findNominalMunsell()
-        return str(self.__Nominal_H1) + str(self.__H2) + ' ' + str(self.__Nominal_V) + '/' + str(self.__Nominal_C)
+        return self.formatMunsellString(self.NominalMunsellVector)
 
     @property
     def DecimalHue(self):
