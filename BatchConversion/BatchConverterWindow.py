@@ -10,8 +10,6 @@ from BatchConversion.batch_conversion import BatchConverter
 
 
 class BatchConverterWindow(BatchConverter, BaseWidget):
-    _headers = None
-
     def __init__(self):
         BatchConverter.__init__(self)
         BaseWidget.__init__(self, 'Batch Converter')
@@ -48,7 +46,7 @@ class BatchConverterWindow(BatchConverter, BaseWidget):
                               color.MunsellVector[3], color.NominalMunsellVector[0], color.NominalMunsellVector[1],
                               color.NominalMunsellVector[2], color.NominalMunsellVector[3]]
                 self._LabList += listOutput
-            self._headers.resizeSections()
+            self._headers.resizeSections(QHeaderView.Stretch)
             # self._LabList.tableWidget.resizeColumnsToContents()
             self._messageLabel.value = 'File Transform Complete'
         else:
