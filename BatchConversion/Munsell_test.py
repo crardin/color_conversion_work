@@ -26,13 +26,16 @@ class TestMunsell(unittest.TestCase):
         self.assertEqual('5.1PB 4.6/9.1', self.myMunsell.MunsellValue)
 
     def test_MunsellVector(self):
-        pass
+        self.assertListEqual(self.myMunsell.MunsellVector, [5.1, 'PB', 4.6, 9.1])
 
     def test_nominal_munsell(self):
-        pass
+        self.assertListEqual(self.myMunsell.NominalMunsellVector, [5, 'PB', 5, 9])
 
     def test_decimalHue(self):
-        pass
+        self.assertEqual(self.myMunsell.DecimalHue, 75.1)
+
+    def test_nominalDecimalHue(self):
+        self.assertEqual(self.myMunsell.NominalDecimalHue, 75)
 
 
 if __name__ == "__main__":

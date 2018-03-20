@@ -11,15 +11,18 @@ class LABColor(Color):
     __L = 0
     __a = 0
     __b = 0
+    __NominalLabVector = []
     __roundedLab = ''
     __LChVector = []
     __Munsell = None
     __MunsellVector = []
+    __NominalMunsellVector = []
     __HueNumber = 0.0
     __HueLetter = ''
     __Value = 0.0
     __Chroma = 0.0
     __DeltaE = 0.0
+    __fortyHue = 0.0
 
     def __init__(self, colorIdentifier, colorName, L, a, b):
         Color.__init__(self, colorIdentifier, colorName)
@@ -49,6 +52,10 @@ class LABColor(Color):
         h = self.calculateHueValue()
         self.__LChVector = [self.__L, C, h]
 
+    def calculateFortyHue(self):
+        self.__fortyHue = self.deltaE / 2.5
+        self.__fortyHue = int(round(self.__fortyHue, 0))
+
     def calculateDeltaE(self):
         """
         this method is going to utilize the CIE76 method of calculating the deltaE value
@@ -58,14 +65,71 @@ class LABColor(Color):
 
         :return: deltaE value for the given LABColor
         """
-        pass
+        self.convertNominalMunsellToLab()
+        self.__DeltaE = math.sqrt(
+            self.delta(self.LabVector[0], self.NominalLabVector[0]) + self.delta(self.LabVector[1],
+                                                                                 self.NominalLabVector[1]) + self.delta(
+                self.LabVector[2], self.NominalLabVector[2]))
+        self.__DeltaE = round(self.__DeltaE, 2)
+
+    @staticmethod
+    def delta(input1, input2):
+        """
+        static function to find the difference of two numbers squared
+        :param input1: first number
+        :param input2: second number
+        :return: take the difference of the two numbers and square the results
+        """
+        returnValue = 0.0
+
+        if isinstance(input1, float) and isinstance(input2, float):
+            if input1 > input2:
+                returnValue = math.pow((input1 - input2), 2)
+            else:
+                returnValue = math.pow((input2 - input1), 2)
+
+        returnValue = round(returnValue, 2)
+
+        return returnValue
+
+    def convertNominalMunsellToLab(self):
+        """
+        function to convert a Munsell vector to a Lab vector
+        :return: a nominal Lab vector
+        """
+        L = self.NominalMunsellVector[1] * 10
+        C = self.NominalMunsellVector[2] * 5
+        h = self.findHueNumber()
+
+        a = C * math.cos(h)
+        b = C * math.sin(h)
+
+        self.NominalLabVector = [L, a, b]
+
+    def findHueNumber(self):
+        """
+        function to find an approximate value for the hue angle from a munsell value
+        :return: an angle in radians
+        """
+        hueLetterCode = self.findHueLetterCode(self.NominalMunsellVector[1])
+        SingleHueNumber = divmod(divmod(17 - hueLetterCode, 10)[0] + (self.NominalMunsellVector[0]/10.0) - 0.5, 10)[0]
+        returnAngleDegrees = np.interp(SingleHueNumber, [0, 2, 3, 4, 5, 6, 8, 9, 10],
+                                       [0, 45, 70, 135, 160, 225, 255, 315, 360])
+        return returnAngleDegrees
+
+    @staticmethod
+    def findHueLetterCode(inputHueLetter):
+        colors = {'R': 6, 'YR': 5, 'Y': 4, 'GY': 3, 'G': 2, 'BG': 1, 'B': 0, 'PB': 9, 'P': 8, 'RP': 7,
+                  'N': -2.5}
+        if inputHueLetter in colors:
+            return colors[inputHueLetter]
 
     def calculateHueValue(self):
         h = math.atan2(self.__b, self.__a)
         h = math.degrees(h)
-        if (h < 0):
+        if h < 0:
             h += 360.0
-        elif (h >= 360):
+        elif h >= 360:
             h -= 360.0
         h = round(h, 2)
         return h
@@ -81,7 +145,7 @@ class LABColor(Color):
          at 90 degrees, 5G at 162 degrees, and so on.  Each letter code corresponds
          to a certain sector of the circle.  The following cases extract the
          letter code.
-        :param inputAngle:
+        :param
         :return: A letter code based on the input angle
         """
         inputAngle = self.LChVector[2]
@@ -127,12 +191,6 @@ class LABColor(Color):
         """
         self.__Munsell = Munsell(self.HueNumber, self.HueLetter, self.Value, self.Chroma)
 
-    def convertMunsellToLab(self):
-        """
-        method to perform conversion of a Munsell Value to the corresponding Lab representation
-        """
-        pass
-
     def calculateChroma(self):
         self.__Chroma = round((self.LChVector[1] / 5.0), 1)
 
@@ -168,6 +226,15 @@ class LABColor(Color):
     @property
     def LabVector(self):
         return [self.__L, self.__a, self.__b]
+
+    @property
+    def NominalLabVector(self):
+        self.convertNominalMunsellToLab()
+        return self.__NominalLabVector
+
+    @NominalLabVector.setter
+    def NominalLabVector(self, value):
+        self.__NominalLabVector = value
 
     @property
     def LChVector(self):
@@ -206,3 +273,8 @@ class LABColor(Color):
     def deltaE(self):
         self.calculateDeltaE()
         return self.__DeltaE
+
+    @property
+    def FortyHue(self):
+        self.calculateFortyHue()
+        return self.__fortyHue

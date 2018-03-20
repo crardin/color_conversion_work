@@ -24,7 +24,7 @@ class TestLABColor(unittest.TestCase):
         self.assertEqual('L82 A-14 B44', inputLabColor.roundedLab)
 
     def test_generateLChVector(self):
-        self.assertEqual([46.38, 37.04, 266.66], self.testColor_1.LChVector)
+        self.assertEqual([46.38, 37.04, 266.67], self.testColor_1.LChVector)
         self.assertEqual([78.00, 80.75, 82.17], self.testColor_2.LChVector)
         self.assertEqual([45.56, 16.36, 357.86], self.testColor_3.LChVector)
 
@@ -40,6 +40,21 @@ class TestLABColor(unittest.TestCase):
     def test_MunsellVector(self):
         self.assertGreaterEqual(len(self.testColor_1.MunsellVector), 0)
         self.assertEqual(len(self.testColor_1.MunsellVector), 4)
+
+    def test_deltaE(self):
+        self.assertEqual(45.88, self.testColor_1.deltaE)
+
+    def test_delta(self):
+        self.assertEqual(1, self.testColor_1.delta(3.0, 2.0))
+
+    def test_findHueLetterCode(self):
+        self.assertEqual(4, self.testColor_1.findHueLetterCode('Y'))
+
+    def test_findHueNumber(self):
+        self.assertIn(self.testColor_1.findHueNumber(), [0, 45, 70, 135, 160, 225, 255, 315, 360])
+
+    def test_findHueNumber_returnsFloat(self):
+        self.assertIsInstance(self.testColor_1.findHueNumber(), float)
 
 
 if __name__ == "__main__":
