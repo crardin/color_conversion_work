@@ -1,14 +1,12 @@
+import pyforms
 from pysettings import conf
 from BatchConversion import settings
-
-conf += settings
-
-import pyforms
 from pyforms import BaseWidget
-
 from pyforms.Controls import ControlEmptyWidget
 from BatchConversion.BatchConverterWindow import BatchConverterWindow
 from BatchConversion.singleColorConversionWindow import SingleConverterWindow
+
+conf += settings
 
 
 class BaseWindow(BaseWidget):
@@ -58,4 +56,4 @@ class BaseWindow(BaseWidget):
 
 
 if __name__ == "__main__":
-    pyforms.start_app(BaseWindow,  geometry=(200, 200, 1000, 400))
+    pyforms.start_app(BaseWindow, geometry=(200, 200, 1000, 400))

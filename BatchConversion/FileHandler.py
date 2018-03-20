@@ -4,6 +4,7 @@ class FileHandler(object):
     """
 
     __fileName = ""
+    __inputFile = None
 
     def __init__(self):
         pass

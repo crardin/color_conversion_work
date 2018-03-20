@@ -3,6 +3,7 @@ import numpy as np
 from BatchConversion.Color import Color
 from BatchConversion.Munsell import Munsell
 
+
 class LABColor(Color):
     """
     class  to represent a given Lab color
@@ -18,6 +19,7 @@ class LABColor(Color):
     __HueLetter = ''
     __Value = 0.0
     __Chroma = 0.0
+    __DeltaE = 0.0
 
     def __init__(self, colorIdentifier, colorName, L, a, b):
         Color.__init__(self, colorIdentifier, colorName)
@@ -46,6 +48,17 @@ class LABColor(Color):
         C = self.calculateChromaValue()
         h = self.calculateHueValue()
         self.__LChVector = [self.__L, C, h]
+
+    def calculateDeltaE(self):
+        """
+        this method is going to utilize the CIE76 method of calculating the deltaE value
+        it is also known as deltaE*_ab
+
+        there are more modern versions to calculating this number
+
+        :return: deltaE value for the given LABColor
+        """
+        pass
 
     def calculateHueValue(self):
         h = math.atan2(self.__b, self.__a)
@@ -114,6 +127,12 @@ class LABColor(Color):
         """
         self.__Munsell = Munsell(self.HueNumber, self.HueLetter, self.Value, self.Chroma)
 
+    def convertMunsellToLab(self):
+        """
+        method to perform conversion of a Munsell Value to the corresponding Lab representation
+        """
+        pass
+
     def calculateChroma(self):
         self.__Chroma = round((self.LChVector[1] / 5.0), 1)
 
@@ -179,10 +198,11 @@ class LABColor(Color):
         return self.__Munsell.NominalDecimalHue
 
     @property
-    def MunsellValue(self):
-        return self.__Munsell.MunsellValue
-
-    @property
     def roundedLab(self):
         self.__roundedLab = 'L{0} A{1} B{2}'.format(str(round(self.__L)), str(round(self.__a)), str(round(self.__b)))
         return self.__roundedLab
+
+    @property
+    def deltaE(self):
+        self.calculateDeltaE()
+        return self.__DeltaE

@@ -1,6 +1,5 @@
 from BatchConversion.InputFileHandler import InputFileHandler
 from BatchConversion.OutputFileHandler import OutputFileHandler
-from BatchConversion.Munsell import Munsell
 
 
 class BatchConverter(object):
