@@ -16,7 +16,7 @@ class BaseWindow(BaseWidget):
         self.mainmenu = [
             {'File': [
                 {'Batch Transform': self.__batchTransformEvent},
-                {'Single Color Transform': self.__singleColorTransformEvent},
+                # {'Single Color Transform': self.__singleColorTransformEvent},
                 # {'Load Illuminant Data': self.__loadIlluminantDataEvent},
                 # {'Load Reference Data': self.__loadReferenceDataEvent},
                 # {'Current Settings': self.__currentSettingsEvent},

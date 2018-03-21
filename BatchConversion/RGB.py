@@ -3,7 +3,7 @@ from BatchConversion.Color import Color
 
 class RGBColor(Color):
     """
-    class to handle RGB information for a given color
+    class to handle sRGB information for a given color
     """
     __RValue = 0.0
     __GValue = 0.0
@@ -17,4 +17,5 @@ class RGBColor(Color):
 
     @property
     def RGBValue(self):
-        pass
+        self.calculateRGBValue()
+        return [self.__RValue, self.__GValue, self.__BValue]
