@@ -37,6 +37,15 @@ class TestMunsell(unittest.TestCase):
     def test_nominalDecimalHue(self):
         self.assertEqual(self.myMunsell.NominalDecimalHue, 75)
 
+    def test_findVerbalForValue(self):
+        self.assertEqual("dark", self.myMunsell.findVerbalForValue(3))
+        self.assertEqual("light", self.myMunsell.findVerbalForValue(7))
+        self.assertEqual("middle", self.myMunsell.findVerbalForValue(4))
+
+    def test_findVerbalForChroma(self):
+        self.assertEqual("very weak", self.myMunsell.findVerbalForChroma(1))
+        self.assertEqual("moderate", self.myMunsell.findVerbalForChroma(6))
+
 
 if __name__ == "__main__":
     unittest.main()

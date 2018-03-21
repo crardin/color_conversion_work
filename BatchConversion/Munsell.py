@@ -1,3 +1,6 @@
+from BatchConversion.VerbalFileHandler import VerbalFileHandler
+
+
 class Munsell:
     """
     class to handle data related to a Munsell color
@@ -13,6 +16,8 @@ class Munsell:
     __Nominal_C = 0
     __NominalMunsellVector = []
     __MunsellVector = []
+    __MunsellVerbalDescription = ""
+    __verbalFileHandler = None
 
     def __init__(self, HueNumber, HueLetter, Value, Chroma):
         self.__H1 = round(HueNumber, 2)
@@ -20,6 +25,7 @@ class Munsell:
         self.__V = round(Value, 2)
         self.__C = round(Chroma, 2)
         self.__MunsellVector = [self.__H1, self.__H2, self.__V, self.__C]
+        self.__verbalFileHandler = VerbalFileHandler("HueVerbalsTable.xlsx")
 
     @staticmethod
     def getNumberForHueLetter(inputHueLetter):
@@ -43,6 +49,56 @@ class Munsell:
         self.findNominalValue()
         self.findNominalChroma()
         self.__NominalMunsellVector = [self.__Nominal_H1, self.__H2, self.__Nominal_V, self.__Nominal_C]
+
+    def generateNominalMunsellVerbalDescription(self):
+        description = ""
+        value = self.findVerbalForValue(self.NominalMunsellVector[2])
+        chroma = self.findVerbalForChroma(self.NominalMunsellVector[3])
+        hue = self.findVerbalForHue(self.NominalMunsellVector[0], self.NominalMunsellVector[1])
+
+        description = value + ", " + chroma + ", " + hue
+
+        self.__MunsellVerbalDescription = description
+
+    def findVerbalForHue(self, H1, H2):
+        return self.__verbalFileHandler.getHueVerbal(H1, H2)
+
+    @staticmethod
+    def findVerbalForChroma(inputChroma):
+        returnValue = ""
+
+        if inputChroma == 0:
+            returnValue = "neutral"
+        elif inputChroma == 1:
+            returnValue = "very weak"
+        elif 2 <= inputChroma <= 4:
+            returnValue = "weak"
+        elif 6 <= inputChroma <= 8:
+            returnValue = "moderate"
+        elif 8 <= inputChroma <= 10:
+            returnValue = "strong"
+        elif inputChroma >= 12:
+            returnValue = "very strong"
+
+        return returnValue
+
+    @staticmethod
+    def findVerbalForValue(inputValue):
+        returnValue = ""
+
+        if 0 < inputValue < 10:
+            if 0 <= inputValue <= 2:
+                returnValue = "very dark"
+            elif inputValue == 3:
+                returnValue = "dark"
+            elif 4 <= inputValue <= 6:
+                returnValue = "middle"
+            elif 7 <= inputValue <= 8:
+                returnValue = "light"
+            elif 9 <= inputValue <= 10:
+                returnValue = "very light"
+
+        return returnValue
 
     def findNominalH1(self):
         # must be 2.5, 5, 7.5, or 10
@@ -77,6 +133,11 @@ class Munsell:
     @property
     def MunsellValue(self):
         return self.formatMunsellString(self.MunsellVector)
+
+    @property
+    def MunsellVerbalDescription(self):
+        self.generateNominalMunsellVerbalDescription()
+        return self.__MunsellVerbalDescription
 
     @property
     def NominalMunsellVector(self):

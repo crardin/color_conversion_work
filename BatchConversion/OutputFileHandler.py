@@ -20,7 +20,7 @@ class OutputFileHandler(FileHandler):
             outputWriter.writerow(
                 ['Unique #', 'Label', 'L', 'a', 'b', 'RoundedLab', 'H1', 'H2', 'V', 'C', 'Munsell Value', 'Decimal Hue', 'Nominal H1',
                  'Nominal H2',
-                 'Nominal V', 'Nominal C', 'Nominal Munsell Value', 'Nominal Decimal Hue', 'Delta E', '40 Hue'])
+                 'Nominal V', 'Nominal C', 'Nominal Munsell Value', 'Nominal Decimal Hue', 'Nominal Munsell Verbal', 'Delta E', '40 Hue'])
             for outputColor in self.OutputColors:
                 outputWriter.writerow([outputColor.colorIdentifier, outputColor.colorName, outputColor.LabVector[0],
                                        outputColor.LabVector[1], outputColor.LabVector[2], outputColor.roundedLab,
@@ -29,7 +29,7 @@ class OutputFileHandler(FileHandler):
                                        outputColor.MunsellValue, outputColor.DecimalHue,
                                        outputColor.NominalMunsellVector[0], outputColor.NominalMunsellVector[1],
                                        outputColor.NominalMunsellVector[2], outputColor.NominalMunsellVector[3],
-                                       outputColor.NominalMunsellValue, outputColor.NominalDecimalHue, outputColor.deltaE, outputColor.FortyHue])
+                                       outputColor.NominalMunsellValue, outputColor.NominalDecimalHue, outputColor.MunsellVerbal, outputColor.deltaE, outputColor.FortyHue])
 
     @property
     def OutputFileName(self):

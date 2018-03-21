@@ -278,3 +278,7 @@ class LABColor(Color):
     def FortyHue(self):
         self.calculateFortyHue()
         return self.__fortyHue
+
+    @property
+    def MunsellVerbal(self):
+        return self.__Munsell.MunsellVerbalDescription
