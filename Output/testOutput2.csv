@@ -1,94 +1,395 @@
-Unique #,Label,L,a,b,Rounded Lab,Munsell,H1,H2,V,C
-0,Abbey,33.56,0.40,-4.53,L33 A0 B-4,['2.5PB 3/2'],6.5,PB,3,1
-0,Abbey,45.03,23.22,-31.32,L45 A23 B-31,['2.5P 4/8'],5.0,P,5,8
-0,Abbey Stone,68.91,-2.46,9.16,L68 A-2 B9,['2.5Y 7/2'],9.0,Y,7,2
-0,ABSINTHE,76.81,-20.46,52.85,L76 A-20 B52,['2.5GY 8/8'],1.0,GY,8,11
-0,absinthe green,66.32,-7.00,23.30,L66 A-7 B23,['10Y 6/4'],9.5,Y,7,5
-0,Absinthe green,66.97,-9.90,36.19,L66 A-9 B36,['10Y 7/4'],9.5,Y,7,8
-0,Absinthe [green],85.99,-16.05,45.02,L85 A-16 B45,['2.5GY 9/6'],10.0,GY,9,10
-0,Absinthe green,68.53,-33.61,19.35,L68 A-33 B19,['2.5G 7/6'],1.5,G,7,8
-0,ABSINTHE YELLOW,73.89,5.89,46.88,L73 A5 B46,['10YR 7/8'],3.0,Y,7,9
-0,Absinthe yellow,67.22,1.17,39.49,L67 A1 B39,['2.5Y 7/6'],4.5,Y,7,8
-0,absinthe yellow,74.88,-3.46,44.73,L74 A-3 B44,['5Y 7/6'],6.0,Y,7,9
-0,ABSTRACT BLUE,64.93,-2.15,-5.01,L64 A-2 B-5,['10B 6/2'],8.5,B,6,1
-0,ABYSS,57.30,-10.30,7.53,L57 A-10 B7,['10GY 6/2'],10.0,GY,6,3
-0,abyss blue (gs),31.79,-10.21,-6.58,L31 A-10 B-6,['10BG 3/2'],9.0,BG,3,2
-0,Abyss,61.25,-6.22,-3.01,L61 A-6 B-3,['2.5B 6/2'],7.0,BG,6,1
-0,Blue abysse (blue abyss),16.00,2.41,-18.11,L16 A2 B-18,['5PB 2/4'],7.0,PB,2,4
-0,Acacia,85.29,-4.62,54.32,L85 A-4 B54,['5Y 8/8'],6.5,Y,9,11
-0,Acacia,74.53,-4.20,51.50,L74 A-4 B51,['5Y 7/8'],6.5,Y,7,10
-0,ACACIA,57.23,-11.87,7.35,L57 A-11 B7,['2.5G 6/2'],1.0,G,6,3
-0,Acacia,34.42,37.15,1.05,L34 A37 B1,['7.5RP 3/8'],10.0,R,3,7
-0,acacia brown,61.00,22.00,26.00,L61 A22 B26,['2.5YR 6/6'],4.0,YR,6,7
-0,ACACIA gray,55.58,-8.63,5.86,L55 A-8 B5,['2.5G 5/2'],0.5,G,6,2
-0,ACACIA GREEN,64.23,-8.28,6.94,L64 A-8 B6,['10GY 6/2'],9.0,GY,6,2
-0,Academy blue,46.23,-25.08,-16.88,L46 A-25 B-16,['10BG 5/6'],9.5,BG,5,6
-0,Acai,23.98,22.90,-23.51,L23 A22 B-23,['2.5P 2/6'],7.5,P,2,7
-0,Acai,31.00,29.00,-5.00,L31 A29 B-5,['5RP 3/6'],7.5,RP,3,6
-0,Acajou,38.07,32.13,21.02,L38 A32 B21,['7.5R 4/8'],9.0,R,4,8
-0,acajou (fr),40.31,34.06,30.16,L40 A34 B30,['10R 4/8'],1.5,YR,4,9
-0,acajou (fr),32.99,26.86,19.68,L32 A26 B19,['10R 3/6'],10.0,YR,3,7
-0,acajou (fr),33.85,31.19,25.49,L33 A31 B25,['10R 3/8'],1.0,YR,3,8
-0,acajou (fr),34.92,33.03,27.72,L34 A33 B27,['10R 3/8'],1.0,YR,3,9
-0,Acajou,42.00,25.00,41.00,L42 A25 B41,['5YR 4/8'],6.5,YR,4,10
-0,Acajou,51.71,23.49,50.29,L51 A23 B50,['5YR 5/10'],8.0,YR,5,11
-0,Acajou red,43.94,32.22,11.51,L43 A32 B11,['2.5R 4/8'],5.5,R,4,7
-0,Acanthe,43.66,10.78,28.53,L43 A10 B28,['10YR 4/4'],9.5,YR,4,6
-0,Acapulco,67.95,-20.42,2.19,L67 A-20 B2,['2.5BG 7/4'],8.5,G,7,4
-0,Acetin blue,36.17,2.26,-17.57,L36 A2 B-17,['5PB 4/4'],7.0,PB,4,4
-0,Acid green,75.61,-11.94,71.32,L75 A-11 B71,['7.5Y 8/10'],7.5,Y,8,14
-0,acid green,71.00,-25.00,63.00,L71 A-25 B63,['5GY 7/10'],1.0,GY,7,14
-0,acid green,80.41,-66.86,64.70,L80 A-66 B64,['10GY 8/14'],8.0,GY,8,19
-0,Acier,70.00,0.00,0.00,L70 A0 B0,['2.5PB 7/2'],10.0,RP,7,N
-0,Acier,68.28,-0.55,13.39,L68 A0 B13,['2.5Y 7/2'],5.5,Y,7,3
-0,acier,66.00,-1.76,-10.60,L66 A-1 B-10,['2.5PB 6/2'],2.5,PB,7,2
-0,Ackermann's green,46.86,-22.57,9.76,L46 A-22 B9,['2.5G 5/4'],3.5,G,5,5
-0,Ackermann's green,46.69,-33.75,15.67,L46 A-33 B15,['2.5G 5/6'],3.0,G,5,7
-0,aconite violet,21.73,17.47,-20.21,L21 A17 B-20,['2.5P 2/6'],6.5,P,2,5
-0,aconite violet,24.08,21.91,-25.11,L24 A21 B-25,['2.5P 2/6'],6.5,P,2,7
-0,ACONITE VIOLET,25.70,12.58,-14.89,L25 A12 B-14,['2.5P 2/4'],6.0,P,3,4
-0,aconite violet,27.82,25.28,-25.39,L27 A25 B-25,['2.5P 3/8'],7.5,P,3,7
-0,aconite violet,20.82,13.22,-12.84,L20 A13 B-12,['5P 2/4'],7.5,P,2,4
-0,Aconite violet,41.52,27.09,-17.46,L41 A27 B-17,['7.5P 4/8'],1.0,RP,4,6
-0,Aconite violet,41.08,26.29,-12.48,L41 A26 B-12,['10P 4/6'],3.0,RP,4,6
-0,aconite violet,66.34,15.76,-4.30,L66 A15 B-4,['2.5RP 6/4'],6.0,RP,7,3
-0,aconite violet,57.73,18.00,-3.89,L57 A18 B-3,['2.5RP 6/4'],6.5,RP,6,4
-0,aconite violet,51.12,20.27,-3.69,L51 A20 B-3,['5RP 5/4'],7.0,RP,5,4
-0,aconite violet,48.26,21.80,-8.65,L48 A21 B-8,['2.5RP 5/6'],4.0,RP,5,5
-0,aconite violet,43.88,21.86,-4.05,L43 A21 B-4,['5RP 4/4'],7.0,RP,4,4
-0,ACONITE YELLOW,89.15,4.53,57.51,L89 A4 B57,['2.5Y 9/8'],3.5,Y,9,12
-0,Acorn,43.75,10.83,12.76,L43 A10 B12,['5YR 4/2'],4.0,YR,4,3
-0,ACORN,44.47,9.14,20.92,L44 A9 B20,['7.5YR 4/4'],8.5,YR,4,5
-0,Acorn,38.03,8.96,22.48,L38 A8 B22,['7.5YR 4/4'],9.0,YR,4,5
-0,Acorn,39.53,-2.89,37.97,L39 A-2 B37,['5Y 4/6'],6.0,Y,4,8
-0,Acuba green,51.55,-3.15,31.79,L51 A-3 B31,['7.5Y 5/4'],6.5,Y,5,6
-0,Adam,67.68,1.73,6.11,L67 A1 B6,['2.5YR 7/2'],0.5,Y,7,1
-0,adam blue,71.00,-7.00,-5.00,L71 A-7 B-5,['2.5B 7/2'],10.0,BG,7,2
-0,ADAM CREAM,96.89,0.52,24.71,L96 A0 B24,['10YR 9/4'],4.5,Y,10,5
-0,ADAM GOLD,64.53,4.69,49.43,L64 A4 B49,['2.5Y 6/8'],3.5,Y,6,10
-0,adam gray,78.78,3.25,6.69,L78 A3 B6,['2.5YR 8/2'],8.0,YR,8,1
-0,"Adam’s green, Mid.",81.10,-11.18,21.42,L81 A-11 B21,['5GY 8/4'],2.5,GY,8,5
-0,"Adam’s green, Pale",85.77,-5.32,22.74,L85 A-5 B22,['10Y 9/2'],8.5,Y,9,5
-0,light adam green,79.12,-10.86,22.26,L79 A-10 B22,['5GY 8/4'],2.0,GY,8,5
-0,deep adam green,49.56,-12.24,20.61,L49 A-12 B20,['5GY 5/4'],3.5,GY,5,5
-0,"Adam’s green, Deep",54.57,-16.61,19.75,L54 A-16 B19,['7.5GY 5/4'],6.0,GY,5,5
-0,adam ivory,92.08,1.94,23.14,L92 A1 B23,['10YR 9/4'],3.5,Y,9,5
-0,adam pink,71.00,7.00,6.00,L71 A7 B6,['10R 7/2'],1.5,YR,7,2
-0,adam yellow,89.45,0.58,48.38,L89 A0 B48,['2.5Y 9/6'],5.0,Y,9,10
-0,Adamia,25.65,33.30,-27.09,L25 A33 B-27,['5P 3/8'],9.0,P,3,9
-0,Adelaide,27.59,28.70,-26.24,L27 A28 B-26,['5P 3/8'],8.0,P,3,8
-0,ADEN,66.61,-29.47,6.98,L66 A-29 B6,['7.5G 7/6'],6.5,G,7,6
-0,Aden,46.15,-41.08,5.39,L46 A-41 B5,['7.5G 4/6'],8.0,G,5,8
-0,ADMIRAL,30.28,6.44,3.94,L30 A6 B3,['5R 3/2'],8.5,R,3,2
-0,Admiral,34.03,-2.66,-16.58,L34 A-2 B-16,['10B 3/4'],2.5,PB,3,3
-0,Admiral,29.11,10.15,-36.71,L29 A10 B-36,['5PB 3/8'],9.5,PB,3,8
-0,Admiral,21.90,4.81,-13.62,L21 A4 B-13,['7.5PB 2/2'],10.0,P,2,3
-0,Admiral blue,68.71,-12.39,-17.36,L68 A-12 B-17,['7.5B 7/6'],5.0,B,7,4
-0,Admiral blue,33.56,-0.56,-22.20,L33 A0 B-22,['2.5PB 3/4'],4.5,PB,3,4
-0,Dark Admiralty Grey,43.50,-2.75,-2.84,L43 A-2 B-2,['7.5B 4/2'],3.0,B,4,1
-0,Dark Admiralty Grey,42.69,-3.06,-4.22,L42 A-3 B-4,['7.5B 4/2'],5.0,B,4,1
-0,Dark Admiralty Grey,44.15,-3.50,-3.50,L44 A-3 B-3,['5B 4/2'],2.5,B,4,1
-0,Light Admiralty Grey,74.96,-9.69,-1.32,L74 A-9 B-1,['5BG 7/2'],2.0,BG,7,2
-0,adobe,57.47,44.97,29.79,L57 A44 B29,['5R 6/12'],9.5,R,6,11
-0,Adobe,49.25,24.01,34.05,L49 A24 B34,['2.5YR 5/8'],5.0,YR,5,8
-0,Adobe,48.15,10.64,23.27,L48 A10 B23,['7.5YR 5/4'],8.0,YR,5,5
+Unique #,Label,L,a,b,RoundedLab,H1,H2,V,C
+nan,cacao brown,51.83,28.67,33.44,L52 A29 B33,3.7,YR,5.2,8.8
+nan,cactus [green],53.87,-5.71,8.84,L54 A-6 B9,4.1,GY,5.4,2.1
+nan,cactus flower,45.26,49.88,-3.46,L45 A50 B-3,8.9,RP,4.5,10.0
+nan,cadet blue,46.38,-2.15,-36.98,L46 A-2 B-37,4.1,PB,4.6,7.4
+nan,[pale] cadet blue,71.89,-2.83,-24.18,L72 A-3 B-24,3.1,PB,7.2,4.9
+nan,cadet gray,61.73,-5.45,-10.48,L62 A-5 B-10,7.4,B,6.2,2.4
+nan,cadmium green,71.0,-25.0,63.0,L71 A-25 B63,1.0,GY,7.1,13.6
+nan,cadmium lemon [yellow],90.0,-5.0,86.0,L90 A-5 B86,5.9,Y,9.0,17.2
+nan,cadmium orange,59.0,46.0,48.0,L59 A46 B48,2.8,YR,5.9,13.3
+nan,cadmium red,51.0,60.0,31.0,L51 A60 B31,7.6,R,5.1,13.5
+nan,cadmium yellow,78.0,11.0,80.0,L78 A11 B80,2.8,Y,7.8,16.1
+nan,calabash,72.33,18.69,12.96,L72 A19 B13,9.7,R,7.2,4.5
+nan,calamine blue,77.42,-15.3,-6.89,L77 A-15 B-7,6.7,BG,7.7,3.4
+nan,Caledonian brown,41.62,24.56,31.02,L42 A25 B31,4.3,YR,4.2,7.9
+nan,California color,43.66,14.35,28.64,L44 A14 B29,7.6,YR,4.4,6.4
+nan,calla green,44.67,-7.58,24.07,L45 A-8 B24,9.9,Y,4.5,5.0
+nan,camel,63.68,9.38,18.87,L64 A9 B19,7.7,YR,6.4,4.2
+nan,camellia [red],54.86,54.8,29.83,L55 A55 B30,7.9,R,5.5,12.5
+nan,camellia rose,75.02,42.34,10.84,L75 A42 B11,4.0,R,7.5,8.7
+nan,cameo,84.49,10.38,25.34,L84 A10 B25,8.8,YR,8.4,5.5
+nan,cameo brown,42.73,14.28,12.95,L43 A14 B13,1.7,YR,4.3,3.9
+nan,cameo green,76.36,-12.98,6.98,L76 A-13 B7,2.1,G,7.6,2.9
+nan,cameo blue,76.01,-18.74,-3.67,L76 A-19 B-4,3.1,BG,7.6,3.8
+nan,cameo violet,45.56,16.35,-0.61,L46 A16 B-1,9.4,RP,4.6,3.3
+nan,cameo pink,69.11,20.32,0.21,L69 A20 B0,0.2,R,6.9,4.1
+nan,camouflage red,36.86,18.2,16.07,L37 A18 B16,1.5,YR,3.7,4.9
+nan,camouflage desert sand,62.22,9.67,15.91,L62 A10 B16,6.3,YR,6.2,3.7
+nan,camouflage earth brown,35.27,6.16,11.01,L35 A6 B11,6.9,YR,3.5,2.5
+nan,camouflage tan,66.48,6.91,19.02,L66 A7 B19,9.5,YR,6.6,4.0
+nan,camouflage gray,45.82,0.0,0.65,L46 A0 B1,5.0,Y,4.6,0.1
+nan,camouflage green ,37.98,-5.19,13.72,L38 A-5 B14,0.8,GY,3.8,2.9
+nan,campanula [blue],47.54,11.95,-40.66,L48 A12 B-41,9.5,PB,4.8,8.5
+nan,campanula mauve,46.98,29.01,-30.96,L47 A29 B-31,7.0,P,4.7,8.5
+nan,campanula violet,38.45,37.49,-43.55,L38 A37 B-44,6.3,P,3.8,11.5
+nan,canary [yellow],80.76,3.09,63.91,L81 A3 B64,4.2,Y,8.1,12.8
+nan,candy apple red,49.0,68.0,35.0,L49 A68 B35,7.6,R,4.9,15.3
+nan,candy pink,85.89,14.53,10.33,L86 A15 B10,9.8,R,8.6,3.6
+nan,candy orange,68.0,43.0,46.0,L68 A43 B46,3.0,YR,6.8,12.6
+nan,candy lime,70.0,-35.0,30.0,L70 A-35 B30,8.7,GY,7.0,9.2
+nan,candy green,67.52,-35.31,-1.42,L68 A-35 B-1,0.6,BG,6.8,7.1
+nan,candy blue,67.95,-5.96,-26.48,L68 A-6 B-26,1.5,PB,6.8,5.4
+nan,cantaloupe,80.0,15.0,34.0,L80 A15 B34,8.4,YR,8.0,7.4
+nan,Canton blue,29.52,-8.41,-8.49,L30 A-8 B-8,2.6,B,3.0,2.4
+nan,Canton green,34.42,-18.65,-4.9,L34 A-19 B-5,4.1,BG,3.4,3.9
+nan,Canton jade,37.88,-22.35,-2.6,L38 A-22 B-3,1.8,BG,3.8,4.5
+nan,caper green ,39.63,-0.21,16.61,L40 A0 B17,5.2,Y,4.0,3.3
+nan,capsicum red,57.49,65.29,57.25,L57 A65 B57,1.5,YR,5.7,17.4
+nan,capucine,69.96,63.0,59.8,L70 A63 B60,2.1,YR,7.0,17.4
+nan,capucine red,74.92,41.51,61.03,L75 A42 B61,5.5,YR,7.5,14.8
+nan,capucine orange,78.6,26.83,53.57,L79 A27 B54,7.6,YR,7.9,12.0
+nan,capucine buff,83.99,13.27,36.31,L84 A13 B36,9.4,YR,8.4,7.7
+nan,capucine yellow,74.88,22.82,64.22,L75 A23 B64,9.6,YR,7.5,13.6
+nan,caput mortuum,30.0,12.0,2.0,L30 A12 B2,2.6,R,3.0,2.4
+nan,caramel,55.98,19.34,35.15,L56 A19 B35,7.0,YR,5.6,8.0
+nan,caramel brown,29.6,16.98,15.24,L30 A17 B15,1.6,YR,3.0,4.6
+nan,carbon [black],31.0,0.0,0.0,L31 A0 B0,0.0,RP,3.1,0.0
+nan,cardinal,42.57,60.21,25.94,L43 A60 B26,6.5,R,4.3,13.1
+nan,[dark] cardinal,35.63,51.05,18.78,L36 A51 B19,5.6,R,3.6,10.9
+nan,Caribbean [blue],49.38,-30.08,-29.53,L49 A-30 B-30,2.4,B,4.9,8.4
+nan,Caribbean [green],81.55,-34.88,-1.53,L82 A-35 B-2,0.7,BG,8.2,7.0
+nan,carmine,53.34,73.12,50.56,L53 A73 B51,9.6,R,5.3,17.8
+nan,burnt carmine,37.02,52.62,17.13,L37 A53 B17,5.0,R,3.7,11.1
+nan,carmine rose,59.94,40.99,11.76,L60 A41 B12,4.4,R,6.0,8.5
+nan,carnation [pink],79.89,29.6,3.0,L80 A30 B3,1.6,R,8.0,6.0
+nan,carnation [red],48.13,48.19,11.63,L48 A48 B12,3.8,R,4.8,9.9
+nan,carnation green,67.42,-5.82,6.39,L67 A-6 B6,6.8,GY,6.7,1.7
+nan,carnelian,61.78,35.06,32.24,L62 A35 B32,1.8,YR,6.2,9.5
+nan,carnelian red,65.55,48.34,42.18,L66 A48 B42,1.4,YR,6.6,12.8
+nan,carob,30.68,15.21,18.32,L31 A15 B18,4.0,YR,3.1,4.8
+nan,carrara green,26.34,-25.76,3.48,L26 A-26 B3,7.9,G,2.6,5.2
+nan,carrot,81.84,37.06,55.85,L82 A37 B56,5.7,YR,8.2,13.4
+nan,carrot red,72.08,38.22,36.52,L72 A38 B37,2.1,YR,7.2,10.6
+nan,carthamus red,53.2,69.24,47.85,L53 A69 B48,9.6,R,5.3,16.8
+nan,cartridge buff,87.39,4.22,23.3,L87 A4 B23,2.1,Y,8.7,4.7
+nan,cascade [blue],51.62,-13.28,-20.05,L52 A-13 B-20,5.7,B,5.2,4.8
+nan,cascade [green],71.47,-31.45,-11.16,L71 A-31 B-11,5.4,BG,7.1,6.7
+nan,cashew,54.08,16.76,33.34,L54 A17 B33,7.6,YR,5.4,7.5
+nan,cashmere,81.0,3.69,18.29,L81 A4 B18,1.8,Y,8.1,3.7
+nan,cashmere [beige],70.6,4.46,7.12,L71 A4 B7,6.1,YR,7.1,1.7
+nan,Castilian blue,41.39,-7.61,-40.67,L41 A-8 B-41,2.1,PB,4.1,8.3
+nan,Castilian red,40.62,62.36,41.49,L41 A62 B41,9.3,R,4.1,15.0
+nan,Castilian brown,36.84,29.9,15.08,L37 A30 B15,7.4,R,3.7,6.7
+nan,Castile earth,44.28,17.62,23.11,L44 A18 B23,4.6,YR,4.4,5.8
+nan,castle gray,59.06,-1.28,-4.84,L59 A-1 B-5,0.9,PB,5.9,1.0
+nan,castor,33.22,4.3,8.48,L33 A4 B8,7.5,YR,3.3,1.9
+nan,catawba,26.23,24.95,5.42,L26 A25 B5,3.4,R,2.6,5.1
+nan,catechu,43.15,19.21,22.4,L43 A19 B22,3.7,YR,4.3,5.9
+nan,cathedral blue,50.31,8.7,-27.34,L50 A9 B-27,9.9,PB,5.0,5.7
+nan,catkin,82.54,-8.49,29.4,L83 A-8 B29,9.5,Y,8.3,6.1
+nan,cattail,29.15,15.55,16.48,L29 A16 B16,3.0,YR,2.9,4.5
+nan,cauldron,36.51,34.02,26.79,L37 A34 B27,0.6,YR,3.7,8.7
+nan,cayenne,56.26,58.91,29.9,L56 A59 B30,7.5,R,5.6,13.2
+nan,cedar [green],35.96,-7.22,16.87,L36 A-7 B17,1.4,GY,3.6,3.7
+nan,cedar wood,50.01,22.69,16.41,L50 A23 B16,10.0,R,5.0,5.6
+nan,celadon,82.0,-14.0,9.0,L82 A-14 B9,0.9,G,8.2,3.3
+nan,celadon green,60.46,-8.88,14.7,L60 A-9 B15,3.6,GY,6.0,3.4
+nan,celadon blue,70.0,-10.0,-4.0,L70 A-10 B-4,6.1,BG,7.0,2.2
+nan,celery green,80.19,-10.54,40.81,L80 A-11 B41,9.0,Y,8.0,8.4
+nan,celeste,89.21,-12.13,-6.21,L89 A-12 B-6,7.5,BG,8.9,2.7
+nan,celeste [dark],49.39,-2.98,-11.69,L49 A-3 B-12,1.0,PB,4.9,2.4
+nan,cement [gray],53.89,-3.12,7.24,L54 A-3 B7,1.5,GY,5.4,1.6
+nan,cendre,88.73,-2.01,10.28,L89 A-2 B10,8.1,Y,8.9,2.1
+nan,cendre blue,64.39,-23.02,-20.56,L64 A-23 B-21,1.6,B,6.4,6.2
+nan,cendre green,67.26,-39.24,18.36,L67 A-39 B18,3.0,G,6.7,8.7
+nan,pale cendre green,83.82,-7.6,20.77,L84 A-8 B21,0.6,GY,8.4,4.4
+nan,ceramic blue,40.8,-15.82,-19.56,L41 A-16 B-20,4.2,B,4.1,5.0
+nan,ceramic blue (GS),47.85,-20.55,-4.67,L48 A-21 B-5,3.6,BG,4.8,4.2
+nan,cerulean [blue] (traditional),89.21,-12.13,-6.21,L89 A-12 B-6,7.5,BG,8.9,2.7
+nan,cerulean [blue] (contemporary),54.53,-24.6,-37.42,L55 A-25 B-37,5.7,B,5.5,9.0
+nan,chalcedony yellow,81.94,-6.25,43.6,L82 A-6 B44,7.3,Y,8.2,8.8
+nan,chalk pink,78.98,23.33,15.98,L79 A23 B16,9.6,R,7.9,5.7
+nan,chalk red,46.48,33.4,30.05,L46 A33 B30,1.7,YR,4.6,9.0
+nan,chalk beige,69.03,7.97,22.48,L69 A8 B22,9.6,YR,6.9,4.8
+nan,chalk green,85.0,-6.0,5.0,L85 A-6 B5,8.9,GY,8.5,1.6
+nan,chalk blue,36.91,1.05,-19.58,L37 A1 B-20,5.9,PB,3.7,3.9
+nan,chalk violet,66.42,10.94,-12.14,L66 A11 B-12,6.7,P,6.6,3.3
+nan,chambray [blue],72.91,-2.59,-19.31,L73 A-3 B-19,2.9,PB,7.3,3.9
+nan,chameleon [green],71.0,-22.0,5.0,L71 A-22 B5,6.4,G,7.1,4.5
+nan,chameleon green [pale],81.0,-12.0,7.0,L81 A-12 B7,1.6,G,8.1,2.8
+nan,chamois,83.59,11.43,44.5,L84 A11 B44,1.0,Y,8.4,9.2
+nan,chamomile (tea),86.52,3.2,26.86,L87 A3 B27,3.1,Y,8.7,5.4
+nan,chamomile (dye),71.0,-4.0,71.0,L71 A-4 B71,5.9,Y,7.1,14.2
+nan,champagne,83.31,8.98,33.47,L83 A9 B33,0.8,Y,8.3,6.9
+nan,champagne green,41.0,-23.0,29.0,L41 A-23 B29,5.7,GY,4.1,7.4
+nan,charcoal gray (cool),40.71,-0.89,-4.11,L41 A-1 B-4,1.6,PB,4.1,0.8
+nan,charcoal gray (neutral),41.0,0.0,0.0,L41 A0 B0,0.0,RP,4.1,0.0
+nan,charcoal gray (warm),30.0,-8.0,-37.0,L30 A-8 B-37,1.6,PB,3.0,7.6
+nan,Charleston green,20.0,-4.0,-1.0,L20 A-4 B-1,3.9,BG,2.0,0.8
+nan,chartreuse (ys),73.37,-1.82,66.31,L73 A-2 B66,5.4,Y,7.3,13.3
+nan,chartreuse (gs),68.05,-15.72,43.46,L68 A-16 B43,0.5,GY,6.8,9.2
+nan,chartreuse green,87.12,-19.92,53.22,L87 A-20 B53,0.7,GY,8.7,11.4
+nan,chasseur,34.48,-15.86,-0.88,L34 A-16 B-1,0.9,BG,3.4,3.2
+nan,chateau gray,50.39,1.02,3.38,L50 A1 B3,0.3,Y,5.0,0.7
+nan,cheddar,69.38,30.08,55.79,L69 A30 B56,7.1,YR,6.9,12.7
+nan,cherry [red],53.32,68.84,19.66,L53 A69 B20,4.4,R,5.3,14.3
+nan,cerise,50.36,52.53,7.84,L50 A53 B8,2.4,R,5.0,10.6
+nan,black cherry,31.0,30.0,9.0,L31 A30 B9,4.6,R,3.1,6.3
+nan,Wild Cherry,35.68,38.48,3.23,L36 A38 B3,1.3,R,3.6,7.7
+nan,cherry blossom,81.0,15.0,2.0,L81 A15 B2,2.1,R,8.1,3.0
+nan,cherry pink,74.41,20.7,7.14,L74 A21 B7,5.3,R,7.4,4.4
+nan,cherrywood,71.0,13.0,20.0,L71 A13 B20,5.8,YR,7.1,4.8
+nan,chessylite [blue],51.18,-14.96,-17.19,L51 A-15 B-17,3.6,B,5.1,4.6
+nan,[dark] chessylite [blue],33.93,-10.06,-20.75,L34 A-10 B-21,7.8,B,3.4,4.6
+nan,chestnut,40.01,24.36,24.0,L40 A24 B24,2.4,YR,4.0,6.8
+nan,chestnut brown,25.77,21.42,15.64,L26 A21 B16,0.0,YR,2.6,5.3
+nan,chickadee gray,47.53,1.75,4.81,L48 A2 B5,9.4,YR,4.8,1.0
+nan,chicory brown,61.0,22.0,26.0,L61 A22 B26,3.8,YR,6.1,6.8
+nan,chicory blue,61.77,8.75,-26.42,L62 A9 B-26,0.1,P,6.2,5.6
+nan,[light] chicory blue,77.23,4.88,-16.08,L77 A5 B-16,9.7,PB,7.7,3.4
+nan,[deep] chicory blue,54.93,10.66,-30.64,L55 A11 B-31,0.3,P,5.5,6.5
+nan,green chile,51.0,-30.0,40.0,L51 A-30 B40,5.2,GY,5.1,10.0
+nan,chili pepper [red],36.81,50.91,23.25,L37 A51 B23,6.8,R,3.7,11.2
+nan,chimney red,39.22,47.11,29.15,L39 A47 B29,8.8,R,3.9,11.1
+nan,Chinese blue,49.71,-13.73,-21.47,L50 A-14 B-21,5.9,B,5.0,5.1
+nan,Chinese rose,48.72,48.47,13.75,L49 A48 B14,4.4,R,4.9,10.1
+nan,Chinese green,61.37,-35.9,17.45,L61 A-36 B17,2.8,G,6.1,8.0
+nan,Chinese red,47.98,51.61,42.35,L48 A52 B42,0.9,YR,4.8,13.4
+nan,Chinese yellow,76.29,16.66,46.4,L76 A17 B46,9.5,YR,7.6,9.9
+nan,chinchilla,56.6,0.4,2.79,L57 A0 B3,2.7,Y,5.7,0.6
+nan,chipmunk,51.55,14.32,40.88,L52 A14 B41,9.6,YR,5.2,8.7
+nan,chive,43.35,-17.75,21.82,L43 A-18 B22,5.9,GY,4.3,5.6
+nan,chocolate,33.48,13.34,19.08,L33 A13 B19,5.3,YR,3.3,4.7
+nan,dark chocolate,25.56,8.96,6.99,L26 A9 B7,0.5,YR,2.6,2.3
+nan,milk chocolate,51.0,20.0,31.0,L51 A20 B31,5.9,YR,5.1,7.4
+nan,white chocolate,86.0,-1.0,31.0,L86 A-1 B31,5.5,Y,8.6,6.2
+nan,Christmas/holly red,50.0,64.0,48.0,L50 A64 B48,0.2,YR,5.0,16.0
+nan,Christmas/holly green,52.0,-35.0,31.0,L52 A-35 B31,8.5,GY,5.2,9.3
+nan,chrome yellow,81.27,18.75,70.76,L81 A19 B71,0.9,Y,8.1,14.6
+nan,chrome yellow primrose,93.48,-6.19,64.18,L93 A-6 B64,6.5,Y,9.3,12.9
+nan,chrome orange,65.95,33.98,59.85,L66 A34 B60,6.8,YR,6.6,13.8
+nan,chrome red/scarlet,59.19,53.05,55.89,L59 A53 B56,2.9,YR,5.9,15.4
+nan,chrome green,42.37,-44.25,6.83,L42 A-44 B7,7.6,G,4.2,9.0
+nan,chrysanthemum crimson,43.73,53.25,9.38,L44 A53 B9,2.8,R,4.4,10.8
+nan,chrysanthemum yellow,86.9,5.16,91.73,L87 A5 B92,4.1,Y,8.7,18.4
+nan,chrysocolla [green],59.95,-54.55,10.37,L60 A-55 B10,7.0,G,6.0,11.1
+nan,chutney,36.63,30.27,25.32,L37 A30 B25,1.1,YR,3.7,7.9
+nan,cinder [gray],60.63,6.0,5.03,L61 A6 B5,1.1,YR,6.1,1.6
+nan,cinnabar,58.87,65.57,47.84,L59 A66 B48,0.0,YR,5.9,16.2
+nan,cinnabar green,46.43,-16.47,4.59,L46 A-16 B5,5.7,G,4.6,3.4
+nan,cinnamon,67.35,17.02,38.91,L67 A17 B39,8.4,YR,6.7,8.5
+nan,cinnamon brown ,43.62,13.59,25.48,L44 A14 B25,7.2,YR,4.4,5.8
+nan,cinnamon pink,62.74,12.68,13.77,L63 A13 B14,3.2,YR,6.3,3.7
+nan,citrine (gem),81.0,9.0,66.0,L81 A9 B66,2.8,Y,8.1,13.3
+nan,citrine (tertiary color),53.13,2.49,32.18,L53 A2 B32,3.8,Y,5.3,6.5
+nan,citron [yellow],81.01,1.25,48.99,L81 A1 B49,4.6,Y,8.1,9.8
+nan,citron green,74.38,-4.43,40.64,L74 A-4 B41,6.7,Y,7.4,8.2
+nan,citronella,78.56,-8.38,61.09,L79 A-8 B61,7.2,Y,7.9,12.3
+nan,citrus,81.16,21.61,73.46,L81 A22 B73,0.4,Y,8.1,15.3
+nan,citrus yellow,83.31,-4.52,50.49,L83 A-5 B50,6.4,Y,8.3,10.1
+nan,citrus yellow (gs),91.62,-5.53,35.23,L92 A-6 B35,7.5,Y,9.2,7.1
+nan,clair de lune,56.34,-7.03,-3.82,L56 A-7 B-4,7.9,BG,5.6,1.6
+nan,claret,40.44,51.85,18.66,L40 A52 B19,5.5,R,4.0,11.0
+nan,clay,58.05,12.36,34.8,L58 A12 B35,9.6,YR,5.8,7.4
+nan,green clay,61.0,-3.0,15.0,L61 A-3 B15,8.1,Y,6.1,3.1
+nan,white clay,80.0,-2.0,8.0,L80 A-2 B8,8.9,Y,8.0,1.6
+nan,clay brown,37.51,20.13,30.76,L38 A20 B31,5.8,YR,3.8,7.4
+nan,red clay,37.09,33.53,17.64,L37 A34 B18,7.7,R,3.7,7.6
+nan,clematis,28.77,31.15,-36.33,L29 A31 B-36,6.3,P,2.9,9.6
+nan,cloud,49.97,-9.7,-10.99,L50 A-10 B-11,3.5,B,5.0,2.9
+nan,cloud blue,82.28,-2.57,-3.43,L82 A-3 B-3,4.8,B,8.2,0.9
+nan,cloud gray,80.35,0.24,4.85,L80 A0 B5,4.2,Y,8.0,1.0
+nan,cloud pink,86.21,10.01,9.43,L86 A10 B9,2.0,YR,8.6,2.8
+nan,clove [brown],28.73,6.05,7.16,L29 A6 B7,3.8,YR,2.9,1.9
+nan,clove pink,30.82,41.56,13.45,L31 A42 B13,5.0,R,3.1,8.7
+nan,clover leaf [green],41.62,-13.01,20.04,L42 A-13 B20,4.2,GY,4.2,4.8
+nan,clover [pink],60.23,17.53,-5.51,L60 A18 B-6,5.2,RP,6.0,3.7
+nan,coal [black],38.14,-0.85,0.79,L38 A-1 B1,8.1,GY,3.8,0.2
+nan,cobalt blue,40.46,-22.99,-40.81,L40 A-23 B-41,6.8,B,4.0,9.4
+nan,cobalt green,61.31,-26.36,20.01,L61 A-26 B20,9.7,GY,6.1,6.6
+nan,cobalt turquoise,41.0,-33.0,-24.0,L41 A-33 B-24,0.0,B,4.1,8.2
+nan,cobalt blue,55.01,-0.05,-48.47,L55 A0 B-48,5.0,PB,5.5,9.7
+nan,cobweb,60.49,4.59,17.06,L60 A5 B17,0.8,Y,6.0,3.5
+nan,cochineal,52.58,64.05,37.18,L53 A64 B37,8.4,R,5.3,14.8
+nan,cocoa,45.63,24.19,27.14,L46 A24 B27,3.4,YR,4.6,7.3
+nan,coconut [brown],38.69,11.34,14.08,L39 A11 B14,4.2,YR,3.9,3.6
+nan,coffee,25.68,8.31,8.72,L26 A8 B9,2.9,YR,2.6,2.4
+nan,espresso,20.63,6.33,1.5,L21 A6 B2,3.7,R,2.1,1.3
+nan,cafÔøΩ au lait,65.07,10.57,17.71,L65 A11 B18,6.4,YR,6.5,4.1
+nan,latte,67.67,5.9,25.61,L68 A6 B26,1.4,Y,6.8,5.3
+nan,cappuccino,32.95,14.25,12.37,L33 A14 B12,1.4,YR,3.3,3.8
+nan,mocha,30.66,12.56,15.11,L31 A13 B15,4.0,YR,3.1,3.9
+nan,mocha [light],61.0,11.0,23.0,L61 A11 B23,7.9,YR,6.1,5.1
+nan,colcothar,34.95,32.79,23.39,L35 A33 B23,9.9,R,3.5,8.1
+nan,colewort green,52.45,-7.82,0.43,L52 A-8 B0,9.1,G,5.2,1.6
+nan,Cologne brown,44.28,17.62,23.11,L44 A18 B23,4.6,YR,4.4,5.8
+nan,Cologne yellow,77.27,5.78,61.3,L77 A6 B61,3.5,Y,7.7,12.3
+nan,colonial blue,48.49,-4.83,-15.8,L48 A-5 B-16,0.3,PB,4.8,3.3
+nan,colonial buff,82.18,0.96,39.18,L82 A1 B39,4.6,Y,8.2,7.8
+nan,colonial yellow,86.63,5.26,53.93,L87 A5 B54,3.5,Y,8.7,10.8
+nan,colonial green,57.22,-16.26,6.34,L57 A-16 B6,4.1,G,5.7,3.5
+nan,comfrey,71.0,3.0,13.0,L71 A3 B13,1.4,Y,7.1,2.7
+nan,commelina blue,49.81,5.84,-43.72,L50 A6 B-44,7.1,PB,5.0,8.8
+nan,Como,43.73,-17.48,-10.44,L44 A-17 B-10,8.6,BG,4.4,4.1
+nan,conch [pink],75.38,33.91,28.78,L75 A34 B29,1.2,YR,7.5,8.9
+nan,concord [purple],25.83,26.31,-29.7,L26 A26 B-30,6.5,P,2.6,7.9
+nan,conifer,40.92,-5.5,10.3,L41 A-6 B10,2.8,GY,4.1,2.3
+nan,continental blue,23.25,2.42,-11.94,L23 A2 B-12,8.2,PB,2.3,2.4
+nan,Copenhagen blue,58.93,-2.75,-4.69,L59 A-3 B-5,6.6,B,5.9,1.1
+nan,[strong] Copenhagen blue,46.53,-7.01,-27.39,L47 A-7 B-27,1.0,PB,4.7,5.7
+nan,copper,54.56,27.21,30.61,L55 A27 B31,3.4,YR,5.5,8.2
+nan,copper coin,47.53,33.92,30.27,L48 A34 B30,1.6,YR,4.8,9.1
+nan,copper rust,45.62,33.65,26.42,L46 A34 B26,0.6,YR,4.6,8.6
+nan,red copper,49.86,43.78,36.35,L50 A44 B36,1.0,YR,5.0,11.4
+nan,copper rose,53.87,44.4,28.74,L54 A44 B29,9.1,R,5.4,10.6
+nan,copper brown,40.38,20.23,16.69,L40 A20 B17,1.0,YR,4.0,5.2
+nan,copper tan,54.76,18.48,16.57,L55 A18 B17,1.6,YR,5.5,5.0
+nan,golden copper,58.77,7.1,34.24,L59 A7 B34,1.7,Y,5.9,7.0
+nan,copper yellow,70.42,3.43,57.42,L70 A3 B57,4.0,Y,7.0,11.5
+nan,copperbeech,34.06,30.13,19.51,L34 A30 B20,9.1,R,3.4,7.2
+nan,copper blue,38.09,-14.67,-22.87,L38 A-15 B-23,5.9,B,3.8,5.4
+nan,copper green,61.0,-28.0,-13.0,L61 A-28 B-13,6.9,BG,6.1,6.2
+nan,coral,60.86,43.72,40.4,L61 A44 B40,1.9,YR,6.1,11.9
+nan,coral pink,70.93,34.97,23.9,L71 A35 B24,9.5,R,7.1,8.5
+nan,coral red,41.24,43.9,32.02,L41 A44 B32,0.0,YR,4.1,10.9
+nan,cordovan,28.3,26.84,6.29,L28 A27 B6,3.7,R,2.8,5.5
+nan,Corinthian pink,64.96,25.64,9.37,L65 A26 B9,5.6,R,6.5,5.5
+nan,Corinthian purple,35.73,25.42,2.16,L36 A25 B2,1.4,R,3.6,5.1
+nan,Corinthian red,57.34,35.29,18.97,L57 A35 B19,7.9,R,5.7,8.0
+nan,cork,58.04,15.53,28.43,L58 A16 B28,7.0,YR,5.8,6.5
+nan,corn,77.14,10.32,50.76,L77 A10 B51,1.8,Y,7.7,10.4
+nan,corn husk,86.97,15.13,35.5,L87 A15 B36,8.6,YR,8.7,7.7
+nan,cornsilk,79.81,6.8,41.71,L80 A7 B42,2.4,Y,8.0,8.5
+nan,cornflower,30.65,13.91,-38.52,L31 A14 B-39,0.5,P,3.1,8.2
+nan,coromandel,34.95,32.79,23.39,L35 A33 B23,9.9,R,3.5,8.1
+nan,corydalis green,77.16,-7.14,18.94,L77 A-7 B19,0.7,GY,7.7,4.0
+nan,corydalis blue,81.84,-9.9,-12.79,L82 A-10 B-13,4.5,B,8.2,3.2
+nan,cosmos [pink],62.57,43.93,-3.21,L63 A44 B-3,8.8,RP,6.3,8.8
+nan,cosmos blue,49.3,-1.42,-17.18,L49 A-1 B-17,3.7,PB,4.9,3.4
+nan,Cossack green,27.69,-18.0,15.49,L28 A-18 B15,8.7,GY,2.8,4.8
+nan,cotinga purple,32.47,33.01,-18.53,L32 A33 B-19,1.9,RP,3.2,7.6
+nan,cotton candy (candy floss),83.09,15.67,4.95,L83 A16 B5,4.9,R,8.3,3.3
+nan,cowslip,79.29,25.94,46.62,L79 A26 B47,6.9,YR,7.9,10.7
+nan,coyote brown,45.39,5.69,15.27,L45 A6 B15,9.3,YR,4.5,3.3
+nan,[light] coyote brown,54.47,5.59,13.79,L54 A6 B14,8.9,YR,5.4,3.0
+nan,crab apple,63.38,46.24,41.74,L63 A46 B42,1.7,YR,6.3,12.5
+nan,cranberry,33.09,35.54,6.7,L33 A36 B7,3.0,R,3.3,7.2
+nan,crayon blue,68.69,-4.87,-9.57,L69 A-5 B-10,7.5,B,6.9,2.1
+nan,crayon green,83.8,-12.4,29.24,L84 A-12 B29,1.4,GY,8.4,6.4
+nan,cream,102.2,3.51,16.36,L102 A4 B16,1.6,Y,10.2,3.3
+nan,deep cream,83.03,11.77,46.02,L83 A12 B46,1.0,Y,8.3,9.5
+nan,golden cream,82.12,13.18,53.31,L82 A13 B53,1.1,Y,8.2,11.0
+nan,cream yellow,89.24,-1.03,24.16,L89 A-1 B24,5.7,Y,8.9,4.8
+nan,cress [green],50.24,-11.86,22.2,L50 A-12 B22,2.8,GY,5.0,5.0
+nan,crimson,54.72,72.81,26.32,L55 A73 B26,5.5,R,5.5,15.5
+nan,crimson pink,72.27,40.8,11.96,L72 A41 B12,4.5,R,7.2,8.5
+nan,crocodile,36.92,-0.65,14.94,L37 A-1 B15,5.7,Y,3.7,3.0
+nan,crocus ,70.93,21.71,-17.8,L71 A22 B-18,9.1,P,7.1,5.6
+nan,crocus [pink],61.44,24.53,-5.39,L61 A25 B-5,6.6,RP,6.1,5.0
+nan,crocus [yellow],73.77,27.6,69.83,L74 A28 B70,9.0,YR,7.4,15.0
+nan,crocus martis,46.48,33.4,30.05,L46 A33 B30,1.7,YR,4.6,9.0
+nan,crushed strawberry,54.1,33.74,11.88,L54 A34 B12,5.4,R,5.4,7.2
+nan,cucumber,42.7,-32.67,9.15,L43 A-33 B9,5.7,G,4.3,6.8
+nan,cudbear,40.0,38.0,-21.0,L40 A38 B-21,2.0,RP,4.0,8.7
+nan,cupboard red,49.42,33.22,15.68,L49 A33 B16,7.0,R,4.9,7.3
+nan,currant red,40.4,47.96,23.7,L40 A48 B24,7.3,R,4.0,10.7
+nan,blackcurrant,25.29,10.99,1.79,L25 A11 B2,2.6,R,2.5,2.2
+nan,curry [yellow],55.98,9.54,58.16,L56 A10 B58,2.4,Y,5.6,11.8
+nan,custard,83.84,7.87,52.79,L84 A8 B53,2.6,Y,8.4,10.7
+nan,cutch,71.0,24.0,41.0,L71 A24 B41,6.6,YR,7.1,9.5
+nan,cyan,59.0,-34.0,-43.0,L59 A-34 B-43,4.4,B,5.9,11.0
+nan,cyclamen,56.76,45.4,12.63,L57 A45 B13,4.3,R,5.7,9.4
+nan,cyclamen pink,80.86,33.55,7.98,L81 A34 B8,3.7,R,8.1,6.9
+nan,cyclamen purple,57.67,57.74,-13.41,L58 A58 B-13,6.4,RP,5.8,11.9
+nan,cypress green,29.92,-17.94,21.87,L30 A-18 B22,5.9,GY,3.0,5.7
+nan,Cyprus green,69.29,-34.59,37.28,L69 A-35 B37,6.9,GY,6.9,10.2
+nan,daffodil,94.61,-7.55,67.06,L95 A-8 B67,6.8,Y,9.5,13.5
+nan,dahlia mauve,42.55,33.42,-3.1,L43 A33 B-3,8.5,RP,4.3,6.7
+nan,dahlia purple ,28.64,40.15,-29.4,L29 A40 B-29,9.9,P,2.9,10.0
+nan,dahlia red,37.59,37.73,17.3,L38 A38 B17,6.8,R,3.8,8.3
+nan,dahlia yellow,72.39,30.97,72.12,L72 A31 B72,8.5,YR,7.2,15.7
+nan,daisy yellow,78.78,4.76,55.95,L79 A5 B56,3.6,Y,7.9,11.2
+nan,damask red,30.52,28.69,10.78,L31 A29 B11,5.7,R,3.1,6.1
+nan,damask pink (rose),51.15,48.43,14.25,L51 A48 B14,4.6,R,5.1,10.1
+nan,damask pink (cheek),52.0,45.0,9.0,L52 A45 B9,3.1,R,5.2,9.2
+nan,damson,30.28,11.34,-12.36,L30 A11 B-12,6.8,P,3.0,3.4
+nan,dandelion,86.89,6.07,72.29,L87 A6 B72,3.7,Y,8.7,14.5
+nan,Blue Danube,51.8,-31.78,-21.48,L52 A-32 B-21,9.5,BG,5.2,7.7
+nan,Danube green,37.77,-7.98,6.23,L38 A-8 B6,9.5,GY,3.8,2.0
+nan,daphne pink,64.2,21.49,-3.26,L64 A21 B-3,7.6,RP,6.4,4.3
+nan,daphne red,51.5,49.09,3.09,L52 A49 B3,1.0,R,5.2,9.8
+nan,date,30.49,6.71,10.91,L30 A7 B11,6.2,YR,3.0,2.6
+nan,datura,41.08,26.29,-12.48,L41 A26 B-12,2.9,RP,4.1,5.8
+nan,Dauphin's blue,58.54,11.57,-12.06,L59 A12 B-12,7.2,P,5.9,3.3
+nan,Dauphin's violet,65.93,11.23,-19.5,L66 A11 B-20,3.3,P,6.6,4.5
+nan,Dauphine,61.78,25.8,7.99,L62 A26 B8,4.8,R,6.2,5.4
+nan,Davy's gray,51.0,-3.0,6.0,L51 A-3 B6,2.4,GY,5.1,1.3
+nan,golden dawn,87.11,9.2,48.56,L87 A9 B49,2.0,Y,8.7,9.9
+nan,dawn gray,77.28,-0.91,-7.21,L77 A-1 B-7,3.0,PB,7.7,1.5
+nan,dawn pink,92.32,9.07,5.7,L92 A9 B6,8.9,R,9.2,2.1
+nan,dawn rose,62.23,24.54,16.8,L62 A25 B17,9.6,R,6.2,5.9
+nan,dead leaf,56.23,33.02,41.65,L56 A33 B42,4.3,YR,5.6,10.6
+nan,dead leaf green,53.0,-2.0,53.0,L53 A-2 B53,5.6,Y,5.3,10.6
+nan,feuille morte,57.62,22.63,43.35,L58 A23 B43,7.3,YR,5.8,9.8
+nan,debutante pink,74.74,30.28,8.52,L75 A30 B9,4.4,R,7.5,6.3
+nan,debutante yellow,93.87,-8.22,42.99,L94 A-8 B43,8.0,Y,9.4,8.8
+nan,debutante blue,87.88,-9.14,3.26,L88 A-9 B3,4.5,G,8.8,1.9
+nan,deer,47.9,8.14,17.58,L48 A8 B18,8.1,YR,4.8,3.9
+nan,Delft blue,26.4,1.42,-15.82,L26 A1 B-16,6.4,PB,2.6,3.2
+nan,Delft rose,52.3,54.39,25.37,L52 A54 B25,6.9,R,5.2,12.0
+nan,della Robbia blue,51.2,-12.81,-19.7,L51 A-13 B-20,5.8,B,5.1,4.7
+nan,della Robbia aubergine,35.83,21.0,9.73,L36 A21 B10,6.9,R,3.6,4.6
+nan,della Robbia yellow,87.1,-2.11,58.01,L87 A-2 B58,5.6,Y,8.7,11.6
+nan,delphinium [blue],60.53,-6.78,-22.03,L61 A-7 B-22,0.2,PB,6.1,4.6
+nan,denim,50.0,-2.0,-24.0,L50 A-2 B-24,3.7,PB,5.0,4.8
+nan,dark denim,30.89,-2.18,-16.02,L31 A-2 B-16,2.8,PB,3.1,3.2
+nan,faded denim,59.8,-4.55,-16.11,L60 A-5 B-16,0.6,PB,6.0,3.3
+nan,Derby blue,26.44,12.3,-26.76,L26 A12 B-27,1.9,P,2.6,5.9
+nan,desert sand,73.76,2.26,9.38,L74 A2 B9,1.2,Y,7.4,1.9
+nan,desert taupe,55.51,4.31,9.31,L56 A4 B9,8.1,YR,5.6,2.1
+nan,desert palm,39.06,2.48,16.48,L39 A2 B16,2.6,Y,3.9,3.3
+nan,desert sage,70.52,-5.52,7.42,L71 A-6 B7,5.2,GY,7.1,1.9
+nan,devil red,44.15,57.95,38.25,L44 A58 B38,9.3,R,4.4,13.9
+nan,Devon [brown],39.63,28.23,17.05,L40 A28 B17,8.6,R,4.0,6.6
+nan,Devon cream,83.17,3.79,26.69,L83 A4 B27,2.8,Y,8.3,5.4
+nan,dianthus purple,48.91,62.35,-11.63,L49 A62 B-12,7.1,RP,4.9,12.7
+nan,dijon (strong),75.51,-5.04,73.99,L76 A-5 B74,6.1,Y,7.6,14.8
+nan,dijon (weak),56.23,7.67,28.82,L56 A8 B29,0.9,Y,5.6,6.0
+nan,dill,43.66,-14.46,18.3,L44 A-14 B18,5.6,GY,4.4,4.7
+nan,dioptase,38.59,-34.14,-5.37,L39 A-34 B-5,2.5,BG,3.9,6.9
+nan,dioxazine purple,30.0,30.0,-36.0,L30 A30 B-36,6.1,P,3.0,9.4
+nan,diva blue,45.18,3.01,-35.87,L45 A3 B-36,6.3,PB,4.5,7.2
+nan,doge purple,35.08,31.43,-13.85,L35 A31 B-14,3.4,RP,3.5,6.9
+nan,dogwood red,44.13,55.1,22.64,L44 A55 B23,6.2,R,4.4,11.9
+nan,donkey brown,47.67,5.6,6.96,L48 A6 B7,4.2,YR,4.8,1.8
+nan,dove gray,72.67,-0.5,-0.09,L73 A0 B0,2.8,BG,7.3,0.1
+nan,drab,60.95,7.75,19.09,L61 A8 B19,8.9,YR,6.1,4.1
+nan,light drab,61.38,4.9,18.08,L61 A5 B18,0.8,Y,6.1,3.7
+nan,dark drab,44.7,6.16,18.1,L45 A6 B18,9.8,YR,4.5,3.8
+nan,brown drab,42.99,15.22,15.44,L43 A15 B15,2.6,YR,4.3,4.3
+nan,olive drab,36.0,-16.0,12.0,L36 A-16 B12,9.8,GY,3.6,4.0
+nan,dragon's blood,48.54,40.45,26.61,L49 A40 B27,9.3,R,4.9,9.7
+nan,dragonfly,40.62,-22.44,-19.2,L41 A-22 B-19,1.3,B,4.1,5.9
+nan,dregs of wine,44.13,26.93,11.56,L44 A27 B12,6.5,R,4.4,5.9
+nan,Dresden yellow,91.56,-3.78,86.49,L92 A-4 B86,5.7,Y,9.2,17.3
+nan,Dresden brown,44.47,8.81,30.56,L44 A9 B31,0.5,Y,4.4,6.4
+nan,Dresden blue,50.14,-18.09,-21.61,L50 A-18 B-22,3.9,B,5.0,5.6
+nan,driftwood,81.84,4.25,12.16,L82 A4 B12,9.6,YR,8.2,2.6
+nan,du Barry red,51.37,47.84,19.46,L51 A48 B19,6.2,R,5.1,10.3
+nan,du Barry blue,61.95,-34.78,-12.78,L62 A-35 B-13,5.6,BG,6.2,7.4
+nan,duck green,27.0,-20.66,-4.89,L27 A-21 B-5,3.7,BG,2.7,4.2
+nan,duck [wing] blue,25.44,6.66,-16.86,L25 A7 B-17,1.0,P,2.5,3.6
+nan,duck egg blue,70.0,-8.0,0.0,L70 A-8 B0,0.0,G,7.0,1.6
+nan,duck egg green,81.0,-21.0,13.0,L81 A-21 B13,1.2,G,8.1,4.9
+nan,dun,62.0,6.0,11.0,L62 A6 B11,7.1,YR,6.2,2.5
+nan,dune,49.94,4.29,13.68,L50 A4 B14,0.2,Y,5.0,2.9
+nan,dusk,39.15,6.33,-3.01,L39 A6 B-3,2.9,RP,3.9,1.4
+nan,dusk blue,30.0,2.0,-21.0,L30 A2 B-21,6.5,PB,3.0,4.2
+nan,dusty blue,80.86,-12.33,-12.19,L81 A-12 B-12,2.4,B,8.1,3.5
+nan,dusty green,74.35,-8.62,22.08,L74 A-9 B22,0.9,GY,7.4,4.7
+nan,dusty turquoise,60.95,-20.11,-8.49,L61 A-20 B-8,6.4,BG,6.1,4.4
+nan,dusty rose,58.56,24.96,7.47,L59 A25 B7,4.6,R,5.9,5.2
+nan,Dutch blue,58.39,-0.29,-4.16,L58 A0 B-4,3.9,PB,5.8,0.8
+nan,Dutch pink,80.52,0.49,54.99,L81 A0 B55,4.9,Y,8.1,11.0
+nan,dyer's broom yellow,71.68,16.43,74.67,L72 A16 B75,1.6,Y,7.2,15.3

@@ -7,9 +7,9 @@ output
 - rounded lab values
 	- one cell
 	x check to see if I already have a function to do this
-	*g add this data to the output table
+	xg add this data to the output table
 - Original Munsell
-	*f write function to take Munsell values and create this value
+	xf write function to take Munsell values and create this value
 - Nominal H1
 	- found from rounding the Munsell value to nearest node
 	- 2.5, 5, 7.5, or 10
@@ -29,18 +29,18 @@ output
 	- same as Nominal H above 
 	- uses the Nominal values as input?
 	- not sure what is needed here
-	*f add function to find nominal munsell from full munsell value?
-	*g add this data to the output table
+	xf add function to find nominal munsell from full munsell value?
+	xg add this data to the output table
 - dE to Node
 	- quantifies how close the Munsell value and the Nominal munsell value is
-	*f write a function to determine dE
-	*g add functionality to display this value
+	xf write a function to determine dE
+	xg add functionality to display this value
 - Nominal Decimal Hue
-	*f write function to convert color value to decimal value
-	*f write function to create this value from the Nominal Munsell value
-	*g add this data to the output table
+	xf write function to convert color value to decimal value
+	xf write function to create this value from the Nominal Munsell value
+	xg add this data to the output table
 - 40 Hue
-	*f write function to calculate this
+	xf write function to calculate this
 		- divide dE by 2.5 and round to the nearest whole number
 		- neutrals are -1
 - Munsell verbal description
@@ -81,11 +81,11 @@ output
 	*g add this data to the output table
 
 GUI
-	*g finish single color conversion page
+	xg finish single color conversion page
 	*g add in visualization of colors to the page
-	*g delete output file line
-	*g change button to open output file select box
-	*f finish single_conversion class implementation
+	xg delete output file line
+	xg change button to open output file select box
+	xf finish single_conversion class implementation
 Design
 	xs draw up class design
 	xs fix classes
@@ -94,7 +94,7 @@ Design
 	xs determine where to put in new function definitions
 	xs plan out testing locations
 	xt implement testing for main classes
-	*f refactor to new design
+	xf refactor to new design
 	
 Testing
 	xt set up basic testing on the application
@@ -102,7 +102,7 @@ Testing
 
 Deployment
 	*a figure out if it's possible to script the App generation process
-	*a fix download to/from github
+	xa fix download to/from github
 	*a figure out scripting command line commands
 
 **************************************************************************
@@ -114,3 +114,30 @@ application tasks - 3
 
 total tasks - 30
 total task time - 
+
+cacao brown
+L = 51.827
+a* = 28.671
+b* = 33.44
+2.5 YR 5/8 (fit)
+3.5 YR 5.18/8.81 (calculated)
+
+2.1 YR 5/7.5 (from the file)
+
+2.5 YR 5/8 (nominal value)
+
+carbon (black)
+L = 31
+a* = 0
+b* = 0
+
+#N 3.1/0
+
+caput mortum
+L = 30
+a* = 12
+b* = 2
+0.2R 3/2.1
+2.5R 3/2.43
+
+10RP 3/2

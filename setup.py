@@ -8,7 +8,7 @@ Usage:
 from setuptools import setup
 
 # APP = ['BatchConversion/BaseWindow.py']
-DATA_FILES = ['BatchConversion/real_CIELAB.xlsx', 'BatchConversion/style.css']
+DATA_FILES = ['BatchConversion/real_CIELAB.xlsx', 'BatchConversion/style.css', 'BatchConversion/HueVerbalsTable.xlxs', 'BatchConversion/Judd.xlsx']
 OPTIONS = {
     'packages': ['BatchConversion', 'pyforms', 'sklearn', 'openpyxl', 'pandas'],
     'argv_emulation': 1,
@@ -17,5 +17,6 @@ setup(
     app=['BatchConversion/BaseWindow.py'],
     data_files=DATA_FILES,
     options={'py2app': OPTIONS},
-    setup_requires=['py2app'], install_requires=['scikit-learn', 'AnyQt', 'PyQt5', 'pyforms']
+    setup_requires=['py2app'], install_requires=['scikit-learn', 'AnyQt', 'PyQt5', 'pyforms', 'numpy', 'pysettings',
+                                                 'pandas']
 )

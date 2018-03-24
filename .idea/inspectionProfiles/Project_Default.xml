@@ -23,6 +23,7 @@
       <option name="ignoredIdentifiers">
         <list>
           <option value="BatchConversion.LABColor.Color" />
+          <option value="property.setter" />
         </list>
       </option>
     </inspection_tool>

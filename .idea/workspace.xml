@@ -2,207 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdbf9acc-2805-4226-afe0-4407b10f96b6" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/InputData/test (2).csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/InputData/testOutput.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Output/testOutput" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Output/testOutput.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Output/testOutput2.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Output/testOutput3.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/developer_notes/.~lock.Batch Conversion App Details.docx#" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/developer_notes/color breakdown" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Abidjan" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Accra" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Addis_Ababa" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Algiers" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Asmara" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Asmera" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Bamako" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Bangui" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Banjul" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Bissau" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Blantyre" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Brazzaville" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Bujumbura" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Cairo" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Casablanca" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Ceuta" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Conakry" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Dakar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Dar_es_Salaam" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Djibouti" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Douala" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/El_Aaiun" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Freetown" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Gaborone" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Harare" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Johannesburg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Juba" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Kampala" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Khartoum" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Kigali" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Kinshasa" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Lagos" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Libreville" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Lome" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Luanda" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Lubumbashi" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Lusaka" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Malabo" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Maputo" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Maseru" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Mbabane" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Mogadishu" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Monrovia" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Nairobi" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Ndjamena" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Niamey" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Nouakchott" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Ouagadougou" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Porto-Novo" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Sao_Tome" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Timbuktu" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Tripoli" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Tunis" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Africa/Windhoek" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Arctic/Longyearbyen" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Almaty" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Aqtau" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Ashgabat" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Baghdad" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Barnaul" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Bishkek" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Chongqing" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Colombo" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Dacca" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Damascus" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Dhaka" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Dili" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Dushanbe" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Ho_Chi_Minh" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Jerusalem" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Kashgar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Khandyga" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Kolkata" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Krasnoyarsk" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Kuching" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Macao" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Macau" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Magadan" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Manila" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Novosibirsk" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Omsk" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Phnom_Penh" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Pyongyang" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Qatar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Qyzylorda" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Rangoon" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Riyadh" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Saigon" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Sakhalin" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Singapore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Taipei" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Tehran" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Tokyo" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Tomsk" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Ulan_Bator" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Ust-Nera" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Yangon" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Asia/Yerevan" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Brazil/Acre" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Brazil/DeNoronha" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Brazil/West" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Chile/Continental" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/BaseWindow/pytz/zoneinfo/Chile/EasterIsland" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/ColourMatches/EvaluateAttemptedMatches.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/ColourMatches/EvaluateDEsToReflectanceSpectra.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/ColourMatches/EvaluateDEsToReflectanceSpectraMultiIllum.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/ColourMatches/EvaluateDEsToShadeBankFile.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/ColourMatches/EvaluateMultipleAimpointDEsToShadeBankFile.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/ColourMatches/FindBestMatchForMunsell.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/ColourMatches/FindBestMatchforxyY.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/DataFiles/1931ColourMatchingFunctions.mat" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/DataFiles/1931ColourMatchingFunctions.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/DataFiles/ExtrapolatedMunsellRenotation.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/DataFiles/ExtrapolatedRenotationMatrices.mat" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/DataFiles/ISCCNBSDesignators.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/DataFiles/IlluminantC.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/DataFiles/IlluminantD50.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/DataFiles/InverseRenotation.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/DataFiles/MacAdamLimitsFromRenotationData.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/DataFiles/MaxChromaForExtrapolatedRenotation.mat" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/DataFiles/MaxChromaFromExtrapRenotationData.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/DataFiles/MaxChromasForStandardMunsellHuesAndValues.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/DataFiles/MaxChromasInRenotationData.mat" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/DataFiles/MunsellCentroidsForISCCNBS.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/DataFiles/MunsellRenotation.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/DataFiles/MunsellRenotationTosRGB.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/DataFiles/OptimalColoursForIlluminantC.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/DataFiles/OptimalColoursForIlluminantD65.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/DataFiles/Pointer1980TableII.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/DataFiles/PointerGamutInMunsellSpace.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/DataFiles/RenotationMatrices.mat" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/DataFiles/sRGBToMunsell.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/DataFiles/sRGBToMunsellAndISCCNBS.txt.zip" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/DataFiles/sRGBcentroidsForISCCNBS.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/ElectronicDisplays/AllParallelepipedsInZonohedron.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/ElectronicDisplays/AnalyzeSensorResponses.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/ElectronicDisplays/CombinatorialStructureOfCyclicZonohedron.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/ElectronicDisplays/ConstructCyclicZonohedron.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/ElectronicDisplays/ConstructPositiveZonohedron.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/ElectronicDisplays/DisplayGamutFromPrimaries.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/ElectronicDisplays/ReflectanceSpectrumTosRGB.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/GJK/BoundedVariablesLeastSquares0to1GJK.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/GJK/CheckNewPointMakesSimplex.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/GJK/ClosestPointInConvexPolytopeGJK.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/GJK/ClosestPointInSimplex.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/GJK/lsqnonnegGJK.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/GeneralRoutines/CIEDE2000ForXYZ.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/GeneralRoutines/CIEDE2000ForxyY.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/GeneralRoutines/CIELABtoApproxMunsellSpec.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/GeneralRoutines/ChromaticityOfWhitePoint.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/GeneralRoutines/DescriptiveFileForReflectanceSpectra.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/GeneralRoutines/DmaxOrDminToMunsellValue.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/GeneralRoutines/IsWithinMacAdamLimits.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/GeneralRoutines/MunsellValueToDmaxOrDmin.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/GeneralRoutines/PlotIlluminants.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/GeneralRoutines/ReflectancesToCIEwithWhiteY100.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/GeneralRoutines/SpectralPowerDensityToXYZ.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/GeneralRoutines/WhitePointWithYEqualTo100.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/GeneralRoutines/XYZ2RGBapplergbD65.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/GeneralRoutines/XYZ2xyY.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/GeneralRoutines/xyY2XYZ.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/ISCCNBS/ISCCNBSnameFromNumber.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/ISCCNBS/MunsellToISCCNBS.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/ISCCNBS/sRGBtoISCCNBS.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/KubelkaMunk/CompareReflectanceSpectra.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/KubelkaMunk/EstimateConcentrations.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/KubelkaMunk/K1FromIndicesOfRefraction.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/KubelkaMunk/KSandConcentrationsFromMixtures.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/KubelkaMunk/KandSfromMixtures.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/KubelkaMunk/KandSfromMixturesCentore2013.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/KubelkaMunk/KandSfromMixturesWalowit1987.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/KubelkaMunk/KandSusingGJK.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/KubelkaMunk/KoverSfromMasstoneR.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/KubelkaMunk/MasstoneRfromKandS.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/KubelkaMunk/ReflectanceOfMixtureFromKandS.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/KubelkaMunk/ReflectanceOfMixtureFromKandSandk2.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/KubelkaMunk/SaundersonCorrection.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/KubelkaMunk/SaundersonCorrectionInverse.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/MunsellSystemRoutines/BoundingRenotationHues.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/MunsellSystemRoutines/DrawMunsellHueSheet.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/MunsellSystemRoutines/MakeMaximumChromaMatrix.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/MunsellSystemRoutines/MunsellAnalysisOfColourSet.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/MunsellSystemRoutines/MunsellValueToLuminanceFactor.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/MunsellSystemRoutines/sRGBtoMunsell.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/MunsellAndKubelkaMunkToolboxFeb2017/SensingDevices/DrawMetamerMismatchBody.m" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/example_code/MunsellAndKubelkaMunkToolboxFeb2017/__MACOSX/MunsellAndKubelkaMunkToolboxFeb2017/ColourReproductionViaPrinter/._PrintRGBs.m" />
-      <change beforePath="$PROJECT_DIR$/.idea/colorimetry.iml" afterPath="$PROJECT_DIR$/.idea/colorimetry.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Clay.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Clay.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/BatchConversion/BatchConverterWindow.py" afterPath="$PROJECT_DIR$/BatchConversion/BatchConverterWindow.py" />
-      <change beforePath="$PROJECT_DIR$/BatchConversion/InputFileHandler.py" afterPath="$PROJECT_DIR$/BatchConversion/InputFileHandler.py" />
-      <change beforePath="$PROJECT_DIR$/BatchConversion/LABColor.py" afterPath="$PROJECT_DIR$/BatchConversion/LABColor.py" />
-      <change beforePath="$PROJECT_DIR$/BatchConversion/LABColor_test.py" afterPath="$PROJECT_DIR$/BatchConversion/LABColor_test.py" />
+      <change beforePath="$PROJECT_DIR$/Output/testOutput.csv" afterPath="$PROJECT_DIR$/Output/testOutput.csv" />
+      <change beforePath="$PROJECT_DIR$/Output/testOutput2.csv" afterPath="$PROJECT_DIR$/Output/testOutput2.csv" />
+      <change beforePath="$PROJECT_DIR$/Output/testOutput3.csv" afterPath="$PROJECT_DIR$/Output/testOutput3.csv" />
+      <change beforePath="$PROJECT_DIR$/developer_notes/.~lock.Batch Conversion App Details.docx#" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/developer_notes/color breakdown" afterPath="$PROJECT_DIR$/developer_notes/color breakdown" />
+      <change beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -213,77 +21,69 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/colorimetry$classifier.coverage" NAME="classifier Coverage Results" MODIFIED="1518274468733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/colorimetry$Unittests_in_H1_test_py.coverage" NAME="Unittests in H1_test.py Coverage Results" MODIFIED="1521331323249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
+    <SUITE FILE_PATH="coverage/colorimetry$Unittests_in_InputFileHandler_test_py.coverage" NAME="Unittests in InputFileHandler_test.py Coverage Results" MODIFIED="1521334377368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
+    <SUITE FILE_PATH="coverage/colorimetry$Unittests_in_batch_conversion_test_py.coverage" NAME="Unittests in batch_conversion_test.py Coverage Results" MODIFIED="1521342958482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
+    <SUITE FILE_PATH="coverage/colorimetry$settings.coverage" NAME="settings Coverage Results" MODIFIED="1518615064917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
+    <SUITE FILE_PATH="coverage/color_conversion_work$ColorConverter.coverage" NAME="ColorConverter Coverage Results" MODIFIED="1519367326940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
+    <SUITE FILE_PATH="coverage/colorimetry$VerbalFileHandler.coverage" NAME="VerbalFileHandler Coverage Results" MODIFIED="1521615884643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
+    <SUITE FILE_PATH="coverage/colorimetry$BatchConverterWindow.coverage" NAME="BatchConverterWindow Coverage Results" MODIFIED="1521579450435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
+    <SUITE FILE_PATH="coverage/colorimetry$Unittests_in_LABColor_test_py.coverage" NAME="Unittests in LABColor_test.py Coverage Results" MODIFIED="1521578619229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
+    <SUITE FILE_PATH="coverage/colorimetry$colorimetry__1_.coverage" NAME="colorimetry (1) Coverage Results" MODIFIED="1516486874218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+    <SUITE FILE_PATH="coverage/colorimetry$LABColor.coverage" NAME="LABColor Coverage Results" MODIFIED="1518777613510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
+    <SUITE FILE_PATH="coverage/colorimetry$batch_gui.coverage" NAME="batch_gui Coverage Results" MODIFIED="1518146116827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
+    <SUITE FILE_PATH="coverage/colorimetry$test_gui.coverage" NAME="test_gui Coverage Results" MODIFIED="1518621276595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
+    <SUITE FILE_PATH="coverage/colorimetry$singleColorConversionWindow.coverage" NAME="singleColorConversionWindow Coverage Results" MODIFIED="1518852299552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
+    <SUITE FILE_PATH="coverage/colorimetry$Munsell.coverage" NAME="Munsell Coverage Results" MODIFIED="1521615374510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
     <SUITE FILE_PATH="coverage/color_conversion_work$batch_conversion.coverage" NAME="batch_conversion Coverage Results" MODIFIED="1520003738258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
     <SUITE FILE_PATH="coverage/color_conversion_work$BaseWindow.coverage" NAME="BaseWindow Coverage Results" MODIFIED="1520003749252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
     <SUITE FILE_PATH="coverage/colorimetry$munsell_transforms.coverage" NAME="munsell_transforms Coverage Results" MODIFIED="1517437145213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/color_conversion_work$Munsell.coverage" NAME="Munsell Coverage Results" MODIFIED="1518993224148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
-    <SUITE FILE_PATH="coverage/colorimetry$BaseWindow.coverage" NAME="BaseWindow Coverage Results" MODIFIED="1521091956595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
-    <SUITE FILE_PATH="coverage/colorimetry$batch_conversion.coverage" NAME="batch_conversion Coverage Results" MODIFIED="1519999300350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
+    <SUITE FILE_PATH="coverage/colorimetry$BaseWindow.coverage" NAME="BaseWindow Coverage Results" MODIFIED="1521616605419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
+    <SUITE FILE_PATH="coverage/colorimetry$batch_conversion.coverage" NAME="batch_conversion Coverage Results" MODIFIED="1521605573302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
     <SUITE FILE_PATH="coverage/color_conversion_work$BatchConverterWindow.coverage" NAME="BatchConverterWindow Coverage Results" MODIFIED="1518994672538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
     <SUITE FILE_PATH="coverage/colorimetry$batch_gui_3.coverage" NAME="batch_gui_3 Coverage Results" MODIFIED="1518760097795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
-    <SUITE FILE_PATH="coverage/colorimetry$nosetests.coverage" NAME="nosetests Coverage Results" MODIFIED="1521074396197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/colorimetry$settings.coverage" NAME="settings Coverage Results" MODIFIED="1518615064917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
-    <SUITE FILE_PATH="coverage/color_conversion_work$ColorConverter.coverage" NAME="ColorConverter Coverage Results" MODIFIED="1519367326940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
+    <SUITE FILE_PATH="coverage/colorimetry$nosetests.coverage" NAME="nosetests Coverage Results" MODIFIED="1521342303971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/colorimetry$colorimetry.coverage" NAME="colorimetry Coverage Results" MODIFIED="1516486778291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/colorimetry$BatchConverterWindow.coverage" NAME="BatchConverterWindow Coverage Results" MODIFIED="1521090042868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
+    <SUITE FILE_PATH="coverage/colorimetry$InputFileHandler.coverage" NAME="InputFileHandler Coverage Results" MODIFIED="1521605581241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
+    <SUITE FILE_PATH="coverage/colorimetry$Unittests_in_Munsell_test_py.coverage" NAME="Unittests in Munsell_test.py Coverage Results" MODIFIED="1521582598901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
     <SUITE FILE_PATH="coverage/colorimetry$batch_gui_2.coverage" NAME="batch_gui_2 Coverage Results" MODIFIED="1518566190515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
-    <SUITE FILE_PATH="coverage/colorimetry$Unittests_in_LABColor_test_py.coverage" NAME="Unittests in LABColor_test.py Coverage Results" MODIFIED="1521091932019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
-    <SUITE FILE_PATH="coverage/colorimetry$colorimetry__1_.coverage" NAME="colorimetry (1) Coverage Results" MODIFIED="1516486874218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
-    <SUITE FILE_PATH="coverage/colorimetry$LABColor.coverage" NAME="LABColor Coverage Results" MODIFIED="1518777613510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
     <SUITE FILE_PATH="coverage/colorimetry$colorimetry__2_.coverage" NAME="colorimetry (2) Coverage Results" MODIFIED="1516487140012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/colorimetry$batch_gui.coverage" NAME="batch_gui Coverage Results" MODIFIED="1518146116827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
-    <SUITE FILE_PATH="coverage/colorimetry$test_gui.coverage" NAME="test_gui Coverage Results" MODIFIED="1518621276595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
-    <SUITE FILE_PATH="coverage/colorimetry$singleColorConversionWindow.coverage" NAME="singleColorConversionWindow Coverage Results" MODIFIED="1518852299552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
-    <SUITE FILE_PATH="coverage/colorimetry$Munsell.coverage" NAME="Munsell Coverage Results" MODIFIED="1518594487974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BatchConversion" />
   </component>
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="LABColor.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/BatchConversion/LABColor.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="4777">
+                  <caret line="284" column="0" lean-forward="false" selection-start-line="284" selection-start-column="0" selection-end-line="284" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#0#11#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="BaseWindow.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/BatchConversion/BaseWindow.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+                <state relative-caret-position="153">
+                  <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
                   <folding>
-                    <element signature="e#0#27#0" expanded="true" />
+                    <element signature="e#0#14#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="LABColor_test.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/BatchConversion/LABColor_test.py">
+          <file leaf-file-name="JuddFileHandler.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/BatchConversion/JuddFileHandler.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="578">
-                  <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#15#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="InputFileHandler_test.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/BatchConversion/InputFileHandler_test.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#15#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="InputFileHandler.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/BatchConversion/InputFileHandler.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="23" column="39" lean-forward="false" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-                  <folding>
-                    <element signature="e#0#19#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="170">
+                  <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -292,29 +92,63 @@
             <entry file="file://$PROJECT_DIR$/BatchConversion/BatchConverterWindow.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="765">
-                  <caret line="54" column="33" lean-forward="false" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="batch_conversion.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/BatchConversion/batch_conversion.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1139">
-                  <caret line="71" column="65" lean-forward="false" selection-start-line="71" selection-start-column="65" selection-end-line="71" selection-end-column="65" />
+                  <caret line="52" column="36" lean-forward="false" selection-start-line="52" selection-start-column="36" selection-end-line="53" selection-end-column="0" />
                   <folding>
-                    <element signature="e#0#10#0" expanded="true" />
+                    <element signature="e#0#14#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Illuminant.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/BatchConversion/Illuminant.py">
+          <file leaf-file-name="LABColor_test.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/BatchConversion/LABColor_test.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+                <state relative-caret-position="136">
+                  <caret line="7" column="76" lean-forward="false" selection-start-line="7" selection-start-column="76" selection-end-line="7" selection-end-column="76" />
+                  <folding>
+                    <element signature="e#0#15#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="VerbalFileHandler.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/BatchConversion/VerbalFileHandler.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="357">
+                  <caret line="22" column="62" lean-forward="false" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
+                  <folding>
+                    <element signature="e#0#51#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="RGB.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/BatchConversion/RGB.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="357">
+                  <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="batch_conversion_test.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/BatchConversion/batch_conversion_test.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                  <caret line="7" column="55" lean-forward="false" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Munsell.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/BatchConversion/Munsell.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1122">
+                  <caret line="66" column="41" lean-forward="false" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
                   <folding />
                 </state>
               </provider>
@@ -324,12 +158,38 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="LABColor.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/BatchConversion/LABColor.py">
+          <file leaf-file-name="batch_conversion.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/BatchConversion/batch_conversion.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="260">
-                  <caret line="86" column="38" lean-forward="false" selection-start-line="86" selection-start-column="38" selection-end-line="86" selection-end-column="38" />
-                  <folding />
+                <state relative-caret-position="34">
+                  <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#0#61#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="VerbalFileHandler.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/BatchConversion/VerbalFileHandler.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="374">
+                  <caret line="22" column="62" lean-forward="false" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
+                  <folding>
+                    <element signature="e#0#51#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="RGB_test.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/BatchConversion/RGB_test.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="289">
+                  <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#0#15#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -352,7 +212,31 @@
       <find>10B 8/4</find>
       <find>PB</find>
       <find>#</find>
+      <find>convertLABToMunsell</find>
+      <find>generateLChList</find>
+      <find>convertLABToLCh</find>
+      <find>getValue</find>
+      <find>calculateChroma</find>
+      <find>convertLabToLCh</find>
+      <find>calculateDecimalHue</find>
+      <find>__LChList</find>
+      <find>__DecimalHue</find>
       <find>predict</find>
+      <find>predictNominalMunsellVector</find>
+      <find>__H1</find>
+      <find>__H2</find>
+      <find>__V</find>
+      <find>__C</find>
+      <find>calculateChromaValue</find>
+      <find>convertLabToMunsell</find>
+      <find>Value</find>
+      <find>findNominalMunsell</find>
+      <find>calculateNominalDecimalHue</find>
+      <find>generateNominalMunsellVerbalDescription</find>
+      <find>findVerbalForValue</find>
+      <find>findVerbalForChroma</find>
+      <find>findVerbalForHue</find>
+      <find>__verbalFileHandler</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -384,17 +268,27 @@
         <option value="$PROJECT_DIR$/BatchConversion/menuFunctionality.py" />
         <option value="$PROJECT_DIR$/BatchConversion/batch_gui_3.py" />
         <option value="$PROJECT_DIR$/BatchConversion/singleColorConversionWindow.py" />
-        <option value="$PROJECT_DIR$/BatchConversion/style.css" />
-        <option value="$PROJECT_DIR$/BatchConversion/Munsell.py" />
         <option value="$PROJECT_DIR$/BatchConversion/XYZColor.py" />
         <option value="$PROJECT_DIR$/BatchConversion/ColorConverter.py" />
-        <option value="$PROJECT_DIR$/BatchConversion/BaseWindow.py" />
-        <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/BatchConversion/Predictor.py" />
+        <option value="$PROJECT_DIR$/BatchConversion/InputFileHandler_test.py" />
+        <option value="$PROJECT_DIR$/BatchConversion/batch_conversion_test.py" />
+        <option value="$PROJECT_DIR$/BatchConversion/OutputFileHandler_test.py" />
+        <option value="$PROJECT_DIR$/BatchConversion/style.css" />
         <option value="$PROJECT_DIR$/BatchConversion/batch_conversion.py" />
         <option value="$PROJECT_DIR$/BatchConversion/BatchConverterWindow.py" />
+        <option value="$PROJECT_DIR$/BatchConversion/FileHandler.py" />
+        <option value="$PROJECT_DIR$/BatchConversion/LABColor_test.py" />
+        <option value="$PROJECT_DIR$/BatchConversion/Munsell_test.py" />
+        <option value="$PROJECT_DIR$/BatchConversion/OutputFileHandler.py" />
         <option value="$PROJECT_DIR$/BatchConversion/InputFileHandler.py" />
         <option value="$PROJECT_DIR$/BatchConversion/LABColor.py" />
-        <option value="$PROJECT_DIR$/BatchConversion/LABColor_test.py" />
+        <option value="$PROJECT_DIR$/BatchConversion/Munsell.py" />
+        <option value="$PROJECT_DIR$/BatchConversion/VerbalFileHandler.py" />
+        <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/BatchConversion/BaseWindow.py" />
+        <option value="$PROJECT_DIR$/BatchConversion/RGB_test.py" />
+        <option value="$PROJECT_DIR$/BatchConversion/RGB.py" />
       </list>
     </option>
   </component>
@@ -405,8 +299,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="286" />
-    <option name="y" value="21" />
+    <option name="x" value="228" />
+    <option name="y" value="72" />
     <option name="width" value="1493" />
     <option name="height" value="877" />
   </component>
@@ -428,6 +322,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -443,38 +339,37 @@
             <path>
               <item name="colorimetry" type="b2602c69:ProjectViewProjectNode" />
               <item name="colorimetry" type="462c0819:PsiDirectoryNode" />
-              <item name="developer_notes" type="462c0819:PsiDirectoryNode" />
+              <item name="InputData" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="colorimetry" type="b2602c69:ProjectViewProjectNode" />
               <item name="colorimetry" type="462c0819:PsiDirectoryNode" />
-              <item name="InputData" type="462c0819:PsiDirectoryNode" />
+              <item name="Output" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../machine_learning/ud120-projects" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../codewars/function_learning/Color_functions.py" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/BatchConversion" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Clay\PycharmProjects\colorimetry\example_code" />
       <recent name="C:\Users\Clay\PycharmProjects\colorimetry\developer_notes" />
       <recent name="C:\Users\Clay\PycharmProjects\colorimetry\Output" />
       <recent name="C:\Users\Clay\PycharmProjects\colorimetry\AppsForBook" />
       <recent name="C:\Users\Clay\PycharmProjects\colorimetry\background_papers" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Clay\PycharmProjects\colorimetry\BatchConversion" />
+      <recent name="$PROJECT_DIR$/BatchConversion" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -509,7 +404,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="BatchConverterWindow" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="InputFileHandler" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -522,13 +417,13 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="colorimetry" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BatchConversion/BatchConverterWindow.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BatchConversion/InputFileHandler.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="ColorConverter" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Munsell" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -541,7 +436,26 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="colorimetry" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BatchConversion/ColorConverter.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BatchConversion/Munsell.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="VerbalFileHandler" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BatchConversion" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="colorimetry" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BatchConversion/VerbalFileHandler.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -723,21 +637,6 @@
       <option name="_new_target" value="&quot;&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <configuration name="Unittests in LABColor_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BatchConversion" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="colorimetry" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/BatchConversion/LABColor_test.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-    </configuration>
     <configuration name="nosetests" type="tests" factoryName="Nosetests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -758,18 +657,18 @@
       <item index="0" class="java.lang.String" itemvalue="Python.colorimetry" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.nosetests" />
       <item index="2" class="java.lang.String" itemvalue="Python.BaseWindow" />
-      <item index="3" class="java.lang.String" itemvalue="Python.batch_conversion" />
-      <item index="4" class="java.lang.String" itemvalue="Python.BatchConverterWindow" />
-      <item index="5" class="java.lang.String" itemvalue="Python.ColorConverter" />
-      <item index="6" class="java.lang.String" itemvalue="Python tests.Unittests in LABColor_test.py" />
+      <item index="3" class="java.lang.String" itemvalue="Python.InputFileHandler" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Munsell" />
+      <item index="5" class="java.lang.String" itemvalue="Python.batch_conversion" />
+      <item index="6" class="java.lang.String" itemvalue="Python.VerbalFileHandler" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.BaseWindow" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in LABColor_test.py" />
-        <item index="2" class="java.lang.String" itemvalue="Python.BatchConverterWindow" />
-        <item index="3" class="java.lang.String" itemvalue="Python.batch_conversion" />
-        <item index="4" class="java.lang.String" itemvalue="Python.ColorConverter" />
+        <item index="1" class="java.lang.String" itemvalue="Python.VerbalFileHandler" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Munsell" />
+        <item index="3" class="java.lang.String" itemvalue="Python.InputFileHandler" />
+        <item index="4" class="java.lang.String" itemvalue="Python.batch_conversion" />
       </list>
     </recent_temporary>
   </component>
@@ -850,56 +749,153 @@
       <option name="project" value="LOCAL" />
       <updated>1518994747128</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fixed file input/output stuff">
+      <created>1521158101237</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1521158101238</updated>
+    </task>
+    <task id="LOCAL-00011" summary="added testing/refactoring of Munsell calculation">
+      <created>1521211410082</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1521211410082</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fixed function break down structure">
+      <created>1521348779666</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1521348779666</updated>
+    </task>
+    <task id="LOCAL-00013" summary="gui fixes">
+      <created>1521434651983</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1521434651983</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fixed header reference for transform button">
+      <created>1521440162772</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1521440162772</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fixed header reference for transform button">
+      <created>1521440937676</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1521440937676</updated>
+    </task>
+    <task id="LOCAL-00016" summary="updated setup.py for generating mac app">
+      <created>1521484257551</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1521484257551</updated>
+    </task>
+    <task id="LOCAL-00017" summary="update setup.py for potential app fix">
+      <created>1521484602289</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1521484602289</updated>
+    </task>
+    <task id="LOCAL-00018" summary="updated to fix app problem">
+      <created>1521486153437</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1521486153437</updated>
+    </task>
+    <task id="LOCAL-00019" summary="fixes for app running problems">
+      <created>1521486182250</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1521486182250</updated>
+    </task>
+    <task id="LOCAL-00020" summary="cleaned up problems in files">
+      <created>1521567297024</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1521567297024</updated>
+    </task>
+    <task id="LOCAL-00021" summary="added in the delta E, decimal Hue, and 40 Hue to the output file">
+      <created>1521579871300</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1521579871300</updated>
+    </task>
+    <task id="LOCAL-00022" summary="added in verbal description for munsell vector">
+      <created>1521616453745</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1521616453745</updated>
+    </task>
+    <task id="LOCAL-00023" summary="added to the hex conversion">
+      <created>1521620062776</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1521620062776</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_LABColor_test_py - 2018.03.14 at 23h 16m 21s.xml">
+    <history-entry file="Unittests_in_LABColor_test_py - 2018.03.20 at 14h 36m 44s.xml">
       <configuration name="Unittests in LABColor_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_LABColor_test_py - 2018.03.14 at 23h 18m 31s.xml">
+    <history-entry file="Unittests_in_LABColor_test_py - 2018.03.20 at 14h 36m 57s.xml">
       <configuration name="Unittests in LABColor_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_LABColor_test_py - 2018.03.14 at 23h 19m 07s.xml">
+    <history-entry file="Unittests_in_LABColor_test_py - 2018.03.20 at 14h 37m 49s.xml">
       <configuration name="Unittests in LABColor_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_LABColor_test_py - 2018.03.14 at 23h 23m 32s.xml">
+    <history-entry file="Unittests_in_LABColor_test_py - 2018.03.20 at 14h 39m 19s.xml">
       <configuration name="Unittests in LABColor_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_LABColor_test_py - 2018.03.14 at 23h 24m 30s.xml">
+    <history-entry file="Unittests_in_LABColor_test_py - 2018.03.20 at 14h 39m 35s.xml">
       <configuration name="Unittests in LABColor_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_LABColor_test_py - 2018.03.14 at 23h 24m 57s.xml">
+    <history-entry file="Unittests_in_LABColor_test_py - 2018.03.20 at 14h 40m 01s.xml">
       <configuration name="Unittests in LABColor_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_LABColor_test_py - 2018.03.14 at 23h 30m 26s.xml">
+    <history-entry file="Unittests_in_LABColor_test_py - 2018.03.20 at 14h 42m 03s.xml">
       <configuration name="Unittests in LABColor_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_LABColor_test_py - 2018.03.14 at 23h 31m 13s.xml">
+    <history-entry file="Unittests_in_LABColor_test_py - 2018.03.20 at 14h 43m 39s.xml">
       <configuration name="Unittests in LABColor_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_LABColor_test_py - 2018.03.14 at 23h 31m 32s.xml">
-      <configuration name="Unittests in LABColor_test.py" configurationId="tests" />
+    <history-entry file="Unittests_in_Munsell_test_py - 2018.03.20 at 15h 39m 57s.xml">
+      <configuration name="Unittests in Munsell_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_LABColor_test_py - 2018.03.14 at 23h 32m 12s.xml">
-      <configuration name="Unittests in LABColor_test.py" configurationId="tests" />
+    <history-entry file="Unittests_in_Munsell_test_py - 2018.03.20 at 15h 49m 59s.xml">
+      <configuration name="Unittests in Munsell_test.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="286" y="21" width="1493" height="877" extended-state="0" />
-    <editor active="true" />
+    <frame x="228" y="72" width="1493" height="877" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37651822" sideWeight="0.5024424" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32764506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37760702" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32523617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46693656" sideWeight="0.49755758" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285151" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21004885" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14933705" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24929379" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937893" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2489339" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -908,7 +904,7 @@
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="0" y="0" width="300" height="759" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -978,106 +974,35 @@
     <MESSAGE value="updating current changes" />
     <MESSAGE value="working branch for mac" />
     <MESSAGE value="fixed file input/output stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed file input/output stuff" />
+    <MESSAGE value="added testing/refactoring of Munsell calculation" />
+    <MESSAGE value="fixed function break down structure" />
+    <MESSAGE value="gui fixes" />
+    <MESSAGE value="fixed header reference for transform button" />
+    <MESSAGE value="updated setup.py for generating mac app" />
+    <MESSAGE value="update setup.py for potential app fix" />
+    <MESSAGE value="updated to fix app problem" />
+    <MESSAGE value="fixes for app running problems" />
+    <MESSAGE value="cleaned up problems in files" />
+    <MESSAGE value="added in the delta E, decimal Hue, and 40 Hue to the output file" />
+    <MESSAGE value="added in verbal description for munsell vector" />
+    <MESSAGE value="added to the hex conversion" />
+    <MESSAGE value="update 20180323" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 20180323" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="5" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../samba_scripts/quick_python_scripts/channel_parents/channel_parents.py" />
-    <entry file="file://$PROJECT_DIR$/../samba_scripts/quick_python_scripts/update_open_balances/test/test_BalanceItem.py" />
-    <entry file="file://$PROJECT_DIR$/BatchConversion/batch_gui_2.py" />
-    <entry file="file://$PROJECT_DIR$/example_code/classifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example_code/fetch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/todo.txt" />
-    <entry file="file://$PROJECT_DIR$/InputData/TestFileWithConversions.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/developer_notes/class_breakdown.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="89" column="48" lean-forward="false" selection-start-line="89" selection-start-column="48" selection-end-line="89" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../samba_scripts/quick_python_scripts/drm_defaults/drm_defaults.py" />
-    <entry file="file://$PROJECT_DIR$/../samba_scripts/quick_python_scripts/update_open_balances/test/test_OpenBalanceTool.py" />
-    <entry file="file://$PROJECT_DIR$/BatchConversion/batch_gui.py" />
-    <entry file="file://$PROJECT_DIR$/Output/testConversions.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="56" lean-forward="false" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Output/testAnswers.txt" />
-    <entry file="file://$PROJECT_DIR$/pyvenv.cfg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BatchConversion/test_gui.py" />
-    <entry file="file://$PROJECT_DIR$/color_transform.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="52" lean-forward="false" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/munsell_transforms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Output/transformedValues3" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/pyforms/gui/Controls/ControlList.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/pyforms/gui/Controls/ControlText.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/pyforms/gui/standaloneManager.py" />
-    <entry file="file://$PROJECT_DIR$/BatchConversion/menuFunctionality.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Output/transformedValues.csv" />
     <entry file="file://$PROJECT_DIR$/InputData/TestWithoutAnswers.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="73" lean-forward="false" selection-start-line="13" selection-start-column="73" selection-end-line="13" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BatchConversion/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="54" column="4" lean-forward="false" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -1097,31 +1022,10 @@
       </provider>
     </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/openpyxl/chart/reader.py" />
-    <entry file="file://$PROJECT_DIR$/BatchConversion/Color.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BatchConversion/Munsell.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BatchConversion/singleColorConversionWindow.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="38" column="26" lean-forward="false" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BatchConversion/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1139,13 +1043,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InputData/test.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1598">
-          <caret line="94" column="26" lean-forward="false" selection-start-line="94" selection-start-column="26" selection-end-line="94" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BatchConversion/XYZColor.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1153,25 +1050,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/InputData/testOutput.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InputData/test (2).csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InputData/C&amp;DColors.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../codewars/function_learning/Color_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="39" column="46" lean-forward="true" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BatchConversion/Hex.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BatchConversion/Illuminant.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
-          <folding />
+        <state relative-caret-position="153">
+          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
+    <entry file="file://$PROJECT_DIR$/BatchConversion/LCh.py" />
+    <entry file="file://$PROJECT_DIR$/BatchConversion/InputFileHandler_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="306">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Output/testOutput.csv">
+    <entry file="file://$PROJECT_DIR$/BatchConversion/OutputFileHandler_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1203">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="136">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InputData/test.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1598">
+          <caret line="94" column="26" lean-forward="false" selection-start-line="94" selection-start-column="26" selection-end-line="94" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BatchConversion/Color.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -1180,22 +1126,138 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BatchConversion/Chroma.py" />
+    <entry file="file://$PROJECT_DIR$/BatchConversion/Chroma_test.py" />
+    <entry file="file://$PROJECT_DIR$/BatchConversion/H1.py" />
+    <entry file="file://$PROJECT_DIR$/BatchConversion/H1_test.py" />
+    <entry file="file://$PROJECT_DIR$/BatchConversion/H2.py" />
+    <entry file="file://$PROJECT_DIR$/BatchConversion/H2_test.py" />
+    <entry file="file://$PROJECT_DIR$/BatchConversion/Value.py" />
+    <entry file="file://$PROJECT_DIR$/BatchConversion/Value_test.py" />
     <entry file="file://$PROJECT_DIR$/Output/testOutput3.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BatchConversion/FileHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BatchConversion/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BatchConversion/Munsell_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="46" column="75" lean-forward="false" selection-start-line="46" selection-start-column="75" selection-end-line="46" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BatchConversion/Converter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BatchConversion/Predictor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="58" lean-forward="true" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BatchConversion/OutputFileHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BatchConversion/InputFileHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BatchConversion/LABColor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4777">
+          <caret line="284" column="0" lean-forward="false" selection-start-line="284" selection-start-column="0" selection-end-line="284" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BatchConversion/Munsell.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="66" column="41" lean-forward="false" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InputData/testOutput.csv">
+    <entry file="file://$PROJECT_DIR$/Output/testOutput.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="51">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BatchConversion/batch_conversion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BatchConversion/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="12" column="80" lean-forward="true" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BatchConversion/BaseWindow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BatchConversion/JuddFileHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1203,14 +1265,34 @@
     <entry file="file://$PROJECT_DIR$/BatchConversion/BatchConverterWindow.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
-          <caret line="54" column="33" lean-forward="false" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
+          <caret line="52" column="36" lean-forward="false" selection-start-line="52" selection-start-column="36" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BatchConversion/VerbalFileHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="62" lean-forward="false" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BatchConversion/batch_conversion_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="55" lean-forward="false" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BatchConversion/InputFileHandler_test.py">
+    <entry file="file://$PROJECT_DIR$/BatchConversion/RGB_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="289">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
@@ -1218,55 +1300,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BatchConversion/InputFileHandler.py">
+    <entry file="file://$PROJECT_DIR$/BatchConversion/RGB.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="23" column="39" lean-forward="false" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BatchConversion/batch_conversion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="71" column="65" lean-forward="false" selection-start-line="71" selection-start-column="65" selection-end-line="71" selection-end-column="65" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BatchConversion/LABColor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="86" column="38" lean-forward="false" selection-start-line="86" selection-start-column="38" selection-end-line="86" selection-end-column="38" />
+        <state relative-caret-position="357">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BatchConversion/BaseWindow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InputData/C&amp;DColors.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BatchConversion/LABColor_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="136">
+          <caret line="7" column="76" lean-forward="false" selection-start-line="7" selection-start-column="76" selection-end-line="7" selection-end-column="76" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
