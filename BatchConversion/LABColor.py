@@ -112,7 +112,7 @@ class LABColor(Color):
         :return: an angle in radians
         """
         hueLetterCode = self.findHueLetterCode(self.NominalMunsellVector[1])
-        SingleHueNumber = divmod(divmod(17 - hueLetterCode, 10)[0] + (self.NominalMunsellVector[0]/10.0) - 0.5, 10)[0]
+        SingleHueNumber = divmod(divmod(17 - hueLetterCode, 10)[0] + (self.NominalMunsellVector[0] / 10.0) - 0.5, 10)[0]
         returnAngleDegrees = np.interp(SingleHueNumber, [0, 2, 3, 4, 5, 6, 8, 9, 10],
                                        [0, 45, 70, 135, 160, 225, 255, 315, 360])
         return returnAngleDegrees
@@ -282,3 +282,19 @@ class LABColor(Color):
     @property
     def MunsellVerbal(self):
         return self.__Munsell.MunsellVerbalDescription
+
+    @property
+    def JuddCategory(self):
+        return self.__Munsell.JuddCategory
+
+    @property
+    def JuddVerbal(self):
+        return self.__Munsell.JuddVerbal
+
+    @property
+    def sRGB(self):
+        return self.__Munsell.sRGB
+
+    @property
+    def Hex(self):
+        return self.__Munsell.Hex

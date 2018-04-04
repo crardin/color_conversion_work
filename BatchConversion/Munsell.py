@@ -1,4 +1,7 @@
 from BatchConversion.VerbalFileHandler import VerbalFileHandler
+from BatchConversion.xyYColor import xyYColor
+from BatchConversion.RGB import RGBColor
+from BatchConversion.Hex import HexColor
 
 
 class Munsell:
@@ -18,6 +21,9 @@ class Munsell:
     __MunsellVector = []
     __MunsellVerbalDescription = ""
     __verbalFileHandler = None
+    __xyYColor = None
+    __sRGB = None
+    __Hex = None
 
     def __init__(self, HueNumber, HueLetter, Value, Chroma):
         self.__H1 = round(HueNumber, 2)
@@ -62,6 +68,15 @@ class Munsell:
 
     def findVerbalForHue(self, H1, H2):
         return self.__verbalFileHandler.getHueVerbal(H1, H2)
+
+    def findxyYForMunsell(self):
+        self.__xyYColor = xyYColor(self.H1, self.H2, self.V, self.C)
+
+    def findsRGBForMunsell(self):
+        self.__sRGB = RGBColor()
+
+    def findHexForMunsell(self):
+        self.__Hex = HexColor()
 
     @staticmethod
     def findVerbalForChroma(inputChroma):
@@ -157,6 +172,25 @@ class Munsell:
     def NominalDecimalHue(self):
         self.calculateNominalDecimalHue()
         return self.__NominalDecimalHue
+
+    @property
+    def JuddCategory(self):
+        self.findxyYForMunsell()
+        return self.__xyYColor.JuddCategory
+
+    @property
+    def JuddVerbal(self):
+        self.findxyYForMunsell()
+        return self.__xyYColor.JuddVerbal
+
+    @property
+    def sRGB(self):
+        self.findsRGBForMunsell()
+        return self.__sRGB.RGBValue
+
+    def Hex(self):
+        self.findHexForMunsell()
+        return self.__Hex.HexValue
 
     @property
     def H1(self):
