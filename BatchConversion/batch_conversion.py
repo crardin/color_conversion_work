@@ -69,5 +69,5 @@ class BatchConverter(object):
 
 if __name__ == '__main__':
     myBatchConverter = BatchConverter()
-    myBatchConverter.inputFileName = '../InputData/test.csv'
+    myBatchConverter.inputFileName = "../InputData/Gernot'sListInOrder.csv"
     myBatchConverter.getInputData()

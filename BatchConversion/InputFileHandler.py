@@ -20,6 +20,7 @@ class InputFileHandler(FileHandler):
         headerValues = list(df.columns.values)
         uniqueHeaderValues = [s for s in headerValues if "Unique" in s]
         uniqueHeader = ""
+        nameHeader = ""
         if len(uniqueHeaderValues) > 0:
             uniqueHeader = uniqueHeaderValues[0]
 
@@ -28,9 +29,9 @@ class InputFileHandler(FileHandler):
             nameHeader = nameHeaderValues[0]
 
         for index, row in df.iterrows():
-            if uniqueHeader != "":
+            if uniqueHeader != "" and nameHeader != "":
                 newColor = LABColor(row[uniqueHeader], row[nameHeader], row['L*'], row['a*'], row['b*'])
-            else:
+            elif nameHeader != "":
                 newColor = LABColor(0, row[nameHeader], row['L*'], row['a*'], row['b*'])
             self.__colors.append(newColor)
 
