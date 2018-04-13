@@ -56,6 +56,18 @@ class LABColor(Color):
         self.__fortyHue = self.deltaE / 2.5
         self.__fortyHue = int(round(self.__fortyHue, 0))
 
+    def calculateDeltaENickerson(self):
+        """
+        function to calculate the dE using the nickerson formula
+        deltaH take the difference between the decimal hue and the nominal decimal hue
+        deltaV take the difference between the v values of the V and the nominal V
+        deltaC take the difference of the C value and the nominal C value
+        deltaE = ((2/5 * nominal C) * deltaH) + (6 * deltaV) + (3 * deltaC)
+        :return:
+        """
+        self.__DeltaE = ((2/5 * self.NominalMunsellVector[3]) * math.fabs(self.__Munsell.DecimalHue - self.__Munsell.NominalDecimalHue)) + (6 * math.fabs(self.MunsellVector[2] - self.NominalMunsellVector[2])) + (3 * math.fabs(self.MunsellVector[3] - self.NominalMunsellVector[3]))
+        self.__DeltaE = round(self.__DeltaE, 2)
+
     def calculateDeltaE(self):
         """
         this method is going to utilize the CIE76 method of calculating the deltaE value
@@ -271,7 +283,7 @@ class LABColor(Color):
 
     @property
     def deltaE(self):
-        self.calculateDeltaE()
+        self.calculateDeltaENickerson()
         return self.__DeltaE
 
     @property

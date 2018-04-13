@@ -42,7 +42,7 @@ class TestLABColor(unittest.TestCase):
         self.assertEqual(len(self.testColor_1.MunsellVector), 4)
 
     def test_deltaE(self):
-        self.assertEqual(45.88, self.testColor_1.deltaE)
+        self.assertEqual(6.12, self.testColor_1.deltaE)
 
     def test_delta(self):
         self.assertEqual(1, self.testColor_1.delta(3.0, 2.0))
