@@ -4,10 +4,11 @@ from sklearn.neighbors import KNeighborsClassifier
 
 
 class Predictor:
-    __munsellDataFile = "real_CIELAB.xlsx"
+    __munsellDataFile = "CTAListD50_RoundedLABx.xlsx"
     __conversionData = {}
     __munsellTrainingValues = []
     __labTrainingValues = []
+    __predictedMunsellVector = []
 
     def __init__(self):
         self.neigh = KNeighborsClassifier(n_neighbors=1)
@@ -16,28 +17,30 @@ class Predictor:
 
     def getTrainingData(self):
         wb = openpyxl.load_workbook(self.__munsellDataFile)
-        sheet = wb['data']
+        sheet = wb['CTAListD50_RoundedLAB']
         for i in range(2, sheet.max_row + 1):
             munsellValue = self.getMunsellTrainingValue(i, sheet)
             labValue = self.getLabTrainingValue(i, sheet)
             self.__conversionData[labValue] = munsellValue
 
     def getMunsellTrainingValue(self, i, sheet):
-        H = sheet.cell(row=i, column=2).value
-        munsellValue = str(H) + " "
-        V = sheet.cell(row=i, column=3).value
+        H1 = sheet.cell(row=i, column=4).value
+        munsellValue = str(H1) + " "
+        H2 = sheet.cell(row=i, column=5).value
+        munsellValue += str(H2) + " "
+        V = sheet.cell(row=i, column=6).value
         munsellValue += str(V) + "/"
-        C = sheet.cell(row=i, column=4).value
+        C = sheet.cell(row=i, column=7).value
         munsellValue += str(C)
-        self.__munsellTrainingValues.append(str(H + " " + str(V) + "/" + str(C)))
+        self.__munsellTrainingValues.append(str(H1) + H2 + " " + str(V) + "/" + str(C))
         return munsellValue
 
     def getLabTrainingValue(self, i, sheet):
-        L = sheet.cell(row=i, column=11).value
+        L = sheet.cell(row=i, column=8).value
         labValue = str(L) + " "
-        a = sheet.cell(row=i, column=12).value
+        a = sheet.cell(row=i, column=9).value
         labValue += str(a) + " "
-        b = sheet.cell(row=i, column=13).value
+        b = sheet.cell(row=i, column=10).value
         labValue += str(b)
         self.__labTrainingValues.append([L, a, b])
         return labValue
@@ -55,8 +58,14 @@ class Predictor:
 
     def predictNominalMunsellVector(self, LabVector):
         predictedValue = self.neigh.predict([LabVector])[0]
-        return self.getMunsellValue(predictedValue)
+        self.__predictedMunsellVector = self.getMunsellValue(predictedValue)
+
+    @property
+    def PredictedMunsellVector(self):
+        return self.__predictedMunsellVector
 
 
 if __name__ == "__main__":
     myPredictor = Predictor()
+    myPredictor.predictNominalMunsellVector([40, 10, 3])
+    print(myPredictor.PredictedMunsellVector)

@@ -167,8 +167,12 @@ class Munsell:
 
     @property
     def NominalMunsellVector(self):
-        self.findNominalMunsell()
+        # self.findNominalMunsell()
         return self.__NominalMunsellVector
+
+    @NominalMunsellVector.setter
+    def NominalMunsellVector(self, value):
+        self.__NominalMunsellVector = value
 
     @property
     def NominalMunsellValue(self):

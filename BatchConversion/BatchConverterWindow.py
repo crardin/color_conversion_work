@@ -5,7 +5,7 @@ from pyforms.Controls import ControlButton
 from pyforms.Controls import ControlFile
 from pyforms.Controls import ControlList
 from pyforms.Controls import ControlLabel
-from batch_conversion import BatchConverter
+from BatchConversion.batch_conversion import BatchConverter
 
 
 class BatchConverterWindow(BatchConverter, BaseWidget):
@@ -57,7 +57,6 @@ class BatchConverterWindow(BatchConverter, BaseWidget):
         QApplication.processEvents()
         self.inputFileName = self._inputFile.value
         if self.inputFileName is not None and self.inputFileName != '':
-            BatchConverter.getInputData(self)
             self.outputFileName = QFileDialog.getSaveFileName(self, 'Choose Output File')[0]
             BatchConverter.outputData(self)
             self._messageLabel.value = 'File Export Complete'

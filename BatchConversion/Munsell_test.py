@@ -57,6 +57,9 @@ class TestMunsell(unittest.TestCase):
         self.find_nominal_munsell([0.1, 'YR', 5.7, 12.1])
         self.assertListEqual(self.myMunsell.NominalMunsellVector, [10, 'R', 6, 12])
 
+    def test_find_nominal_munsell_node(self):
+        pass
+
     def test_decimalHue(self):
         self.assertEqual(self.myMunsell.DecimalHue, 75.1)
 

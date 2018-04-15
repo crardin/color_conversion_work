@@ -268,6 +268,10 @@ class LABColor(Color):
     def NominalMunsellVector(self):
         return self.__Munsell.NominalMunsellVector
 
+    @NominalMunsellVector.setter
+    def NominalMunsellVector(self, value):
+        self.__Munsell.NominalMunsellVector = value
+
     @property
     def DecimalHue(self):
         return self.__Munsell.DecimalHue

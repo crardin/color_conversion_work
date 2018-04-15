@@ -47,3 +47,4 @@ class InputFileHandler(FileHandler):
     @inputFileName.setter
     def inputFileName(self, value):
         self.__inputFileName = value
+
