@@ -1,3 +1,4 @@
+import math
 from VerbalFileHandler import VerbalFileHandler
 from xyYColor import xyYColor
 from RGB import RGBColor
@@ -51,6 +52,7 @@ class Munsell:
         self.__NominalDecimalHue = h1 + h2
 
     def findNominalMunsell(self):
+        # function to find the nearest node for the given munsell values
         self.findNominalH1()
         self.findNominalValue()
         self.findNominalChroma()
@@ -116,10 +118,16 @@ class Munsell:
         return returnValue
 
     def findNominalH1(self):
-        # must be 2.5, 5, 7.5, or 10
-        vals = [2.5, 5, 7.5, 10]
-        value = lambda myvalue: min(vals, key=lambda x: abs(x - myvalue))
-        self.__Nominal_H1 = value(self.__H1)
+        # any H1 value less than or equal to 1 should find the value 10
+        if self.__H1 == '#':
+            self.__Nominal_H1 = 'N'
+        elif self.__H1 <= 1:
+            self.__Nominal_H1 = 10
+        else:
+            # must be 2.5, 5, 7.5, or 10
+            vals = [2.5, 5, 7.5, 10]
+            value = lambda myvalue: min(vals, key=lambda x: abs(x - myvalue))
+            self.__Nominal_H1 = value(self.__H1)
 
     def findNominalValue(self):
         # should return a whole number between 1 and 10
@@ -127,15 +135,18 @@ class Munsell:
         value = lambda myvalue: min(vals, key=lambda x: abs(x - myvalue))
         self.__Nominal_V = value(self.__V)
 
+    def round_up_to_even(self, value):
+        return math.ceil(value / 2.) * 2
+
     def findNominalChroma(self):
-        if self.__C <= 0.5:
+        if self.__C < 0.5:
             self.__Nominal_C = 0
-        if 1.5 >= self.__C > 0.5:
+        if 1.5 >= self.__C >= 0.5:
             self.__Nominal_C = 1
         if self.__C > 1.5:
-            vals = [2, 3, 4, 5, 6, 7, 8, 9, 10]
-            value = lambda myvalue: min(vals, key=lambda x: abs(x - myvalue))
-            self.__Nominal_C = value(self.__C)
+            vals = [2, 4, 6, 8, 10]
+            # value = lambda myvalue: min(vals, key=lambda x: abs(x - myvalue))
+            self.__Nominal_C = self.round_up_to_even(self.__C)
 
     @staticmethod
     def formatMunsellString(inputVector):
@@ -198,7 +209,14 @@ class Munsell:
 
     @H1.setter
     def H1(self, value):
-        self.__H1 = value
+        if isinstance(value, int) or isinstance(value, float):
+            self.__H1 = value
+        elif value == '#':
+            self.__H1 = value
+
+    @property
+    def Nominal_H1(self):
+        return self.__Nominal_H1
 
     @property
     def H2(self):
@@ -217,12 +235,20 @@ class Munsell:
         self.__V = value
 
     @property
+    def Nominal_V(self):
+        return self.__Nominal_V
+
+    @property
     def C(self):
         return self.__C
 
     @C.setter
     def C(self, value):
         self.__C = value
+
+    @property
+    def Nominal_C(self):
+        return self.__Nominal_C
 
 
 if __name__ == "__main__":
