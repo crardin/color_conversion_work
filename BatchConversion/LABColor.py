@@ -1,7 +1,7 @@
 import math
 import numpy as np
-from BatchConversion.Color import Color
-from BatchConversion.Munsell import Munsell
+from Color import Color
+from Munsell import Munsell
 
 
 class LABColor(Color):

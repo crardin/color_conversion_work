@@ -1,5 +1,5 @@
 import unittest
-from BatchConversion.RGB import RGBColor
+from RGB import RGBColor
 
 
 class TestRGB(unittest.TestCase):

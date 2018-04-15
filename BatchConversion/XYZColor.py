@@ -1,4 +1,4 @@
-from BatchConversion.Illuminant import Illuminant
+from Illuminant import Illuminant
 import math
 
 

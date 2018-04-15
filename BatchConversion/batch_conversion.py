@@ -1,5 +1,5 @@
-from BatchConversion.InputFileHandler import InputFileHandler
-from BatchConversion.OutputFileHandler import OutputFileHandler
+from InputFileHandler import InputFileHandler
+from OutputFileHandler import OutputFileHandler
 
 
 class BatchConverter(object):

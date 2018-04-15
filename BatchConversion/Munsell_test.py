@@ -1,5 +1,5 @@
 import unittest
-from BatchConversion.Munsell import Munsell
+from Munsell import Munsell
 
 
 class TestMunsell(unittest.TestCase):

@@ -1,6 +1,6 @@
 import unittest
-from BatchConversion.batch_conversion import BatchConverter
-from BatchConversion.LABColor import LABColor
+from batch_conversion import BatchConverter
+from LABColor import LABColor
 
 
 class testBatchConverter(unittest.TestCase):

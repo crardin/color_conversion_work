@@ -1,6 +1,6 @@
 import pandas as pd
-from BatchConversion.FileHandler import FileHandler
-from BatchConversion.LABColor import LABColor
+from FileHandler import FileHandler
+from LABColor import LABColor
 
 
 class InputFileHandler(FileHandler):

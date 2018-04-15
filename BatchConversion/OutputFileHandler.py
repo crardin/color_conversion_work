@@ -1,6 +1,6 @@
 import os
 import csv
-from BatchConversion.FileHandler import FileHandler
+from FileHandler import FileHandler
 
 
 class OutputFileHandler(FileHandler):

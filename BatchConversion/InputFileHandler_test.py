@@ -1,5 +1,5 @@
 import unittest
-from BatchConversion.InputFileHandler import InputFileHandler
+from InputFileHandler import InputFileHandler
 
 
 class TestInputFileHandler(unittest.TestCase):

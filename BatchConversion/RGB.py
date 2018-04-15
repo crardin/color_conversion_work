@@ -1,4 +1,4 @@
-from BatchConversion.Color import Color
+from Color import Color
 
 
 class RGBColor(Color):

@@ -3,8 +3,8 @@ from pysettings import conf
 from BatchConversion import settings
 from pyforms import BaseWidget
 from pyforms.Controls import ControlEmptyWidget
-from BatchConversion.BatchConverterWindow import BatchConverterWindow
-from BatchConversion.singleColorConversionWindow import SingleConverterWindow
+from BatchConverterWindow import BatchConverterWindow
+from singleColorConversionWindow import SingleConverterWindow
 
 conf += settings
 

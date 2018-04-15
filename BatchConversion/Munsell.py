@@ -1,7 +1,7 @@
-from BatchConversion.VerbalFileHandler import VerbalFileHandler
-from BatchConversion.xyYColor import xyYColor
-from BatchConversion.RGB import RGBColor
-from BatchConversion.Hex import HexColor
+from VerbalFileHandler import VerbalFileHandler
+from xyYColor import xyYColor
+from RGB import RGBColor
+from Hex import HexColor
 
 
 class Munsell:

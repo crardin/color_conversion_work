@@ -1,4 +1,4 @@
-from BatchConversion.FileHandler import FileHandler
+from FileHandler import FileHandler
 
 
 class JuddFileHandler(FileHandler):

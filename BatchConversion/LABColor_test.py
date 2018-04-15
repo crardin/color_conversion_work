@@ -1,5 +1,5 @@
 import unittest
-from BatchConversion.LABColor import LABColor
+from LABColor import LABColor
 
 
 class TestLABColor(unittest.TestCase):
