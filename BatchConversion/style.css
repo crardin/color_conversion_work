@@ -32,14 +32,36 @@ QPushButton{
     padding: 10px 10px 10px 10px;
     border-radius: 6px;
     margin-left: 5px;
+    border: 1px solid #006699;
 }
 
-QPushButton:hover{
+QPushButton::hover{
     background: #3cb0fd;
+    border: 1px solid #006699;
 }
 
-QHeaderView:section{
-    border: 1px solid red;
+QHeaderView::section{
+    border: 1px solid #777777;
+    border-top: none;
+    border-right: 1px solid #777777;
+    border-left: none;
+    font-weight: bold;
+}
+
+QHeaderView::section:last{
+    border-right: none;
+}
+
+QTableView{
+    border: 1px solid #777777;
+    margin: 5px;
+    alternate-background-color:#999999;
+    selection-background-color:#ddd;
+    selection-color: #000;
+}
+
+QTableView::item{
+    border-right: 1px solid #777777;
 }
 
 #_colorValue{
