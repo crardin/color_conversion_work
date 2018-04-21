@@ -2,6 +2,8 @@ import math
 import numpy as np
 from Color import Color
 from Munsell import Munsell
+from XYZColor import XYZColor
+from RGB import RGBColor
 
 
 class LABColor(Color):
@@ -23,12 +25,15 @@ class LABColor(Color):
     __Chroma = 0.0
     __DeltaE = 0.0
     __fortyHue = 0.0
+    __XYZ = None
+    __RGB = None
 
     def __init__(self, colorIdentifier, colorName, L, a, b):
         Color.__init__(self, colorIdentifier, colorName)
         self.checkLabValue(L, a, b)
         self.convertLabToLCh()
         self.convertLabToMunsell()
+        self.convertLabToRGB()
 
     def checkLabValue(self, L, a, b):
         try:
@@ -65,7 +70,10 @@ class LABColor(Color):
         deltaE = ((2/5 * nominal C) * deltaH) + (6 * deltaV) + (3 * deltaC)
         :return:
         """
-        self.__DeltaE = ((2/5 * self.NominalMunsellVector[3]) * math.fabs(self.__Munsell.DecimalHue - self.__Munsell.NominalDecimalHue)) + (6 * math.fabs(self.MunsellVector[2] - self.NominalMunsellVector[2])) + (3 * math.fabs(self.MunsellVector[3] - self.NominalMunsellVector[3]))
+        self.__DeltaE = ((2 / 5 * self.NominalMunsellVector[3]) * math.fabs(
+            self.__Munsell.DecimalHue - self.__Munsell.NominalDecimalHue)) + (
+                                    6 * math.fabs(self.MunsellVector[2] - self.NominalMunsellVector[2])) + (
+                                    3 * math.fabs(self.MunsellVector[3] - self.NominalMunsellVector[3]))
         self.__DeltaE = round(self.__DeltaE, 2)
 
     def calculateDeltaE(self):
@@ -203,6 +211,13 @@ class LABColor(Color):
         """
         self.__Munsell = Munsell(self.HueNumber, self.HueLetter, self.Value, self.Chroma)
 
+    def convertLabToRGB(self):
+        """
+        method to perform conversion to the LAB Color representation
+        """
+        self.__XYZ = XYZColor(self.__L, self.__a, self.__b)
+        self.__RGB = RGBColor(self.__XYZ.X, self.__XYZ.Y, self.__XYZ.Z)
+
     def calculateChroma(self):
         self.__Chroma = round((self.LChVector[1] / 5.0), 1)
 
@@ -261,16 +276,16 @@ class LABColor(Color):
         return self.__Munsell.MunsellValue
 
     @property
-    def NominalMunsellValue(self):
-        return self.__Munsell.NominalMunsellValue
-
-    @property
     def NominalMunsellVector(self):
         return self.__Munsell.NominalMunsellVector
 
     @NominalMunsellVector.setter
     def NominalMunsellVector(self, value):
         self.__Munsell.NominalMunsellVector = value
+
+    @property
+    def NominalMunsellValue(self):
+        return self.__Munsell.NominalMunsellValue
 
     @property
     def DecimalHue(self):
@@ -309,8 +324,8 @@ class LABColor(Color):
 
     @property
     def sRGB(self):
-        return self.__Munsell.sRGB
+        return self.__RGB.sRGBValue
 
     @property
     def Hex(self):
-        return self.__Munsell.Hex
+        return self.__RGB.hexValue

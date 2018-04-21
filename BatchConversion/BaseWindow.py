@@ -56,4 +56,4 @@ class BaseWindow(BaseWidget):
 
 
 if __name__ == "__main__":
-    pyforms.start_app(BaseWindow, geometry=(200, 200, 1000, 400))
+    pyforms.start_app(BaseWindow, geometry=(200, 200, 1300, 400))

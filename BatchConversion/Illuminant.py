@@ -17,3 +17,4 @@ class Illuminant:
     @property
     def illuminantVector(self):
         return self.__illuminantVector
+

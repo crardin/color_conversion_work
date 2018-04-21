@@ -34,16 +34,12 @@ QPushButton{
     margin-left: 5px;
 }
 
-QPushButton::hover{
+QPushButton:hover{
     background: #3cb0fd;
 }
 
-QTableWidget{
-    border: none;
-}
-
-QHeaderView::section{
-    border: 1px solid #777777;
+QHeaderView:section{
+    border: 1px solid red;
 }
 
 #_colorValue{

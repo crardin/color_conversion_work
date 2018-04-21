@@ -23,8 +23,6 @@ class Munsell:
     __MunsellVerbalDescription = ""
     __verbalFileHandler = None
     __xyYColor = None
-    __sRGB = None
-    __Hex = None
 
     def __init__(self, HueNumber, HueLetter, Value, Chroma):
         self.__H1 = round(HueNumber, 2)
@@ -197,15 +195,6 @@ class Munsell:
     def JuddVerbal(self):
         self.findxyYForMunsell()
         return self.__xyYColor.JuddVerbal
-
-    @property
-    def sRGB(self):
-        self.findsRGBForMunsell()
-        return self.__sRGB.RGBValue
-
-    def Hex(self):
-        self.findHexForMunsell()
-        return self.__Hex.HexValue
 
     @property
     def H1(self):

@@ -24,11 +24,12 @@ class BatchConverterWindow(BatchConverter, BaseWidget):
         self._messageLabel = ControlLabel('')
         self._LabList = ControlList('Transform Results')
         self._LabList.horizontal_headers = ['Color Name', 'L', 'a', 'b', 'Rounded Lab', 'H1', 'H2', 'V', 'C',
-                                            'Nominal H1', 'Nominal H2', 'Nominal V', 'Nominal C']
+                                            'Nominal Munsell', 'sRGB', 'Hex']
         self._headers = self._LabList.tableWidget.horizontalHeader()
         self._headers.setSectionResizeMode(QHeaderView.Stretch)
         self._headers.setStretchLastSection(False)
         self._LabList.readonly = True
+        self._LabList.tableWidget.setAlternatingRowColors(True)
 
         self.formset = [(' ', '_inputFile', ' '), (' ', '_transformButton', '_saveButton', ' '), '_LabList',
                         (' ', '_messageLabel', ' ')]
@@ -42,8 +43,7 @@ class BatchConverterWindow(BatchConverter, BaseWidget):
             for color in BatchConverter.inputLabColors.fget(self):
                 listOutput = [color.colorName, color.LabVector[0], color.LabVector[1], color.LabVector[2],
                               color.roundedLab, color.MunsellVector[0], color.MunsellVector[1], color.MunsellVector[2],
-                              color.MunsellVector[3], color.NominalMunsellVector[0], color.NominalMunsellVector[1],
-                              color.NominalMunsellVector[2], color.NominalMunsellVector[3]]
+                              color.MunsellVector[3], color.NominalMunsellValue, color.sRGB, color.Hex]
                 self._LabList += listOutput
             self._headers.resizeSections(QHeaderView.Stretch)
             # self._LabList.tableWidget.resizeColumnsToContents()
@@ -66,4 +66,4 @@ class BatchConverterWindow(BatchConverter, BaseWidget):
 
 
 if __name__ == '__main__':
-    pyforms.start_app(BatchConverterWindow, geometry=(200, 200, 1000, 400))
+    pyforms.start_app(BatchConverterWindow, geometry=(200, 200, 1300, 400))

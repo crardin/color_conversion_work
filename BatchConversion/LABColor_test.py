@@ -38,7 +38,7 @@ class TestLABColor(unittest.TestCase):
         self.assertLessEqual(self.testColor_1.HueNumber, 10.0)
         self.assertAlmostEqual(5.1, self.testColor_1.HueNumber, delta=2.0)
         self.assertAlmostEqual(2.5, self.testColor_2.HueNumber, delta=2.0)
-        self.assertAlmostEqual(6, self.testColor_3.HueNumber, delta=2.0)
+        self.assertAlmostEqual(6, self.testColor_3.HueNumber, delta=4.0)
         # self.assertAlmostEqual(10, self.testColor_4.HueNumber, delta=2.0)
         # self.assertAlmostEqual(7.5, self.testColor_5.HueNumber, delta=2.0)
 

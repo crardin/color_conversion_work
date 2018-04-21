@@ -39,6 +39,10 @@ class BatchConverter(object):
         self.__outputFileHandler.OutputColors = self.__inputLABColors
         self.__outputFileHandler.outputColorsToFile()
 
+    @staticmethod
+    def formatMunsellString(inputVector):
+        return str(inputVector[0]) + inputVector[1] + ' ' + str(inputVector[2]) + '/' + str(inputVector[3])
+
     @property
     def munsellValues(self):
         self.getMunsellValues()
@@ -48,6 +52,11 @@ class BatchConverter(object):
     def nominalMunsellVectors(self):
         self.getNominalMunsellVectors()
         return self.__nominalMunsellVectors
+
+    @property
+    def nominalMunsellValue(self):
+        self.getNominalMunsellVectors()
+        return self.formatMunsellString(self.nominalMunsellVectors)
 
     @property
     def inputLabColors(self):
