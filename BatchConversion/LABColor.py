@@ -4,6 +4,7 @@ from Color import Color
 from Munsell import Munsell
 from XYZColor import XYZColor
 from RGB import RGBColor
+from JuddFileHandler import JuddFileHandler
 
 
 class LABColor(Color):
@@ -27,6 +28,7 @@ class LABColor(Color):
     __fortyHue = 0.0
     __XYZ = None
     __RGB = None
+    __JuddFileHandler = JuddFileHandler()
 
     def __init__(self, colorIdentifier, colorName, L, a, b):
         Color.__init__(self, colorIdentifier, colorName)
@@ -72,8 +74,8 @@ class LABColor(Color):
         """
         self.__DeltaE = ((2 / 5 * self.NominalMunsellVector[3]) * math.fabs(
             self.__Munsell.DecimalHue - self.__Munsell.NominalDecimalHue)) + (
-                                    6 * math.fabs(self.MunsellVector[2] - self.NominalMunsellVector[2])) + (
-                                    3 * math.fabs(self.MunsellVector[3] - self.NominalMunsellVector[3]))
+                                6 * math.fabs(self.MunsellVector[2] - self.NominalMunsellVector[2])) + (
+                                3 * math.fabs(self.MunsellVector[3] - self.NominalMunsellVector[3]))
         self.__DeltaE = round(self.__DeltaE, 2)
 
     def calculateDeltaE(self):
@@ -316,11 +318,13 @@ class LABColor(Color):
 
     @property
     def JuddCategory(self):
-        return self.__Munsell.JuddCategory
+        self.__JuddFileHandler.deltaE = self.deltaE
+        return self.__JuddFileHandler.JuddCategory
 
     @property
     def JuddVerbal(self):
-        return self.__Munsell.JuddVerbal
+        self.__JuddFileHandler.deltaE = self.deltaE
+        return self.__JuddFileHandler.JuddVerbal
 
     @property
     def sRGB(self):
