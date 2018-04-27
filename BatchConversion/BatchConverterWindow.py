@@ -1,5 +1,5 @@
 from pysettings import conf
-from batch_conversion import settings
+from BatchConversion.batch_conversion import settings
 
 conf += settings
 
