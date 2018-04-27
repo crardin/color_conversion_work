@@ -318,13 +318,15 @@ class LABColor(Color):
 
     @property
     def JuddCategory(self):
-        self.__JuddFileHandler.deltaE = self.deltaE
-        return self.__JuddFileHandler.JuddCategory
+        # self.__JuddFileHandler.deltaE = self.deltaE
+        # return self.__JuddFileHandler.JuddCategory
+        pass
 
     @property
     def JuddVerbal(self):
-        self.__JuddFileHandler.deltaE = self.deltaE
-        return self.__JuddFileHandler.JuddVerbal
+        # self.__JuddFileHandler.deltaE = self.deltaE
+        # return self.__JuddFileHandler.JuddVerbal
+        pass
 
     @property
     def sRGB(self):
