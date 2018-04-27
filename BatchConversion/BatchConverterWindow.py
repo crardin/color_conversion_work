@@ -10,7 +10,7 @@ from pyforms.Controls import ControlButton
 from pyforms.Controls import ControlFile
 from pyforms.Controls import ControlList
 from pyforms.Controls import ControlLabel
-from BatchConversion.batch_conversion import BatchConverter
+from batch_conversion import BatchConverter
 
 
 class BatchConverterWindow(BatchConverter, BaseWidget):
