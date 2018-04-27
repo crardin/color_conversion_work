@@ -1,7 +1,7 @@
-from pysettings import conf
-from BatchConversion import settings
-
-conf += settings
+# from pysettings import conf
+# from BatchConversion import settings
+#
+# conf += settings
 
 import pyforms
 from PyQt5.QtWidgets import QFileDialog, QApplication, QHeaderView
